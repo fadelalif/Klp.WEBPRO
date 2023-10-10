@@ -28,6 +28,11 @@
   .navbar-nav a {
     color: white !important;
   }
+
+  nav img{
+    width: 220px;
+    flex-shrink: 0;
+  }
   
   .login {
     width: 133px;
