@@ -36,6 +36,16 @@
     border-radius: 16px;
     background: #00897b;
     border: 3px solid #fff;
+    margin-right: 10px;
+  }
+
+  .daftar{
+    width: 133px;
+    height: 52px;
+    color: white;
+    border-radius: 16px;
+    background: #00897b;
+    border: 3px solid #fff;
   }
   #hero {
     width: 100%;
@@ -61,21 +71,19 @@
     font-weight: 400;
     line-height: 173.523%; /* 26.028px */
   }
-  
-  .Download {
-    width: 282px;
-    height: 52px;
-    color: white;
-    color: #fff;
-    font-family: Arial;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    border-radius: 16px;
-    background: #00897b;
-    border: 3px solid #fff;
-  }
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.download-button1,
+.download-button2 {
+  display: inline-block;
+  margin-right: 10px;
+  border: none; 
+  background: none; 
+  padding: 0;
+}
   
   #layanan {
     padding: 100px 0 100px 0;

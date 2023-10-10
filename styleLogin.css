@@ -1,14 +1,14 @@
 *{
-   padding: 0;
-   margin: 0;
-   box-sizing:border-box;
-}
-
-body{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+  }
+  
+  body{
     background-color: #ffff;
-}
-
-nav{
+  }
+  
+  nav{
     display: flex;
     flex-shrink: 0;
     background-color: #00897B;
@@ -16,7 +16,7 @@ nav{
     padding: 1rem 2rem;
   }
   
-.nav-link {
+  .nav-link {
     color: #fff;
     font-family: Arial;
     font-size: 22px;
@@ -25,15 +25,6 @@ nav{
     line-height: normal;
   }
   
-.navbar-nav a {
+  .navbar-nav a {
     color: white !important;
-  }
-
-.login {
-    width: 133px;
-    height: 52px;
-    color: white;
-    border-radius: 16px;
-    background: #00897b;
-    border: 3px solid #fff;
   }
