@@ -49,29 +49,25 @@
               <a class="nav-link" href="#">Berita</a>
             </li>
           </ul>
-          <div class="btn-link" style="margin:15px;">
-            <a href="<?=base_url()?>index.php/Dashboard">
-            <button type="button" class="btn btn-outline-light btn-lg">
-            Masuk
-            </button>
-          </a>
-          </div>
-          <div class="btn-link">
-            <a href="<?=base_url()?>index.php/Dashboard">
-            <button type="button" class="btn btn-outline-light btn-lg">
-            Daftar
-            </button>
-          </a>
-          </div>
         </div>
+      </div>
+      <div class="btn-link" style="margin:15px;">
+        <a href="<?=base_url()?>index.php/Dashboard">
+          <button type="button" class="btn btn-outline-light btn-lg">Masuk</button>
+        </a>
+      </div>
+      <div class="btn-link">
+        <a href="<?=base_url()?>index.php/Dashboard">
+          <button type="button" class="btn btn-outline-light btn-lg">Daftar</button>
+        </a>
       </div>
     </nav>
     <!-- Navbar -->
     <!-- Hero Section -->
     <section id="hero">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6 hero-tagline my-auto">
+        <div class="row align-items-center">
+          <div class="col-md-6 hero-tagline">
             <h1>Ayo Cintai Bumi Dengan Mengikuti Aksi Cinta Bumi.</h1>
             <p>
               Ayo bergabung kedalam suatu komunitas untuk dapat menjalakan aksi
@@ -86,22 +82,20 @@
               </button>
             </div>
           </div>
-          <div class="col-md-6 hero-tagline">
-            <img src="<?=base_url()?>assets/img/image 2.png" alt="" style="width:100%; padding-top: 100px;" />
+          <div class="col-md-6 hero-tagline d-flex justify-content-end">
+            <img src="<?=base_url()?>assets/img/image 2.png" alt="" style="width:533px; padding-top: 100px; margin-right: 49px;" />
           </div>
         </div>
       </div>
     </section>
     <!-- Layanan Section -->
     <section id="layanan">
-      <divv class="container-fluid">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6">
-            <img src="<?=base_url()?>" alt="" />
+          <div class="col-md-6 hero-tagline d-flex ">
+            <img src="<?=base_url()?>assets/img/kiri utama.jpg" alt="" style="width:533px; margin-left: 81px;" />
           </div>
-
-          <div class="col-md-6 layanan-tagline">
+          <div class="col-md-6 layanan-tagline d-flex justify-content-end">
             <div class="content w-100">
               <h1>Ciptakan Komunitas Aksi Cinta Bumi Kamu</h1>
               <p>Ayo bergabung kedalam suatu komunitas untuk dapat
@@ -113,20 +107,23 @@
           </div>
         </div>
       </div>
-    </div>
     </section>
 
     <!-- About2 Section -->
     <section id="about2">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 layanan-tagline">
-          <div class="content w-100">
-            <h1>Ciptakan Kegiatan Untuk Komunitas Kamu</h1>
-            <p>Ayo bergabung kedalam suatu komunitas
-             untuk dapat menjalakan aksi cinta bumi
-             melalui aplikasi yang kembangkan.
-            </p>
+            <div class="content w-100">
+              <h1>Ciptakan Kegiatan Untuk Komunitas Kamu</h1>
+              <p>Ayo bergabung kedalam suatu komunitas
+              untuk dapat menjalakan aksi cinta bumi
+              melalui aplikasi yang kembangkan.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 hero-tagline d-flex ">
+            <img src="<?=base_url()?>assets/img/kanan utama.jpg" alt="" style="width:533px; margin-left: 81px;" />
           </div>
         </div>
       </div>
