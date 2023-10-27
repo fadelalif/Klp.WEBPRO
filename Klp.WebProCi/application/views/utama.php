@@ -51,7 +51,7 @@
           </ul>
         </div>
       </div>
-      <div class="btn-link" style="margin:15px;">
+      <div class="btn-link" style="margin:10px; width: 138px;">
         <a href="<?=base_url()?>index.php/Dashboard">
           <button type="button" class="btn btn-outline-light btn-lg">Masuk</button>
         </a>
@@ -131,60 +131,42 @@
 
     <!--Footer -->
     <footer id="footer" class="text-center text-lg-start" >
-      <!-- Section: Links  -->
       <section class="container-fluid p-1 text-end" id="contact-us">
         <div class="container-fluid text-center text-md-start mt-3  ">
-          <!-- Grid row -->
           <div class="row md-3 justify-content-end">
-            <!-- Grid column -->
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
-              <!-- Content -->
               <a>
-                <img src="<?=base_url()?>assets/img/icon logo 1.png" alt="" />
+                <img src="<?=base_url()?>assets/img/icon logo 1.png" alt="" style="width: 241px; margin-left:56px;"/>
               </a>
             </div>
-            <!-- Grid column -->
-    
-            <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4" style="color: #fff;">
-                Layanan Kami
-              </h6>
+              <h6 class="text-uppercase fw-bold mb-4" style="color: #fff;">Layanan Kami</h6>
               <p class="footer-links">
-                <a class="a-footer" href="#">Tentang Kami</a><br>
-                <a class="a-footer" href="#">Pusat Bantuan</a><br>
-                <a class="a-footer" href="#">Kerjasama</a><br>
-                <a class="a-footer" href="#">Donasi</a><br>
+                <a class="a-footer" href="#" style="text-decoration: none;">Daftarkan Komunitas</a><br>
+                <a class="a-footer" href="#" style="text-decoration: none;">Tentang Kami</a><br>
+                <a class="a-footer" href="#" style="text-decoration: none;">Pusat Bantuan</a><br>
+                <a class="a-footer" href="#" style="text-decoration: none;">Kerjasama</a><br>
+                <a class="a-footer" href="#" style="text-decoration: none;">Donasi</a><br>
               </p>
-            </div>
-            <!-- Grid column -->
-    
-            <!-- Grid column -->
+            </div>    
             <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-md-0 mb-4 ms-auto"style="text-align:left;">
-              <!-- Links -->
               <h6 class="text-uppercase fw-bold mb-4" style="color: #fff;"> Informasi Kontak</h6>
               <p style="color:#fff"><i class="fa-brands fa-instagram me-3" style="color: #fff;"></i> Relawanin</p>
               <p style="color:#fff"><i class="fas fa-home me-3" style="color: #fff;"></i> Jalan telekomunikasi</p>
               <p style="color:#fff">
                 <i class="fas fa-envelope me-3 " style="color: #fff;"></i> relawain@gmail.com</p>
-              <p style="color:#fff"><i class="fas fa-phone me-3 " style="color: #fff;"></i> +62 812-3989-290</p>
+              <p style="color:#fff">
+                <i class="fas fa-phone me-3 " style="color: #fff;"></i> +62 812-3989-290</p>
             </div>
-            <!-- Grid column -->
           </div>
-          <!-- Grid row -->
         </div>
       </section>
-  <!-- Copyright -->
-  <div class="text-center p-3 text-white">
+      <div class="text-center p-3 text-white">
       © 2023 Copyright Relawanin
-  </div>
-  <!-- Copyright -->
-</footer>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
