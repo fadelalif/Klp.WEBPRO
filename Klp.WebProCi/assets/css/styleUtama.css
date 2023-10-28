@@ -8,55 +8,10 @@
     background-color: #ffff;
   }
   
-  nav{
-    max-width: 100%;
-    flex-shrink: 0;
-    background-color: #00897B;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-  }
-  
-  .nav-link {
-    color: #fff;
-    font-family: Arial;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  
-  .navbar-nav a {
-    color: white !important;
-  }
-  
-
-  nav img{
-    width: 220px;
-    flex-shrink: 0;
-  }
-
   .container{
     margin-left: 0;
   }
   
-  .login {
-    width: 133px;
-    height: 52px;
-    color: white;
-    border-radius: 16px;
-    background: #00897b;
-    border: 3px solid #fff;
-    margin-right: 10px;
-  }
-
-  .daftar{
-    width: 133px;
-    height: 52px;
-    color: white;
-    border-radius: 16px;
-    background: #00897b;
-    border: 3px solid #fff;
-  }
   #hero {
     width: auto;
     height: 552px;
@@ -92,15 +47,14 @@
     margin-left: 81px;
   }
 
-
-.download-button1,
-.download-button2 {
+  .download-button1,
+  .download-button2 {
   display: inline-block;
   margin-right: 10px;
   border: none; 
   background: none; 
   padding: 0;
-}
+  }
   
   #layanan {
     padding: 100px 0 100px 0;
@@ -148,42 +102,6 @@
     padding-bottom: 55px;
   }
 
-  footer{
-    background-color: #00897B;
-  }
-      
-  a:hover.footer-link{
-    text-decoration: underline;
-  }
-
   img{
     width: 50%;
-  }
-
-  .a-footer{
-    color: #fff;
-  }
-  .footer-links{
-    color: #FFF;
-    font-family: Arial;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 173.523%; /* 34.705px */
-  }
-
-  .btn{
-    border-color: #fff;
-    border-radius: 16px;
-    border: 3px solid #FFF;
-    color: #fff;
-    background-color: #00897b;
-    font-family: Arial;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .btn-link{
-    margin-right: 81px;
   }

@@ -1,4 +1,4 @@
-  <head>
+<head>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="<?=base_url()?>assets/css/styleNav.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg position-fixed w-100">
+    <nav class="navbar navbar-expand-lg position-fixed w-100 container-fluid">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="<?=base_url()?>assets/img/relawain logo 1.png" alt="" />
@@ -45,14 +45,11 @@
           </ul>
         </div>
       </div>
-      <div class="btn-link" style="margin:10px; width: 138px;">
+      <div class="button-container buttonProf" style="margin-right:81px; ">
         <a href="<?=base_url()?>index.php/Dashboard">
-          <button type="button" class="btn btn-outline-light btn-lg">Masuk</button>
-        </a>
-      </div>
-      <div class="btn-link">
-        <a href="<?=base_url()?>index.php/Dashboard">
-          <button type="button" class="btn btn-outline-light btn-lg">Daftar</button>
+          <button type="button" style="background:none; border:none">
+            <img src="<?=base_url()?>assets/img/icon profile.png" alt="" style="width: 67px;" />
+          </button>
         </a>
       </div>
     </nav>
