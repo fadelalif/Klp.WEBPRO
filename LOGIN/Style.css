@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    overflow: hidden;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: white;
+}
+
+.container{
+    background-color: white;    
+    position: relative;
+}
+
+
+.btnMasuk{
+    background-color: #00897B;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 400px;
+}
+
+.btnMasuk:hover{
+    background-color: white;
+    color: #00897B;
+    border: 1px solid #00897B;    
+}
+
+
+.social_icons a{
+    border: 1px solid #00897B;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 6px; 
+    margin-bottom: 20px;
+    position: relative;
+    top: 10px; 
+    width: 50px;
+    height: 50px;
+}
+
+.social_icons a:hover{
+    background-color: #00897B;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+
+/* .Background{
+    position: fixed;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+} */
+
+/* Gambar Tanaman di Login */
+
+/* .gambar{
+    width: 782px;
+    height: 781px; 
+}
+.gambar .pot{
+    position: fixed;
+    width: 782px;
+    height: 781px;
+    top: 0;
+    left: 0; 
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+} */
+/* 
+.Login img{
+    width: 200px;
+    position: relative;
+    top: 90px;
+    left:50px;
+}
+
+h2{
+    position: relative;
+    bottom: -90px;
+    left: -20px;
+    font-weight: bolder;
+    font-size: 40px;
+    color: rgba(81, 81, 81, 1);
+}
+
+.email{
+    color: rgba(81, 81, 81, 1);
+}
+
+.password{
+    color: rgba(81, 81, 81, 1);
+}
+
+a{
+    position: relative;
+    bottom: -300px;
+}
+
+input{
+    margin-top: 20px;
+    margin-bottom: -10px; 
+    position: relative;
+    bottom: -90px;
+    left: -90px;
+    padding: 5px;
+    font-size: 20px;
+    align-items: center;
+    width: 500px;
+}
+
+.email input[type="text"]{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid #ddd ;
+    font-size: 16px;
+    padding-top: 30px;
+}
+
+.password input[type="password"]{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid #ddd ;
+    font-size: 16px;
+    padding-top: 30px;
+}
+
+.btn{
+    position: relative;
+    top: 150px;
+    left: -100px;
+}
+
+.btn:hover{
+    background-color: transparent;
+    border-color: green;
+    border: -50px;
+    color: green;
+}
+
+a{
+    position: relative;
+    top: 110px;
+    left: 280px;
+    padding-bottom: 20px;
+} */
+
+
+
+
+
+
+  
