@@ -21,7 +21,7 @@ class CariKegiatan extends CI_Controller {
 	public function index()
 	{
 
-		$this->load->view('cariKeigatan');
+		$this->load->view('page/cariKegiatan');
 
 	}
 }

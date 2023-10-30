@@ -21,7 +21,7 @@ class Dashboard extends CI_Controller {
 	public function index()
 	{
 
-		$this->load->view('dashboard/relawan');
+		$this->load->view('page/relawan');
 
 	}
 }
