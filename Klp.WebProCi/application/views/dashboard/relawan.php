@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Relawanin</title>
+  <title>Login</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -123,14 +123,6 @@
         <?php include 'application/views/cardKegiatan.php'; ?>
         <?php include 'application/views/cardKegiatan.php'; ?>
         <?php include 'application/views/cardKegiatan.php'; ?>
-      </div>
-    </div>
-  </section>
-  <section id="cardKegiatan">
-    <div class="container-fluid" style="background-color: #DADADA">
-      <div class="row" style="padding: 25px;">
-      <div class="col-md-12"
-        
       </div>
     </div>
   </section>
