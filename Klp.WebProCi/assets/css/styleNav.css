@@ -1,0 +1,69 @@
+nav {
+	max-width: 100%;
+	flex-shrink: 0;
+	background-color: #00897b;
+	justify-content: space-between;
+	padding: 1rem 2rem;
+	z-index: 1000; /* Menambahkan z-index */
+}
+
+.nav-link {
+	color: #fff;
+	font-family: Arial;
+	font-size: 22px;
+	font-style: bold;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.navbar-nav a {
+	color: white !important;
+}
+
+nav img {
+	width: 220px;
+	flex-shrink: 0;
+}
+.login {
+	width: 133px;
+	height: 52px;
+	color: white;
+	border-radius: 16px;
+	background: #00897b;
+	border: 3px solid #fff;
+	margin-right: 10px;
+}
+
+.daftar {
+	width: 133px;
+	height: 52px;
+	color: white;
+	border-radius: 16px;
+	background: #00897b;
+	border: 3px solid #fff;
+}
+
+.btn {
+	border-color: #fff;
+	border-radius: 16px;
+	border: 3px solid #fff;
+	color: #fff;
+	background-color: #00897b;
+	font-family: Arial;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.btn-link {
+	margin-right: 81px;
+}
+
+.button-container buttonProf {
+	background: none; /* Menghapus latar belakang default tombol */
+	border: none; /* Menghapus garis border */
+	cursor: pointer; /* Mengubah kursor saat mengarah ke tombol */
+	padding: 0; /* Menghapus ruang bantalan di dalam tombol */
+	outline: none; /* Menghapus outline saat tombol aktif */
+}
+

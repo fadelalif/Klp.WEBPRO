@@ -1,0 +1,16 @@
+#btnFilter {
+	border-color: #fff;
+	border-radius: 10px;
+	border: 2px solid #00897b;
+	color: #00897b;
+	background-color: #fff;
+	font-family: Arial;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+    width: 102px;
+}
+.btn-link {
+	margin-right: 81px;
+}
