@@ -1,0 +1,20 @@
+footer {
+	background-color: #00897b;
+}
+
+a:hover.footer-link {
+	text-decoration: underline;
+}
+
+.a-footer {
+	color: #fff;
+}
+
+.footer-links {
+	color: #fff;
+	font-family: Arial;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 173.523%; /* 34.705px */
+}
