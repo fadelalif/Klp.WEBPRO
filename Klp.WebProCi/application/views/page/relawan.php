@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Login</title>
+  <title>Relawanin</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -129,21 +129,49 @@
   <section id="cardKegiatan">
     <div class="container-fluid" style="background-color: #DADADA">
       <div class="row" style="padding: 25px;">
-      <div class="col-md-12"
-        
+      <div class="col-md-12"></div>
       </div>
     </div>
   </section>
-  <div class="btn-group" role="group" aria-label="Kategori">
-    <button type="button" class="btn btn-link btnKat">Kategori 1</button>
-    <button type="button" class="btn btn-link btnKat">Kategori 2</button>
-    <button type="button" class="btn btn-link btnKat">Kategori 3</button>
+  <section id="cardKat">
+    <ul class="nav nav-tabs" id="myTabs">
+    <li class="nav-item">
+      <a class="nav-link active" id="card1-tab" data-bs-toggle="tab" href="#card1" role="tab" aria-controls="card1" aria-selected="true" style="color: #00897b;">Kategori 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="card2-tab" data-bs-toggle="tab" href="#card2" role="tab" aria-controls="card2" aria-selected="false" style="color: #00897b;">Kategori 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="card3-tab" data-bs-toggle="tab" href="#card3" role="tab" aria-controls="card3" aria-selected="false" style="color: #00897b;">Kategori 3</a>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="card1" role="tabpanel" aria-labelledby="card1-tab">
+    <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
+        <?php include 'application/views/cardKegiatan.php'; ?>
+        <?php include 'application/views/cardKegiatan.php'; ?>
+        <?php include 'application/views/cardKegiatan.php'; ?>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="card2" role="tabpanel" aria-labelledby="card2-tab">
+    <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
+        <?php include 'application/views/cardKegiatan.php'; ?>
+        <?php include 'application/views/cardKegiatan.php'; ?>
+        <?php include 'application/views/cardKegiatan.php'; ?>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="card3" role="tabpanel" aria-labelledby="card3-tab">
+    <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
+        <?php include 'application/views/cardKegiatan.php'; ?>
+        <?php include 'application/views/cardKegiatan.php'; ?>
+        <?php include 'application/views/cardKegiatan.php'; ?>
+      </div>
+    </div>
   </div>
-  <div class="btn-group" role="group" aria-label="Kategori">
-    <button type="button" class="btn btn-link btnKat">Kategori 1</button>
-    <button type="button" class="btn btn-link btnKat">Kategori 2</button>
-    <button type="button" class="btn btn-link btnKat">Kategori 3</button>
-  </div>
+
+  </section>
+
   <!-- news -->
   <section>
     <div class="container-fluid">
