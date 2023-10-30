@@ -42,7 +42,7 @@
                 akan terwujud bagi lingkungan</p>
             </div>
             <div class="btn-link" style="margin:22px; margin: bottom 44px; width: 260px; height: 50px; ">
-              <a href="<?= base_url() ?>index.php/Dashboard">
+              <a href="<?= base_url() ?>index.php/CariKegiatan">
                 <button type="button" class="btn btn-outline-light btn-lg" style="width: 260px;">Cari Kegiatan</button>
               </a>
             </div>
@@ -123,6 +123,14 @@
         <?php include 'application/views/cardKegiatan.php'; ?>
         <?php include 'application/views/cardKegiatan.php'; ?>
         <?php include 'application/views/cardKegiatan.php'; ?>
+      </div>
+    </div>
+  </section>
+  <section id="cardKegiatan">
+    <div class="container-fluid" style="background-color: #DADADA">
+      <div class="row" style="padding: 25px;">
+      <div class="col-md-12"
+        
       </div>
     </div>
   </section>
