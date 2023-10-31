@@ -50,10 +50,17 @@
       </div>
     </div>
     <div class="button-container buttonProf" style="margin-right:81px; ">
-      <a href="<?= base_url() ?>index.php/Dashboard">
-        <button type="button" style="background:none; border:none">
-          <img src="<?= base_url() ?>assets/img/icon profile.png" alt="" style="width: 67px;" />
-        </button>
+    <li class="nav-item dropdown" style="list-style-type: none;">
+            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button type="button" style="background:none; border:none">
+              <img src="<?= base_url() ?>assets/img/icon profile.png" alt="" style="width: 67px;" />
+            </button>
+            </a>
+            <ul class="dropdown-menu" style="background-color: #00897b;">
+              <li><a class="dropdown-item" href="<?= base_url() ?>index.php/Utama">Log Out</a></li>
+            </ul>
+          </li>
+        
       </a>
     </div>
   </nav>
