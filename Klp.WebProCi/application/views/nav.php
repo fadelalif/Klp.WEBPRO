@@ -22,28 +22,26 @@
           <li class="nav-item mx-4">
             <a class="nav-link active" aria-current="page" href="#">Utama</a>
           </li>
-          <li class="nav-item mx-4">
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown mx-4">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Tentang
             </a>
             <ul class="dropdown-menu navDropdownMenuLink" style="background-color: #00897b">
-              <li><a id="navDropdownMenuLink" class="dropdown-item  " href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item  " href="#">Tentang Relawanin</a></li>
+              <li><a class="dropdown-item" href="#">Visi dan Misi</a></li>
+              <li><a class="dropdown-item" href="#">Hubungi Kami</a></li>
+              <li><a class="dropdown-item" href="#">Donasi</a></li>
             </ul>
           </li>
-          <li class="nav-item mx-4">
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown mx-4">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Fitur
             </a>
             <ul class="dropdown-menu navDropdownMenuLink" style="background-color: #00897b">
-              <li><a id="navDropdownMenuLink" class="dropdown-item  " href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item  " href="#">Cari Kegiatan</a></li>
+              <li><a class="dropdown-item" href="#">Mengadakan Kegiatan</a></li>
+              <li><a class="dropdown-item" href="#">Panduan</a></li>
             </ul>
-          </li>
           </li>
           <li class="nav-item mx-4">
             <a class="nav-link" href="#">Berita</a>

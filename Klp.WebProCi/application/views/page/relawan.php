@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/styleDashboard.css">
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/styleCardKegiatan.css">
+  <link rel="stylesheet" href="<?= base_url() ?>assets/css/styleCardBerita.css">
+
 </head>
 
 <body>
@@ -126,137 +128,59 @@
       </div>
     </div>
   </section>
-  <section id="cardKegiatan">
-    <div class="container-fluid" style="background-color: #DADADA">
-      <div class="row" style="padding: 25px;">
-      <div class="col-md-12"></div>
-      </div>
-    </div>
-  </section>
   <section id="cardKat">
     <ul class="nav nav-tabs" id="myTabs">
-    <li class="nav-item">
-      <a class="nav-link active" id="card1-tab" data-bs-toggle="tab" href="#card1" role="tab" aria-controls="card1" aria-selected="true" style="color: #00897b;">Kategori 1</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="card2-tab" data-bs-toggle="tab" href="#card2" role="tab" aria-controls="card2" aria-selected="false" style="color: #00897b;">Kategori 2</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="card3-tab" data-bs-toggle="tab" href="#card3" role="tab" aria-controls="card3" aria-selected="false" style="color: #00897b;">Kategori 3</a>
-    </li>
-  </ul>
+      <li class="nav-item">
+        <a class="nav-link active" id="card1-tab" data-bs-toggle="tab" href="#card1" role="tab" aria-controls="card1"
+          aria-selected="true" style="color: #00897b;">Kegiatan</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="card2-tab" data-bs-toggle="tab" href="#card2" role="tab" aria-controls="card2"
+          aria-selected="false" style="color: #00897b;">Projek</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="card3-tab" data-bs-toggle="tab" href="#card3" role="tab" aria-controls="card3"
+          aria-selected="false" style="color: #00897b;">Webinar</a>
+      </li>
+    </ul>
 
-  <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="card1" role="tabpanel" aria-labelledby="card1-tab">
-    <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
-        <?php include 'application/views/cardKegiatan.php'; ?>
-        <?php include 'application/views/cardKegiatan.php'; ?>
-        <?php include 'application/views/cardKegiatan.php'; ?>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="card1" role="tabpanel" aria-labelledby="card1-tab">
+        <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
+          <?php include 'application/views/cardKegiatan.php'; ?>
+          <?php include 'application/views/cardKegiatan.php'; ?>
+          <?php include 'application/views/cardKegiatan.php'; ?>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="card2" role="tabpanel" aria-labelledby="card2-tab">
+        <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
+          <?php include 'application/views/cardKegiatan.php'; ?>
+          <?php include 'application/views/cardKegiatan.php'; ?>
+          <?php include 'application/views/cardKegiatan.php'; ?>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="card3" role="tabpanel" aria-labelledby="card3-tab">
+        <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
+          <?php include 'application/views/cardKegiatan.php'; ?>
+          <?php include 'application/views/cardKegiatan.php'; ?>
+          <?php include 'application/views/cardKegiatan.php'; ?>
+        </div>
       </div>
     </div>
-    <div class="tab-pane fade" id="card2" role="tabpanel" aria-labelledby="card2-tab">
-    <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
-        <?php include 'application/views/cardKegiatan.php'; ?>
-        <?php include 'application/views/cardKegiatan.php'; ?>
-        <?php include 'application/views/cardKegiatan.php'; ?>
-      </div>
+    <div class="mt-4" style="text-align: center">
+      <a href="<?= base_url() ?>index.php/Dashboard" class="btn LainnyaBut">Lainnya</a>
     </div>
-    <div class="tab-pane fade" id="card3" role="tabpanel" aria-labelledby="card3-tab">
-    <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
-        <?php include 'application/views/cardKegiatan.php'; ?>
-        <?php include 'application/views/cardKegiatan.php'; ?>
-        <?php include 'application/views/cardKegiatan.php'; ?>
-      </div>
-    </div>
-  </div>
-
   </section>
 
   <!-- news -->
-  <section>
+  <section id="cardBerita">
     <div class="container-fluid">
-      <h5 style="color:#00897b;">Berita</h5>
+      <h5 style="padding-left:10px;">Berita</h5>
       <div class="row row-cols-1 row-cols-md-4 g-4" style="padding: 25px;">
-        <div class="col" style="padding: 10px;">
-          <div class="card h-100">
-            <img class="card-img-top" src="<?= base_url() ?>assets/img/hutan.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title" style="color:#000;">Card title</h5>
-              <p class="card-text" style="color:#000;">This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">see more</small>
-            </div>
-          </div>
-        </div>
-        <div class="col" style="padding: 10px;">
-          <div class="card h-100">
-            <img class="card-img-top" src="<?= base_url() ?>assets/img/hutan.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title" style="color:#000;">Card title</h5>
-              <p class="card-text" style="color:#000;">This card has supporting text below as a natural lead-in to
-                additional content.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">see more</small>
-            </div>
-          </div>
-        </div>
-        <div class="col" style="padding: 10px;">
-          <div class="card h-100">
-            <img class="card-img-top" src="<?= base_url() ?>assets/img/hutan.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title" style="color:#000;">Card title</h5>
-              <p class="card-text" style="color:#000;">This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content than the first to show that equal
-                height action.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">see more</small>
-            </div>
-          </div>
-        </div>
-        <div class="col" style="padding: 10px;">
-          <div class="card h-100">
-            <img class="card-img-top" src="<?= base_url() ?>assets/img/hutan.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title" style="color:#000;">Card title</h5>
-              <p class="card-text" style="color:#000;">This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content than the first to show that equal
-                height action.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">see more</small>
-            </div>
-          </div>
-        </div>
-        <div class="col" style="padding: 10px;">
-          <div class="card h-100">
-            <img class="card-img-top" src="<?= base_url() ?>assets/img/hutan.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title" style="color:#000;">Card title</h5>
-              <p class="card-text" style="color:#000;">This card has supporting text below as a natural lead-in to
-                additional content.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">see more</small>
-            </div>
-          </div>
-        </div>
-        <div class="col" style="padding: 10px;">
-          <div class="card h-100">
-            <img class="card-img-top" src="<?= base_url() ?>assets/img/hutan.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title" style="color:#000;">Card title</h5>
-              <p class="card-text" style="color:#000;">This card has supporting text below as a natural lead-in to
-                additional content.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">see more</small>
-            </div>
-          </div>
-        </div>
+        <?php include 'application/views/cardBerita.php'; ?>
+        <?php include 'application/views/cardBerita.php'; ?>
+        <?php include 'application/views/cardBerita.php'; ?>
+        <?php include 'application/views/cardBerita.php'; ?>
       </div>
     </div>
   </section>
