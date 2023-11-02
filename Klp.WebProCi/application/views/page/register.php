@@ -12,10 +12,8 @@
 
 
 </head>
+
 <body>
-<<<<<<< HEAD
-    <section id="loginPage" style="padding-top: 10px;">
-=======
     <nav class="navbar navbar-expand-lg position-fixed w-100">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -59,14 +57,8 @@
                 </ul>
             </div>
         </div>
-        <div class="btn-link" style="margin:10px; width: 138px;">
-    
-        </div>
-        <div class="btn-link">
-        </div>
     </nav>
     <section id="loginPage" style="padding-top: 130px;">
->>>>>>> Fadel
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
@@ -88,11 +80,11 @@
                                 aria-describedby="basic-addon1" />
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <input type="password" class="form-control" placeholder="Kata Sandi" aria-label="Kata Sandi"
+                            <input type="text" class="form-control" placeholder="Kata Sandi" aria-label="Kata Sandi"
                                 aria-describedby="basic-addon1" />
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <input type="password" class="form-control" placeholder="Konfirmasi Kata Sandi"
+                            <input type="text" class="form-control" placeholder="Konfirmasi Kata Sandi"
                                 aria-label="Konfirmasi Kata Sandi" aria-describedby="basic-addon1" />
                         </div>
                         <h2 class="AkunHead fw-semibold " style="margin-left: 465px;">
