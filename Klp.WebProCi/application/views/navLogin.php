@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg position-fixed w-100">
+  <nav class="navbar navbar-expand-lg position-fixed w-100 container-fluid">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="<?= base_url() ?>assets/img/relawain logo 1.png" alt="" />
@@ -49,14 +49,18 @@
         </ul>
       </div>
     </div>
-    <div class="btn-link" style="margin:10px; width: 138px;">
-      <a href="<?= base_url() ?>index.php/Login">
-        <button type="button" class="btn btn-outline-light btn-lg">Masuk</button>
-      </a>
-    </div>
-    <div class="btn-link">
-      <a href="<?= base_url() ?>index.php/Register">
-        <button type="button" class="btn btn-outline-light btn-lg">Daftar</button>
+    <div class="button-container buttonProf" style="margin-right:81px; ">
+    <li class="nav-item dropdown" style="list-style-type: none;">
+            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button type="button" style="background:none; border:none">
+              <img src="<?= base_url() ?>assets/img/icon profile.png" alt="" style="width: 67px;" />
+            </button>
+            </a>
+            <ul class="dropdown-menu" style="background-color: #00897b;">
+              <li><a class="dropdown-item" href="<?= base_url() ?>index.php/Utama">Log Out</a></li>
+            </ul>
+          </li>
+        
       </a>
     </div>
   </nav>
