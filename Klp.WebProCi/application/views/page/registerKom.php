@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Daftar Akun</title>
+    <title>Daftar Komunitas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/styleRegister.css">
@@ -25,10 +25,8 @@
                             Akun
                         </h2>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <input type="text" class="form-control" placeholder="Nama Depan" aria-label="Nama Depan"
+                            <input type="text" class="form-control" placeholder="Nama Komunitas" aria-label="Nama Komunitas"
                                 aria-describedby="basic-addon1" />
-                            <input type="text" class="form-control" placeholder="Nama Belakang"
-                                aria-label="Nama Belakang" aria-describedby="basic-addon2" />
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
                             <input type="text" class="form-control" placeholder="Email" aria-label="Email"
@@ -43,33 +41,30 @@
                                 aria-label="Konfirmasi Kata Sandi" aria-describedby="basic-addon1" />
                         </div>
                         <h2 class="AkunHead fw-semibold " style="margin-left: 465px;">
-                            Data Diri
+                            Data Komunitas
                         </h2>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
                             <input type="text" class="form-control" placeholder="Nomor Telepon"
                                 aria-label="Nomor Telepon" aria-describedby="basic-addon1" />
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <label for="tgl_lahir" class="input-group-text">Tanggal Lahir</label>
-                            <input type="date" class="form-control" id="tgl_lahir" name="tgl_lahir"
+                            <input type="text" class="form-control" placeholder="Penanggung Jawab" aria-label="Penanggung Jawab"
                                 aria-describedby="basic-addon1" />
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <label class="input-group-text" for="jenis_kelamin">Jenis Kelamin</label>
-                            <select class="form-select" id="jenis_kelamin" name="jenis_kelamin"
+                            <label class="input-group-text" for="kategori">Kategori Komunitas</label>
+                            <select class="form-select" id="kategori" name="kategori"
                                 aria-describedby="basic-addon1">
-                                <option value="">Pilih jenis kelamin</option>
-                                <option value="Laki-laki">Laki-laki</option>
-                                <option value="Perempuan">Perempuan</option>
+                                <option value="">Pilih Kategori</option>
+                                <option value="Perhutana">Perhutana</option>
+                                <option value="Perairan">Perairan</option>
+                                <option value="Bersih-Bersih">Bersih-Bersih</option>
+                                <option value="Daur Ulang">Daur Ulang</option>
                             </select>
                         </div>
-                        <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <input type="text" class="form-control" placeholder="Pekerjaan" aria-label="Pekerjaan"
-                                aria-describedby="basic-addon1" />
-                        </div>
-                        <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <input type="text" class="form-control" placeholder="Institusi" aria-label="Institusi"
-                                aria-describedby="basic-addon1" />
+                        <div class="input-group mb-4 mx-auto form-floating" style="max-width: 568px">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="desc" style="height: 100px"></textarea>
+                        <label for="desc">Deskripsi</label>
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
                             <label class="input-group-text" for="provinsi">Provinsi</label>
@@ -111,14 +106,12 @@
                                 <option value="Papua Barat">Papua Barat</option>
                             </select>
                         </div>
-                        <select class="form-select input-group mb-4 mx-auto " style="max-width: 568px" id="kabupaten" name="kabupaten" style="display: none;">
-                            <option value="">Pilih kabupaten/kota</option>
-                            <!-- Daftar kabupaten/kota sesuai dengan provinsi -->
-                        </select>
+                        <div class="mx-auto form-check" style=" width: 568px; font-size: 16px">
+                        <input type="checkbox" class="form-check-input" id="aggrement" name="aggrement" value="agree">
+                        <label class="form-check-label" for="aggrement"> Dengan ini komunitas kami dengan sungguh-sungguh mendaftarkan diri sesuai dengan syarat dan kesepakatan yang berlaku</label><br>
 
-                        <p class="text-center mx-auto" style="text-align: center; width: 568px; font-size: 16px">
-                            Pastikan bahwa informasi yang anda masukkan sudah benar. Dengan mendaftar, Anda telah
-                            menyetujui syarat dan ketentuan dari Relawanin </p>
+                        </div>
+
 
                         <div class="mt-4" style="text-align: center">
                             <a href="<?= base_url() ?>index.php/Dashboard" class="btn DaftarBut">Daftar</a>

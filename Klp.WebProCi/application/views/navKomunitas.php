@@ -38,8 +38,8 @@
               Fitur
             </a>
             <ul class="dropdown-menu navDropdownMenuLink" style="background-color: #00897b">
-              <li><a id="navDropdownMenuLink" class="dropdown-item  " href="<?= base_url() ?>index.php/CariKegiatan">Cari Kegiatan</a></li>
-              <li><a class="dropdown-item" href="<?= base_url() ?>index.php/RegisterKomunitas">Gabung Komunitas</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item  " href="<?= base_url() ?>index.php/DaftarKegiatan">Buat Kegiatan</a></li>
+              <li><a class="dropdown-item" href="<?= base_url() ?>index.php/RegisterKomunitas">Riwayat Kegiatan</a></li>
               <li><a class="dropdown-item" href="#">Panduan</a></li>
             </ul>
           </li>

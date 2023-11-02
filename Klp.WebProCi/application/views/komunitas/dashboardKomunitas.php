@@ -38,7 +38,7 @@
 
 <body>
   <div>
-    <?php include 'application/views/navLogin.php'; ?>
+    <?php include 'application/views/navKomunitas.php'; ?>
   </div>
   <!-- HEADER  -->
 
@@ -79,12 +79,11 @@
         <div class="col text-center" style="padding: 10px;">
           <div class="card h-100" style="width: 305px; height: 422px; border-radius: 20px; background: #00897B;">
             <div class="card-body"style="display:none;">
-              <p class="card-text pfitur1">Kami menghubungkan anda dengan komunitas, dengan itu bentuk nyata
-                akan terwujud bagi lingkungan</p>
+              <p class="card-text pfitur1">Kami menghubungkan anda dengan relawan, kegiatan anda telah ditunggu para relawan untuk diikuti</p>
             </div>
             <div class="btn-link" style="margin:22px; margin: bottom 44px; width: 260px; height: 50px; ">
-              <a href="<?= base_url() ?>index.php/CariKegiatan">
-                <button type="button" class="btn btn-outline-light btn-lg" style="width: 260px;">Cari Kegiatan</button>
+              <a href="<?= base_url() ?>index.php/DaftarKegiatan">
+                <button type="button" class="btn btn-outline-light btn-lg" style="width: 260px;">Buat Kegiatan</button>
               </a>
             </div>
           </div>
@@ -94,13 +93,12 @@
             style="width: 305px; height: 422px; border-radius: 20px; border: 2px solid #00897B; background: #ffff;">
             <div class="card-body"style="display:none;">
               <img src="<?= base_url() ?>assets/img/fitur 2.png" alt="" />
-              <h5 class="card-title hfitur2"> Jadi Relawan </h5>
-              <p class="card-text pfitur2">Minat menjadi relawan? cari kegiatan yang berada disekitarmu, kemudian
-                daftarkan dirimu</p>
+              <h5 class="card-title hfitur2">Donasi</h5>
+              <p class="card-text pfitur2">Anda dapat mengumpulkan donasi dari para relawan untuk mendukung kegiatan komunitas anda</p>
             </div>
             <div class="btn-link" style="margin:22px; margin: bottom 44px; width: 260px; height: 50px; ">
               <a href="<?= base_url() ?>index.php/Dashboard">
-                <button type="button" class="btn btn-outline-light btn-lg" style="width: 260px;">Daftar Relawan</button>
+                <button type="button" class="btn btn-outline-light btn-lg" style="width: 260px;">Buat Donasi</button>
               </a>
             </div>
           </div>
@@ -110,14 +108,12 @@
             style="width: 305px; height: 422px; border-radius: 20px; border: 2px solid #00897B; background: #ffff;">
             <div class="card-body" style="display:none;">
               <img src="<?= base_url() ?>assets/img/fitur 3.png" alt="" />
-              <h5 class="card-title hfitur3"> Jadi Komunitas </h5>
-              <p class="card-text pfitur3">Daftarkan komunitasmu di platform kami, dan dapatkan keuntungan untuk
-                komunitas yang dikelola</p>
+              <h5 class="card-title hfitur3"> Riwayat Kegiatan</h5>
+              <p class="card-text pfitur3">Anda dapat memeriksa riwayat kegiatan yang telah dibuat</p>
             </div>
             <div class="btn-link" style="margin:22px; margin: bottom 44px; width: 260px; height: 50px; ">
               <a href="<?= base_url() ?>index.php/RegisterKomunitas">
-                <button type="button" class="btn btn-outline-light btn-lg" style="width: 260px;">Kelola
-                  Komunitas</button>
+                <button type="button" class="btn btn-outline-light btn-lg" style="width: 260px;">Riwayat</button>
               </a>
             </div>
           </div>
@@ -148,8 +144,8 @@
     <div class="container-fluid align-items-center">
       <div class="row">
         <div class="col-md-12 headDash-tagline text-center" style="margin-bottom: 74px; margin-top:64px; padding: 0;">
-          <h1 class="msgDash">Banyak kegiatan yang bisa kamu ikuti</h1>
-          <p class="msgDescDash">Ikuti kegiatan yang cocok denganmu, dan lihat lokasinya</p>
+          <h1 class="msgDash">Buat Keigatan Untuk Memperbaiki Bumi</h1>
+          <p class="msgDescDash">Buat kegiatan yang menarik dan bermanfaat bagi bumi dan lingkungan sekitar</p>
         </div>
       </div>
     </div>
@@ -157,23 +153,6 @@
   <!-- MSG  -->
 
   <!-- CARD KEGIATAN -->
-  <section id="cardKegiatan">
-    <div class="container-fluid" style="background-color: #DADADA">
-      <h5 style="padding-left:10px;">Rekomendasi</h5>
-      <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
-        <?php include 'application/views/cardKegiatan.php'; ?>
-        <?php include 'application/views/cardKegiatan.php'; ?>
-        <?php include 'application/views/cardKegiatan.php'; ?>
-      </div>
-    </div>
-  </section>
-  <section id="cardKegiatan">
-    <div class="container-fluid" style="background-color: #DADADA">
-      <div class="row" style="padding: 25px;">
-      <div class="col-md-12"></div>
-      </div>
-    </div>
-  </section>
   <section id="cardKat">
     <ul class="nav nav-tabs" id="myTabs">
     <li class="nav-item">
