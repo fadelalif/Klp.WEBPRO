@@ -17,33 +17,6 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg position-fixed w-100">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="<?= base_url() ?>assets/img/relawain logo 1.png" alt="" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav" style="margin:10px; width: 138px;">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item mx-4">
-                        <a class="nav-link active" aria-current="page" href="#">Utama</a>
-                    </li>
-                    <li class="nav-item mx-4">
-                        <a class="nav-link" href="#">Tentang</a>
-                    </li>
-                    <li class="nav-item mx-4">
-                        <a class="nav-link" href="#">Fitur</a>
-                    </li>
-                    <li class="nav-item mx-4">
-                        <a class="nav-link" href="#">Berita</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <section id="loginPage">
         <div class="container-fluid">
             <div class="row">

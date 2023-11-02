@@ -23,16 +23,33 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav" style="margin:10px; width: 138px;">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item mx-4">
                         <a class="nav-link active" aria-current="page" href="#">Utama</a>
                     </li>
-                    <li class="nav-item mx-4">
-                        <a class="nav-link" href="#">Tentang</a>
+                    <li class="nav-item dropdown mx-4">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Tentang
+                        </a>
+                        <ul class="dropdown-menu navDropdownMenuLink" style="background-color: #00897b">
+                            <li><a id="navDropdownMenuLink" class="dropdown-item  " href="#">Tentang Relawanin</a></li>
+                            <li><a class="dropdown-item" href="#">Visi dan Misi</a></li>
+                            <li><a class="dropdown-item" href="#">Hubungi Kami</a></li>
+                            <li><a class="dropdown-item" href="#">Donasi</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item mx-4">
-                        <a class="nav-link" href="#">Fitur</a>
+                    <li class="nav-item dropdown mx-4">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Fitur
+                        </a>
+                        <ul class="dropdown-menu navDropdownMenuLink" style="background-color: #00897b">
+                            <li><a id="navDropdownMenuLink" class="dropdown-item  " href="#">Cari Kegiatan</a></li>
+                            <li><a class="dropdown-item" href="#">Mengadakan Kegiatan</a></li>
+                            <li><a class="dropdown-item" href="#">Panduan</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item mx-4">
                         <a class="nav-link" href="#">Berita</a>
@@ -40,8 +57,12 @@
                 </ul>
             </div>
         </div>
+        <div class="btn-link" style="margin:10px; width: 138px;">
+    
+        </div>
+        <div class="btn-link">
+        </div>
     </nav>
-
     <section id="loginPage" style="padding-top: 130px;">
         <div class="container-fluid">
             <div class="row">
@@ -140,7 +161,8 @@
                                 <option value="Papua Barat">Papua Barat</option>
                             </select>
                         </div>
-                        <select class="form-select input-group mb-4 mx-auto " style="max-width: 568px" id="kabupaten" name="kabupaten" style="display: none;">
+                        <select class="form-select input-group mb-4 mx-auto " style="max-width: 568px" id="kabupaten"
+                            name="kabupaten" style="display: none;">
                             <option value="">Pilih kabupaten/kota</option>
                             <!-- Daftar kabupaten/kota sesuai dengan provinsi -->
                         </select>
@@ -183,21 +205,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script>
-        const provinsiSelect = document.getElementById("provinsi");
-        const kabupatenSelect = document.getElementById("kabupaten");
-
-        provinsiSelect.addEventListener("change", function () {
-            const selectedProvinsi = provinsiSelect.value;
-
-            // Hanya tampilkan input kabupaten/kota jika provinsi dipilih
-            if (selectedProvinsi) {
-                kabupatenSelect.style.display = "block";
-            } else {
-                kabupatenSelect.style.display = "none";
-            }
-        });
-    </script>
 </body>
 
 </html>
