@@ -20,17 +20,17 @@
                     <h1 class="DaftarHead fw-semibold text-center ">
                         Daftar
                     </h1>
-                    <form action="<?php echo site_url('Kegiatan/tambah'); ?>" method="post">
+                    <form action="<?php echo site_url('Kegiatan/update'); ?>" method="post">
                         <h2 class="AkunHead fw-semibold " style="margin-left: 465px;">
                             Detail Kegiatan
                         </h2>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
                             <input type="text" name="nama_kegiatan" id="nama_kegiatan" class="form-control" placeholder="Nama Keigatan" aria-label="Nama Keigatan"
-                                aria-describedby="basic-addon1" />
+                                aria-describedby="basic-addon1" value="<?php echo $kegiatan->nama_kegiatan; ?>"/>
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
                             <input type="text" name="judul_kegiatan" id="judul_kegiatan" class="form-control" placeholder="judul" aria-label="judul"
-                                aria-describedby="basic-addon1" />
+                                aria-describedby="basic-addon1" value="<?php echo $kegiatan->judul_kegiatan; ?>" />
                         </div>
                         <h2 class="AkunHead fw-semibold " style="margin-left: 465px;">
                             Data Keigatan
@@ -38,20 +38,20 @@
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
                             <label for="tgl_kegiatan" class="input-group-text">Tanggal Kegiatan</label>
                             <input type="date" class="form-control" id="tgl_kegiatan" name="tgl_kegiatan"
-                                aria-describedby="basic-addon1" />
+                                aria-describedby="basic-addon1" value="<?php echo $kegiatan->tanggal_kegiatan; ?>" />
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
                             <input type="text" name="lokasi_kegiatan" id="lokasi_kegiatan" class="form-control" placeholder="Lokasi Kegiatan"
-                                aria-label="Lokasi Kegiatan" aria-describedby="basic-addon1" />
+                                aria-label="Lokasi Kegiatan" aria-describedby="basic-addon1" value="<?php echo $kegiatan->lokasi_kegiatan; ?>" />
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
                             <input type="text" name="penanggung_jawab" id="penanggung_jawab" class="form-control" placeholder="Penanggung Jawab" aria-label="Penanggung Jawab"
-                                aria-describedby="basic-addon1" />
+                                aria-describedby="basic-addon1" value="<?php echo $kegiatan->penanggung_jawab; ?>"/>
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
                             <label class="input-group-text" for="kategori">Kategori Komunitas</label>
                             <select class="form-select" id="kategori" name="kategori"
-                                aria-describedby="basic-addon1">
+                                aria-describedby="basic-addon1" value="<?php echo $kegiatan->kategori; ?>">
                                 <option value="">Pilih Kategori</option>
                                 <option value="Perhutana">Perhutana</option>
                                 <option value="Perairan">Perairan</option>
@@ -60,12 +60,12 @@
                             </select>
                         </div>
                         <div class="input-group mb-4 mx-auto form-floating" style="max-width: 568px">
-                        <textarea class="form-control" name="deskripsi_kegiatan"placeholder="Masukan Deskripsi Kegiatan Anda" id="desc" style="height: 100px"></textarea>
+                        <textarea class="form-control" name="deskripsi_kegiatan"placeholder="Masukan Deskripsi Kegiatan Anda" id="desc" style="height: 100px" value="<?php echo $kegiatan->deskripsi_kegiatan; ?>"></textarea>
                         <label for="desc">Deskripsi</label>
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
                             <label class="input-group-text" for="provinsi">Provinsi</label>
-                            <select class="form-select" id="provinsi" name="provinsi" aria-describedby="basic-addon1">
+                            <select class="form-select" id="provinsi" name="provinsi" aria-describedby="basic-addon1" value="<?php echo $kegiatan->provinsi; ?>">
                                 <option value="">Pilih provinsi</option>
                                 <option value="Aceh">Aceh</option>
                                 <option value="Sumatera Utara">Sumatera Utara</option>
