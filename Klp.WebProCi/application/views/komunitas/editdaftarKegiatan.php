@@ -110,7 +110,7 @@
 
 
                         <div class="mt-4" style="text-align: center; padding-bottom:15px;">
-                        <button type="submit" class="btn MasukBut">MASUK</button>
+                        <button type="submit" class="btn MasukBut">Submit</button>
                         </div>
 
 

@@ -13,7 +13,10 @@
 
 </head>
 <body>
-    <section id="daftarPage" style="padding-top: 10px;">
+<div>
+    <?php include 'application/views/navKomunitas.php'; ?>
+  </div>
+    <section id="daftarPage" style="padding-top: 10px;" position="relative;">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
@@ -110,7 +113,7 @@
 
 
                         <div class="mt-4" style="text-align: center; padding-bottom:15px;">
-                        <button type="submit" class="btn MasukBut">MASUK</button>
+                        <button type="submit" class="btn MasukBut">Submit</button>
                         </div>
 
 
