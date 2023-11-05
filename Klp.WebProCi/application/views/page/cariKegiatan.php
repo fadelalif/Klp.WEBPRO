@@ -57,7 +57,12 @@
       </div>
     </div>
   </section>
-
+  <section id="cardKegiatan">
+    <div class="container-fluid" style="background-color: #DADADA">
+      <div class="row" style="padding: 25px;">
+      <div class="col-md-12"></div>
+      </div>
+    </div>
   <!--Footer -->
   <?php include 'application/views/footer.php'; ?>
   <!--Footer -->
