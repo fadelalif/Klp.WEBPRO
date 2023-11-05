@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg position-fixed w-100 container-fluid">
+  <nav class="navbar navLogin navbar-expand-lg position-fixed w-100 container-fluid">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="<?= base_url() ?>assets/img/relawain logo 1.png" alt="" />
@@ -20,7 +20,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item mx-4">
-            <a class="nav-link active" aria-current="page" href="#">Utama</a>
+            <a class="nav-link active" aria-current="page" href="<?= base_url() ?>index.php/Dashboard">Utama</a>
           </li>
           <li class="nav-item dropdown mx-4">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -38,7 +38,8 @@
               Fitur
             </a>
             <ul class="dropdown-menu navDropdownMenuLink" style="background-color: #00897b">
-              <li><a id="navDropdownMenuLink" class="dropdown-item  " href="<?= base_url() ?>index.php/CariKegiatan">Cari Kegiatan</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item  "
+                  href="<?= base_url() ?>index.php/CariKegiatan">Cari Kegiatan</a></li>
               <li><a class="dropdown-item" href="<?= base_url() ?>index.php/RegisterKomunitas">Gabung Komunitas</a></li>
               <li><a class="dropdown-item" href="#">Panduan</a></li>
             </ul>
@@ -50,17 +51,17 @@
       </div>
     </div>
     <div class="button-container buttonProf" style="margin-right:81px; ">
-    <li class="nav-item dropdown" style="list-style-type: none;">
-            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <button type="button" style="background:none; border:none">
-              <img src="<?= base_url() ?>assets/img/icon profile.png" alt="" style="width: 67px;" />
-            </button>
-            </a>
-            <ul class="dropdown-menu" style="background-color: #00897b;">
-              <li><a class="dropdown-item" href="<?= base_url() ?>index.php/Utama">Log Out</a></li>
-            </ul>
-          </li>
-        
+      <li class="nav-item dropdown" style="list-style-type: none;">
+        <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <button type="button" style="background:none; border:none">
+            <img src="<?= base_url() ?>assets/img/icon profile.png" alt="" style="width: 67px;" />
+          </button>
+        </a>
+        <ul class="dropdown-menu" style="background-color: #00897b;">
+          <li><a class="dropdown-item profil" href="<?= base_url() ?>index.php/Profile">Profil</a></li>
+          <li><a class="dropdown-item keluar" href="<?= base_url() ?>index.php/Utama">Keluar</a></li>
+        </ul>
+      </li>
       </a>
     </div>
   </nav>
