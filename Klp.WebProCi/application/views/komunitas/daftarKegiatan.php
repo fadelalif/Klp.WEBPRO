@@ -20,16 +20,16 @@
                     <h1 class="DaftarHead fw-semibold text-center ">
                         Daftar
                     </h1>
-                    <form action="<?php echo site_url('Kegiatan/tambah'); ?>" method="post">
+                    <form method="POST" action="simpan_kegiatan.php">
                         <h2 class="AkunHead fw-semibold " style="margin-left: 465px;">
                             Detail Kegiatan
                         </h2>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <input type="text" name="nama_kegiatan" id="nama_kegiatan" class="form-control" placeholder="Nama Keigatan" aria-label="Nama Keigatan"
+                            <input type="text" class="form-control" placeholder="Nama Keigatan" aria-label="Nama Keigatan"
                                 aria-describedby="basic-addon1" />
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <input type="text" name="judul_kegiatan" id="judul_kegiatan" class="form-control" placeholder="judul" aria-label="judul"
+                            <input type="text" class="form-control" placeholder="judul" aria-label="judul"
                                 aria-describedby="basic-addon1" />
                         </div>
                         <h2 class="AkunHead fw-semibold " style="margin-left: 465px;">
@@ -41,11 +41,11 @@
                                 aria-describedby="basic-addon1" />
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <input type="text" name="lokasi_kegiatan" id="lokasi_kegiatan" class="form-control" placeholder="Lokasi Kegiatan"
+                            <input type="text" class="form-control" placeholder="Lokasi Kegiatan"
                                 aria-label="Lokasi Kegiatan" aria-describedby="basic-addon1" />
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <input type="text" name="penanggung_jawab" id="penanggung_jawab" class="form-control" placeholder="Penanggung Jawab" aria-label="Penanggung Jawab"
+                            <input type="text" class="form-control" placeholder="Penanggung Jawab" aria-label="Penanggung Jawab"
                                 aria-describedby="basic-addon1" />
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
@@ -60,7 +60,7 @@
                             </select>
                         </div>
                         <div class="input-group mb-4 mx-auto form-floating" style="max-width: 568px">
-                        <textarea class="form-control" name="deskripsi_kegiatan"placeholder="Masukan Deskripsi Kegiatan Anda" id="desc" style="height: 100px"></textarea>
+                        <textarea class="form-control" placeholder="Masukan Deskripsi Kegiatan Anda" id="desc" style="height: 100px"></textarea>
                         <label for="desc">Deskripsi</label>
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
