@@ -112,7 +112,7 @@
               <p class="card-text pfitur3">Anda dapat memeriksa riwayat kegiatan yang telah dibuat</p>
             </div>
             <div class="btn-link" style="margin:22px; margin: bottom 44px; width: 260px; height: 50px; ">
-              <a href="<?= base_url() ?>index.php/Kegiatan">
+              <a href="<?= base_url() ?>index.php/RegisterKomunitas">
                 <button type="button" class="btn btn-outline-light btn-lg" style="width: 260px;">Riwayat</button>
               </a>
             </div>

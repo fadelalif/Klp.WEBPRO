@@ -59,11 +59,6 @@ nav img {
 	margin-right: 81px;
 }
 
-.btn:hover{
-	background-color: #fff;
-	color: #00897b;
-}
-
 .button-container buttonProf {
 	background: none; /* Menghapus latar belakang default tombol */
 	border: none; /* Menghapus garis border */
@@ -71,13 +66,3 @@ nav img {
 	padding: 0; /* Menghapus ruang bantalan di dalam tombol */
 	outline: none; /* Menghapus outline saat tombol aktif */
 }
-
-#navDropdownMenuLink{
-	background-color: #fff;
-	color: #00897b !important;
-}
-
-#navDropdownMenuLink:hover {
-	background-color: #00897b;
-	color: #fff !important;
-  }

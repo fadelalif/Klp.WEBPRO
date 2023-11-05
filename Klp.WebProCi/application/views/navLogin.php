@@ -20,23 +20,23 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item mx-4">
-            <a class="nav-link active" aria-current="page" href="<?= base_url() ?>index.php/Dashboard">Utama</a>
+            <a class="nav-link active" aria-current="page" href="<?= base_url() ?>index.php/Dashboard"">Utama</a>
           </li>
           <li class=" nav-item dropdown mx-4">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"aria-expanded="false">Tentang</a>
-              <ul class="dropdown-menu navDropdownMenuLink">
+              <ul class="dropdown-menu navDropdownMenuLink" style="background-color: #00897b">
                 <li><a id="navDropdownMenuLink" class="dropdown-item  " href="#">Tentang Relawanin</a></li>
-                <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/">Visi dan Misi</a></li>
-                <li><a id="navDropdownMenuLink" class=" dropdown-item" href="<?= base_url() ?>index.php/">Hubungi Kami</a></li>
-                <li><a id="navDropdownMenuLink" class=" dropdown-item" href="<?= base_url() ?>index.php/">Donasi</a></li>
+                <li><a class="dropdown-item" href="<?= base_url() ?>index.php/"">Visi dan Misi</a></li>
+                <li><a class=" dropdown-item" href="<?= base_url() ?>index.php/"">Hubungi Kami</a></li>
+                <li><a class=" dropdown-item" href="<?= base_url() ?>index.php/"">Donasi</a></li>
               </ul>
           </li>
           <li class=" nav-item dropdown mx-4">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fitur</a>
-            <ul class="dropdown-menu navDropdownMenuLink">
+            <ul class="dropdown-menu navDropdownMenuLink" style="background-color: #00897b">
               <li><a id="navDropdownMenuLink" class="dropdown-item  " href="<?= base_url() ?>index.php/CariKegiatan">Cari Kegiatan</a></li>
-              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/">Mengadakan Kegiatan</a></li>
-              <li><a id="navDropdownMenuLink" class=" dropdown-item" href="<?= base_url() ?>index.php/">Panduan</a></li>
+              <li><a class="dropdown-item" href="<?= base_url() ?>index.php/"">Mengadakan Kegiatan</a></li>
+              <li><a class=" dropdown-item" href="<?= base_url() ?>index.php/"">Panduan</a></li>
             </ul>
           </li>
           <li class=" nav-item mx-4">
