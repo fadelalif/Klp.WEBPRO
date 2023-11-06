@@ -20,31 +20,31 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item mx-4">
-            <a class="nav-link active" aria-current="page" href="#">Utama</a>
+            <a class="nav-link active" aria-current="page" href="<?= base_url() ?>index.php/DashboardKomunitas">Utama</a>
           </li>
           <li class="nav-item dropdown mx-4">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Tentang
             </a>
-            <ul class="dropdown-menu navDropdownMenuLink" style="background-color: #00897b">
+            <ul class="dropdown-menu navDropdownMenuLink">
               <li><a id="navDropdownMenuLink" class="dropdown-item  " href="#">Tentang Relawanin</a></li>
-              <li><a class="dropdown-item" href="#">Visi dan Misi</a></li>
-              <li><a class="dropdown-item" href="#">Hubungi Kami</a></li>
-              <li><a class="dropdown-item" href="#">Donasi</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item" href="#">Visi dan Misi</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item" href="#">Hubungi Kami</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item" href="#">Donasi</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown mx-4">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Fitur
             </a>
-            <ul class="dropdown-menu navDropdownMenuLink" style="background-color: #00897b">
-              <li><a id="navDropdownMenuLink" class="dropdown-item  " href="<?= base_url() ?>index.php/DaftarKegiatan">Buat Kegiatan</a></li>
-              <li><a class="dropdown-item" href="<?= base_url() ?>index.php/RegisterKomunitas">Riwayat Kegiatan</a></li>
-              <li><a class="dropdown-item" href="#">Panduan</a></li>
+            <ul class="dropdown-menu navDropdownMenuLink">
+              <li><a id="navDropdownMenuLink" class="dropdown-item  " href="">Buat Kegiatan</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/Kegiatan">Riwayat Kegiatan</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item" href="#">Panduan</a></li>
             </ul>
           </li>
           <li class="nav-item mx-4">
-            <a class="nav-link" href="#">Berita</a>
+            <a class="nav-link" href="<?= base_url() ?>index.php/DashboardKomunitas#news">Berita</a>
           </li>
         </ul>
       </div>
@@ -56,8 +56,9 @@
               <img src="<?= base_url() ?>assets/img/icon profile.png" alt="" style="width: 67px;" />
             </button>
             </a>
-            <ul class="dropdown-menu" style="background-color: #00897b;">
-              <li><a class="dropdown-item" href="<?= base_url() ?>index.php/Utama">Log Out</a></li>
+            <ul class="dropdown-menu navDropdownMenuLink" style="background-color: #fff;">
+              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/Utama">Profile</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/Utama">Log Out</a></li>
             </ul>
           </li>
         

@@ -114,7 +114,7 @@
 
 
                         <div class="mt-4" style="text-align: center">
-                            <a href="<?= base_url() ?>index.php/Dashboard" class="btn DaftarBut">Daftar</a>
+                            <a href="<?= base_url() ?>index.php/DashboardKomunitas" class="btn DaftarBut">Daftar</a>
                         </div>
 
 

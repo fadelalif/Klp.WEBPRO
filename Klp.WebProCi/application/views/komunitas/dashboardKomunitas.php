@@ -53,12 +53,12 @@
         <div class="carousel-item">
           <img class="d-block w-100 " style="height: 650px;" src="<?= base_url() ?>assets/img/gunung.jpg" alt="">
           <h1 class="headerDash">Mari Perbaiki Bersama</h1>
-          <p class="headerDescDash">Gabung kedalam sebuah kegiatan dan aksikan cintamu terhadap lingkungan</p>
+          <p class="headerDescDash" >Gabung kedalam sebuah kegiatan dan aksikan cintamu terhadap lingkungan</p>
         </div>
         <div class="carousel-item">
           <img class="d-block w-100 " style="height: 650px;" src="<?= base_url() ?>assets/img/pantai.jpg" alt="">
-          <h1 class="headerDash">Ayo, Jaga Bumi Kita</h1>
-            <p class="headerDescDash">Gabung kedalam sebuah kegiatan dan aksikan cintamu terhadap lingkungan</p>
+          <h1 class="headerDash" style="background-color:#00897B;">Ayo, Jaga Bumi Kita</h1>
+            <p class="headerDescDash"style="background-color:#00897B;">Gabung kedalam sebuah kegiatan dan aksikan cintamu terhadap lingkungan</p>
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -74,8 +74,8 @@
   <!-- HEADER  -->
   <!-- FITUR  -->
   <section id="fitur">
-    <div class="container-fluid">
-      <div class="row row-cols-1 row-cols-md-4 g-4 " style="padding: 25px;">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4 " style="padding: 25px;">
         <div class="col text-center" style="padding: 10px;">
           <div class="card h-100" style="width: 305px; height: 422px; border-radius: 20px; background: #00897B;">
             <div class="card-body"style="display:none;">
@@ -84,21 +84,6 @@
             <div class="btn-link" style="margin:22px; margin: bottom 44px; width: 260px; height: 50px; ">
               <a href="<?= base_url() ?>index.php/DaftarKegiatan">
                 <button type="button" class="btn btn-outline-light btn-lg" style="width: 260px;">Buat Kegiatan</button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col text-center" style="padding: 10px;">
-          <div class="card h-100"
-            style="width: 305px; height: 422px; border-radius: 20px; border: 2px solid #00897B; background: #ffff;">
-            <div class="card-body"style="display:none;">
-              <img src="<?= base_url() ?>assets/img/fitur 2.png" alt="" />
-              <h5 class="card-title hfitur2">Donasi</h5>
-              <p class="card-text pfitur2">Anda dapat mengumpulkan donasi dari para relawan untuk mendukung kegiatan komunitas anda</p>
-            </div>
-            <div class="btn-link" style="margin:22px; margin: bottom 44px; width: 260px; height: 50px; ">
-              <a href="<?= base_url() ?>index.php/Dashboard">
-                <button type="button" class="btn btn-outline-light btn-lg" style="width: 260px;">Buat Donasi</button>
               </a>
             </div>
           </div>
@@ -156,13 +141,13 @@
   <section id="cardKat">
     <ul class="nav nav-tabs" id="myTabs">
     <li class="nav-item">
-      <a class="nav-link active" id="card1-tab" data-bs-toggle="tab" href="#card1" role="tab" aria-controls="card1" aria-selected="true" style="color: #00897b;">Kategori 1</a>
+      <a class="nav-link active" id="card1-tab" data-bs-toggle="tab" href="#card1" role="tab" aria-controls="card1" aria-selected="true" style="color: #00897b;">Perhutanan</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" id="card2-tab" data-bs-toggle="tab" href="#card2" role="tab" aria-controls="card2" aria-selected="false" style="color: #00897b;">Kategori 2</a>
+      <a class="nav-link" id="card2-tab" data-bs-toggle="tab" href="#card2" role="tab" aria-controls="card2" aria-selected="false" style="color: #00897b;">Laut</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" id="card3-tab" data-bs-toggle="tab" href="#card3" role="tab" aria-controls="card3" aria-selected="false" style="color: #00897b;">Kategori 3</a>
+      <a class="nav-link" id="card3-tab" data-bs-toggle="tab" href="#card3" role="tab" aria-controls="card3" aria-selected="false" style="color: #00897b;">Bersih-Bersih</a>
     </li>
   </ul>
 
@@ -170,21 +155,15 @@
     <div class="tab-pane fade show active" id="card1" role="tabpanel" aria-labelledby="card1-tab">
     <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
         <?php include 'application/views/cardKegiatan.php'; ?>
-        <?php include 'application/views/cardKegiatan.php'; ?>
-        <?php include 'application/views/cardKegiatan.php'; ?>
       </div>
     </div>
     <div class="tab-pane fade" id="card2" role="tabpanel" aria-labelledby="card2-tab">
     <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
         <?php include 'application/views/cardKegiatan.php'; ?>
-        <?php include 'application/views/cardKegiatan.php'; ?>
-        <?php include 'application/views/cardKegiatan.php'; ?>
       </div>
     </div>
     <div class="tab-pane fade" id="card3" role="tabpanel" aria-labelledby="card3-tab">
     <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
-        <?php include 'application/views/cardKegiatan.php'; ?>
-        <?php include 'application/views/cardKegiatan.php'; ?>
         <?php include 'application/views/cardKegiatan.php'; ?>
       </div>
     </div>
@@ -193,90 +172,11 @@
   </section>
 
   <!-- news -->
-  <section>
-    <div class="container-fluid">
-      <h1 style="color:#00897b;">Berita</h1>
-      <div class="row row-cols-1 row-cols-md-4 g-4" style="padding: 25px;">
-        <div class="col" style="padding: 10px;">
-          <div class="card h-100">
-            <img class="card-img-top" src="<?= base_url() ?>assets/img/hutan.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title" style="color:#000;">Card title</h5>
-              <p class="card-text" style="color:#000;">This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">see more</small>
-            </div>
-          </div>
-        </div>
-        <div class="col" style="padding: 10px;">
-          <div class="card h-100">
-            <img class="card-img-top" src="<?= base_url() ?>assets/img/hutan.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title" style="color:#000;">Card title</h5>
-              <p class="card-text" style="color:#000;">This card has supporting text below as a natural lead-in to
-                additional content.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">see more</small>
-            </div>
-          </div>
-        </div>
-        <div class="col" style="padding: 10px;">
-          <div class="card h-100">
-            <img class="card-img-top" src="<?= base_url() ?>assets/img/hutan.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title" style="color:#000;">Card title</h5>
-              <p class="card-text" style="color:#000;">This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content than the first to show that equal
-                height action.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">see more</small>
-            </div>
-          </div>
-        </div>
-        <div class="col" style="padding: 10px;">
-          <div class="card h-100">
-            <img class="card-img-top" src="<?= base_url() ?>assets/img/hutan.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title" style="color:#000;">Card title</h5>
-              <p class="card-text" style="color:#000;">This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content than the first to show that equal
-                height action.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">see more</small>
-            </div>
-          </div>
-        </div>
-        <div class="col" style="padding: 10px;">
-          <div class="card h-100">
-            <img class="card-img-top" src="<?= base_url() ?>assets/img/hutan.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title" style="color:#000;">Card title</h5>
-              <p class="card-text" style="color:#000;">This card has supporting text below as a natural lead-in to
-                additional content.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">see more</small>
-            </div>
-          </div>
-        </div>
-        <div class="col" style="padding: 10px;">
-          <div class="card h-100">
-            <img class="card-img-top" src="<?= base_url() ?>assets/img/hutan.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title" style="color:#000;">Card title</h5>
-              <p class="card-text" style="color:#000;">This card has supporting text below as a natural lead-in to
-                additional content.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">see more</small>
-            </div>
-          </div>
-        </div>
+  <section id="news">
+    <div class="container-fluid;">
+      <h1 style="padding-left: 25px; color:#00897b;">Berita</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
+        <?php include 'application/views/cardBerita.php'; ?>
       </div>
     </div>
   </section>
