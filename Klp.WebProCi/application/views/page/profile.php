@@ -19,26 +19,26 @@
     </div>
     <section id="navProfil">
         <nav class="nav navProf nav-pills nav-fill container-expand " style="padding-top:99px;">
-            <a class="nav-item nav-link navProfButt active" href="#">
+            <a class="nav-item nav-link navProfButt active" href="<?= base_url() ?>index.php/Profile">
                 <i class="fa-regular fa-circle-user" style="color: #00897b; margin-right:5px;"></i>Profil</a>
-            <a class="nav-item nav-link navProfButt" href="#">
-                <i class="fa-regular fa-newspaper" style="color: #00897b; margin-right:5px;"></i>Kegiatan</a>
-            <a class="nav-item nav-link navProfButt" href="#">
+            <a class="nav-item nav-link navProfButt" href="<?= base_url() ?>index.php/Kegiatanku">
+                <i class="fa-regular fa-newspaper" style="color: #00897b; margin-right:5px;"></i>Kegiatanku</a>
+            <a class="nav-item nav-link navProfButt" href="<?= base_url() ?>index.php/Notifikasi">
                 <i class="fa-regular fa-bell" style="color: #00897b; margin-right:5px;"></i>Notifikasi</a>
-            <a class="nav-item nav-link navProfButt" href="#">
+            <a class="nav-item nav-link navProfButt" href="<?= base_url() ?>index.php/Favorit">
                 <i class="fa-regular fa-heart" style="color: #00897b; margin-right:5px;"></i>Favorit</a>
         </nav>
     </section>
-    <section id="editProf" style="padding-top: 10px;">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
+    <section id="editProf" style="padding-top: 10px; padding-bottom:10px;">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-md-12 ">
                     <form>
                         <div class="photoProf text-center">
                             <img src="<?= base_url() ?>assets/img/profile picture.png" alt="" style="width: 238px;" />
                         </div>
-                        <div style="text-align: center;">
-                            <a class="editProfLink" href="#">Edit Profil</a>
+                        <div style="text-align: center; margin-bottom: 37px;">
+                            <a class="ubahProfLink" href="#">Ubah Foto</a>
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
                             <input type="text" class="form-control" placeholder="Nama Depan" aria-label="Nama Depan"
@@ -49,14 +49,6 @@
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
                             <input type="text" class="form-control" placeholder="Email" aria-label="Email"
                                 aria-describedby="basic-addon1" />
-                        </div>
-                        <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <input type="password" class="form-control" placeholder="Kata Sandi" aria-label="Kata Sandi"
-                                aria-describedby="basic-addon1" />
-                        </div>
-                        <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <input type="password" class="form-control" placeholder="Konfirmasi Kata Sandi"
-                                aria-label="Konfirmasi Kata Sandi" aria-describedby="basic-addon1" />
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
                             <input type="text" class="form-control" placeholder="Nomor Telepon"
@@ -127,8 +119,14 @@
                         <select class="form-select input-group mb-4 mx-auto " style="max-width: 568px" id="kabupaten"
                             name="kabupaten" style="display: none;">
                             <option value="">Pilih kabupaten/kota</option>
-                            <!-- Daftar kabupaten/kota sesuai dengan provinsi -->
                         </select>
+                        <div class="form-floating mx-auto" style="max-width: 568px; ">
+                            <input type="text" class="form-control" id="floatingInput" placeholder=" ">
+                            <label for="floatingInput">Deskripsi Akun</label>
+                        </div>
+                        <div style="text-align: center; margin: 37px 37px; ">
+                            <a class="ubahPassLink" href="#">Ubah Kata Sandi</a>
+                        </div>
                         <div class="mt-4" style="text-align: center">
                             <a href="#" class="btn DaftarBut">Simpan</a>
                         </div>
