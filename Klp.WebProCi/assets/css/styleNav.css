@@ -1,4 +1,4 @@
-.navLogin {
+.navLogin, .navNotLogin {
 	max-width: 100%;
 	flex-shrink: 0;
 	background-color: #00897b;

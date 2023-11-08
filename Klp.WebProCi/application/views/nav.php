@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg position-fixed w-100">
+  <nav class="navbar navNotLogin navbar-expand-lg position-fixed w-100">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="<?= base_url() ?>assets/img/relawain logo 1.png" alt="" />
