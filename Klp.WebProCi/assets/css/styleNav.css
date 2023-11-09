@@ -66,3 +66,13 @@ nav img {
 	padding: 0; /* Menghapus ruang bantalan di dalam tombol */
 	outline: none; /* Menghapus outline saat tombol aktif */
 }
+
+#navDropdownMenuLink{
+	background-color: #fff;
+	color: #00897b !important;
+}
+
+#navDropdownMenuLink:hover {
+	background-color: #00897b;
+	color: #fff !important;
+}

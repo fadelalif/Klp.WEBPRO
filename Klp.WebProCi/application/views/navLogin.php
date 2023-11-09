@@ -26,22 +26,22 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Tentang
             </a>
-            <ul class="dropdown-menu navDropdownMenuLink" style="background-color: #00897b">
+            <ul class="dropdown-menu navDropdownMenuLink" >
               <li><a id="navDropdownMenuLink" class="dropdown-item  " href="#">Tentang Relawanin</a></li>
-              <li><a class="dropdown-item" href="#">Visi dan Misi</a></li>
-              <li><a class="dropdown-item" href="#">Hubungi Kami</a></li>
-              <li><a class="dropdown-item" href="#">Donasi</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item" href="#">Visi dan Misi</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item" href="#">Hubungi Kami</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item" href="#">Donasi</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown mx-4">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Fitur
             </a>
-            <ul class="dropdown-menu navDropdownMenuLink" style="background-color: #00897b">
+            <ul class="dropdown-menu navDropdownMenuLink">
               <li><a id="navDropdownMenuLink" class="dropdown-item  "
                   href="<?= base_url() ?>index.php/CariKegiatan">Cari Kegiatan</a></li>
-              <li><a class="dropdown-item" href="<?= base_url() ?>index.php/RegisterKomunitas">Gabung Komunitas</a></li>
-              <li><a class="dropdown-item" href="#">Panduan</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/RegisterKomunitas">Gabung Komunitas</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item" href="#">Panduan</a></li>
             </ul>
           </li>
           <li class="nav-item mx-4">
@@ -57,9 +57,9 @@
             <img src="<?= base_url() ?>assets/img/icon profile.png" alt="" style="width: 67px;" />
           </button>
         </a>
-        <ul class="dropdown-menu" style="background-color: #00897b;">
-          <li><a class="dropdown-item" href="<?= base_url() ?>index.php/Profile">Profile</a></li>
-          <li><a class="dropdown-item" href="<?= base_url() ?>index.php/Utama">Log Out</a></li>
+        <ul class="dropdown-menu">
+          <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/Profile">Profile</a></li>
+          <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/Utama">Log Out</a></li>
         </ul>
       </li>
       </a>
