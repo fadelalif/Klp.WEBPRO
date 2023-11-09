@@ -40,7 +40,7 @@
             <ul class="dropdown-menu navDropdownMenuLink">
               <li><a id="navDropdownMenuLink" class="dropdown-item  "
                   href="<?= base_url() ?>index.php/DaftarKegiatan">Buat Kegiatan</a></li>
-              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/Kegiatanku">Riwayat Kegiatan</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/Kegiatan">Riwayat Kegiatan</a></li>
               <li><a id="navDropdownMenuLink" class="dropdown-item" href="#">Panduan</a></li>
             </ul>
           </li>

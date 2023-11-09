@@ -80,7 +80,7 @@
                 daftarkan dirimu</p>
             </div>
             <div class="btn-link" style="margin:22px; margin: bottom 44px; width: 260px; height: 50px; ">
-              <a href="<?= base_url() ?>index.php/Dashboard">
+              <a href="<?= base_url() ?>index.php/CariKegiatan">
                 <button type="button" id="btnDash" class="btn btn-lg" style="width: 260px;">Daftar Relawan</button>
               </a>
             </div>
