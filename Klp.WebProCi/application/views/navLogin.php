@@ -27,7 +27,7 @@
               Tentang
             </a>
             <ul class="dropdown-menu navDropdownMenuLink" >
-              <li><a id="navDropdownMenuLink" class="dropdown-item  " href="#">Tentang Relawanin</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item  " href="<?= base_url() ?>index.php/TentangKami"">Tentang Relawanin</a></li>
               <li><a id="navDropdownMenuLink" class="dropdown-item" href="#">Visi dan Misi</a></li>
               <li><a id="navDropdownMenuLink" class="dropdown-item" href="#">Hubungi Kami</a></li>
               <li><a id="navDropdownMenuLink" class="dropdown-item" href="#">Donasi</a></li>
