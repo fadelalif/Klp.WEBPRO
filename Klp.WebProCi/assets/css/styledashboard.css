@@ -4,6 +4,34 @@
 	box-sizing: border-box;
 }
 
+#btnDash{
+	border: 3px solid #fff;
+	color: #fff;
+	background-color: #00897b;
+
+}
+
+#btnDash:hover{
+	color: #00897b;
+	border-color: #00897b;
+	background-color: #fff;
+
+}
+
+#btnKegiatan{
+	border: 3px solid #00897b;
+	color: #00897b;
+	background-color: #fff;
+
+}
+
+#btnKegiatan:hover{
+	color: #fff;
+	border-color: #fff;
+	background-color: #00897b;
+
+}
+
 .pfitur1 {
 	color: #fff;
 	text-align: center;
@@ -150,5 +178,9 @@ body {
 	width: 100px;
 }
 
+.carousel-item{
+	height: 40rem;
+}
+  
 
 
