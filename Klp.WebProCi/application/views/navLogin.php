@@ -45,7 +45,7 @@
             </ul>
           </li>
           <li class="nav-item mx-4">
-            <a class="nav-link" href="#">Berita</a>
+            <a class="nav-link" href="<?= base_url() ?>index.php/CariBerita">Berita</a>
           </li>
         </ul>
       </div>
