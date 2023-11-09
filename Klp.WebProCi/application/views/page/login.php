@@ -62,12 +62,12 @@
                         </div>
 
                         <div class="mt-4" style="text-align: center">
-                            <button type="submit" class="btn MasukBut">MASUK</button>
+                            <button type="submit" class="btn MasukBut">Masuk</button>
                         </div>
 
                         <p class="text-center mt-3" style="font-size: 16px">
                             Belum Punya Akun?
-                            <a href="#" style="color: #00897b; margin-left: 10px">Buat Akun</a>
+                            <a href="<?= base_url() ?>index.php/Register" style="color: #00897b; margin-left: 10px">Buat Akun</a>
                         </p>
                     </form>
                 </div>

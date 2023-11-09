@@ -27,10 +27,10 @@
               Tentang
             </a>
             <ul class="dropdown-menu navDropdownMenuLink" >
-              <li><a id="navDropdownMenuLink" class="dropdown-item  " href="<?= base_url() ?>index.php/TentangKami"">Tentang Relawanin</a></li>
-              <li><a id="navDropdownMenuLink" class="dropdown-item" href="#">Visi dan Misi</a></li>
-              <li><a id="navDropdownMenuLink" class="dropdown-item" href="#">Hubungi Kami</a></li>
-              <li><a id="navDropdownMenuLink" class="dropdown-item" href="#">Donasi</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/TentangKami">Tentang Relawanin</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/VisiMisi">Visi dan Misi</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/HubungiKami">Hubungi Kami</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/Donasi">Donasi</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown mx-4">
