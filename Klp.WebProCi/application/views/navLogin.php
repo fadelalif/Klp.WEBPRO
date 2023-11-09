@@ -58,7 +58,7 @@
           </button>
         </a>
         <ul class="dropdown-menu" style="background-color: #00897b;">
-          <li><a class="dropdown-item" href="<?= base_url() ?>index.php/">Profile</a></li>
+          <li><a class="dropdown-item" href="<?= base_url() ?>index.php/Profile">Profile</a></li>
           <li><a class="dropdown-item" href="<?= base_url() ?>index.php/Utama">Log Out</a></li>
         </ul>
       </li>
