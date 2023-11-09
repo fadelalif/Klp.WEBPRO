@@ -3,6 +3,7 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+
 .pfitur1 {
 	color: #fff;
 	text-align: center;
@@ -66,7 +67,16 @@
 	line-height: 173.523%; /* 41.645px */
 }
 
-#cardKegiatan h5 {
+#cardKegiatan .headerCont {
+	color: #222;
+	font-family: Arial;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 173.523%; /* 69.409px */
+}
+
+#cardBerita .headerCont {
 	color: #222;
 	font-family: Arial;
 	font-size: 40px;
@@ -129,6 +139,11 @@ body {
 	background-color: #00897b;
 	color: #fff;
 	font-weight: bold;
+}
+
+#cardKat .navLink.active {
+	background-color: #a3a3a3;
+	color: #00897b;
 }
 
 .img-dpn {

@@ -10,7 +10,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/styleDetailKegiatan.css">
-  <link rel="stylesheet" href="<?= base_url() ?>assets/css/styleCardKegiatan.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
@@ -37,20 +36,21 @@
             Teens Go Green Indonesia. Volunteers yang terdaftar nantinya akan dilibatkan dalam program Teens Go Green
             Indonesia diantaranya #DigitalCampaigner dan Kelas Belajar Lingkungan atau menjadi bagian dari Volunteers
             Teens Go Green Indonesia untuk terlibat di banyak project lingkungan setelah pandemi berakhir.</p>
-          <h4 style="padding-top:37px;color:#fff">Aktivitas</h4>
-          <p style="width: 100%;">Volunteers diharapkan menjadi Green Leaders atau pembawa virus cinta lingkungan untuk
-            menyebarkan semangat positif menjaga lingkungan ke sekitarnya.</p>
-          <h3 style="padding-top:37px; color:#fff">Ketentuan</h3>
-          <p style="width: 100%;">
-            <ul>
-              <li>Pemuda dan pemudi aktif usia 17-24 tahun</li>
-              <li>Berkewarganegaraan Indonesia</li>
-              <li>Sehat Jasmani dan rohani</li>
-              <li>Berdomisili di Bandung lebih diutamakan</li>
-              <li>Memiliki minat dan kepedulian terhadap isu lingkungan di Indonesia dan skala global</li>
-              <li>Memiliki social media dan aktif menggunakan social media untuk gerakan perubahan yang positif</li>
-            </ul>
-          </p>
+            <h3 style="padding-top:37px;">Aktivitas</h3>
+            <h4 style="width: 100%;">Volunteers diharapkan menjadi Green Leaders atau pembawa virus cinta lingkungan
+              untuk
+              menyebarkan semangat positif menjaga lingkungan ke sekitarnya.</h4>
+            <h3 style="padding-top:37px;">Ketentuan</h3>
+            <h4 style="width: 100%;">
+              <ul>
+                <li>Pemuda dan pemudi aktif usia 17-24 tahun</li>
+                <li>Berkewarganegaraan Indonesia</li>
+                <li>Sehat Jasmani dan rohani</li>
+                <li>Berdomisili di Bandung lebih diutamakan</li>
+                <li>Memiliki minat dan kepedulian terhadap isu lingkungan di Indonesia dan skala global</li>
+                <li>Memiliki social media dan aktif menggunakan social media untuk gerakan perubahan yang positif</li>
+              </ul>
+            </h4>
         </div>
       </div>
       <div class="row" style="padding:20px 122px 37px 122px;">

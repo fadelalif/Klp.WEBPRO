@@ -21,7 +21,7 @@ class DetailKegiatan extends CI_Controller {
 	public function index()
 	{
 
-		$this->load->view('komunitas/detailKegiatan');
+		$this->load->view('page/detailKegiatan');
 
 	}
 }

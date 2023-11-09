@@ -13,26 +13,26 @@
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/styleCardKegiatan.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script>
-      $(document).ready(function(){
-        $(".headDash-tagline").fadeIn(1000); 
-        });
+    $(document).ready(function () {
+      $(".headDash-tagline").fadeIn(1000);
+    });
 
 
-        $(window).scroll(function() {
-        var scrollPos = $(this).scrollTop();
-        var windowHeight = $(this).height();
+    $(window).scroll(function () {
+      var scrollPos = $(this).scrollTop();
+      var windowHeight = $(this).height();
 
-        $(".card-body").each(function(i) {
-            var elemPos = $(this).offset().top;
+      $(".card-body").each(function (i) {
+        var elemPos = $(this).offset().top;
 
-            // akan muncul effect ketika sudah pada section yang dituju
-            if (scrollPos + windowHeight > elemPos && !$(this).is(':visible')) {
-                $(this).delay(500 * i).fadeIn(1000);
-            }
-        });
-
-        
+        // akan muncul effect ketika sudah pada section yang dituju
+        if (scrollPos + windowHeight > elemPos && !$(this).is(':visible')) {
+          $(this).delay(500 * i).fadeIn(1000);
+        }
       });
+
+
+    });
   </script>
 </head>
 
@@ -58,7 +58,7 @@
         <div class="carousel-item">
           <img class="d-block w-100 " style="height: 650px;" src="<?= base_url() ?>assets/img/pantai.jpg" alt="">
           <h1 class="headerDash">Ayo, Jaga Bumi Kita</h1>
-            <p class="headerDescDash">Gabung kedalam sebuah kegiatan dan aksikan cintamu terhadap lingkungan</p>
+          <p class="headerDescDash">Gabung kedalam sebuah kegiatan dan aksikan cintamu terhadap lingkungan</p>
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -78,7 +78,7 @@
       <div class="row row-cols-1 row-cols-md-4 g-4 " style="padding: 25px;">
         <div class="col text-center" style="padding: 10px;">
           <div class="card h-100" style="width: 305px; height: 422px; border-radius: 20px; background: #00897B;">
-            <div class="card-body"style="display:none;">
+            <div class="card-body" style="display:none;">
               <p class="card-text pfitur1">Kami menghubungkan anda dengan komunitas, dengan itu bentuk nyata
                 akan terwujud bagi lingkungan</p>
             </div>
@@ -92,7 +92,7 @@
         <div class="col text-center" style="padding: 10px;">
           <div class="card h-100"
             style="width: 305px; height: 422px; border-radius: 20px; border: 2px solid #00897B; background: #ffff;">
-            <div class="card-body"style="display:none;">
+            <div class="card-body" style="display:none;">
               <img src="<?= base_url() ?>assets/img/fitur 2.png" alt="" />
               <h5 class="card-title hfitur2"> Jadi Relawan </h5>
               <p class="card-text pfitur2">Minat menjadi relawan? cari kegiatan yang berada disekitarmu, kemudian
@@ -159,56 +159,52 @@
   <!-- CARD KEGIATAN -->
   <section id="cardKegiatan">
     <div class="container-fluid" style="background-color: #DADADA">
-      <h5 style="padding-left:10px;">Rekomendasi</h5>
+      <h5 class="headerCont" style="padding-left: 25px;">Rekomendasi</h5>
       <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
         <?php include 'application/views/cardKegiatan.php'; ?>
       </div>
     </div>
   </section>
-  <section id="cardKegiatan">
-    <div class="container-fluid" style="background-color: #DADADA">
-      <div class="row" style="padding: 25px;">
-      <div class="col-md-12"></div>
-      </div>
-    </div>
-  </section>
-  <section id="cardKat">
-    <ul class="nav nav-tabs" id="myTabs">
-    <li class="nav-item">
-      <a class="nav-link active" id="card1-tab" data-bs-toggle="tab" href="#card1" role="tab" aria-controls="card1" aria-selected="true" style="color: #00897b;">Kategori 1</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="card2-tab" data-bs-toggle="tab" href="#card2" role="tab" aria-controls="card2" aria-selected="false" style="color: #00897b;">Kategori 2</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="card3-tab" data-bs-toggle="tab" href="#card3" role="tab" aria-controls="card3" aria-selected="false" style="color: #00897b;">Kategori 3</a>
-    </li>
-  </ul>
 
-  <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="card1" role="tabpanel" aria-labelledby="card1-tab">
-    <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
-        <?php include 'application/views/cardKegiatan.php'; ?>
+  <section id="cardKat">
+    <ul class="nav nav-tabs" id="myTabs" style="padding:37px 0px 0px 37px; border:none;" <li class="nav-item">
+      <a class="nav-link navLink active" id="card1-tab" data-bs-toggle="tab" href="#card1" role="tab"
+        aria-controls="card1" aria-selected="true" style="color: #00897b; border:none;">Kegiatan</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link navLink" id="card2-tab" data-bs-toggle="tab" href="#card2" role="tab" aria-controls="card2"
+          aria-selected="false" style="color: #00897b; border:none;">Projek</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link navLink" id="card3-tab" data-bs-toggle="tab" href="#card3" role="tab" aria-controls="card3"
+          aria-selected="false" style="color: #00897b; border:none;">Webinar</a>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="card1" role="tabpanel" aria-labelledby="card1-tab">
+        <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 10px;">
+          <?php include 'application/views/cardKegiatan.php'; ?>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="card2" role="tabpanel" aria-labelledby="card2-tab">
+        <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 10px;">
+          <?php include 'application/views/cardKegiatan.php'; ?>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="card3" role="tabpanel" aria-labelledby="card3-tab">
+        <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 10px;">
+          <?php include 'application/views/cardKegiatan.php'; ?>
+        </div>
       </div>
     </div>
-    <div class="tab-pane fade" id="card2" role="tabpanel" aria-labelledby="card2-tab">
-    <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
-        <?php include 'application/views/cardKegiatan.php'; ?>
-      </div>
-    </div>
-    <div class="tab-pane fade" id="card3" role="tabpanel" aria-labelledby="card3-tab">
-    <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
-        <?php include 'application/views/cardKegiatan.php'; ?>
-      </div>
-    </div>
-  </div>
 
   </section>
 
   <!-- news -->
-  <section>
+  <section id="cardBerita">
     <div class="container-fluid">
-      <h1 style="color:#00897b;">Berita</h1>
+      <h5 class="headerCont" style="padding-left: 25px;">Berita</h5>
       <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
         <?php include 'application/views/cardBerita.php'; ?>
       </div>
@@ -217,6 +213,14 @@
   <!--Footer -->
   <?php include 'application/views/footer.php'; ?>
   <!--Footer -->
+  <script>
+    $(document).ready(function () {
+      $('.nav-link').on('click', function () {
+        $('.nav-link').removeClass('active'); // Menghapus class 'active' dari semua link
+        $(this).addClass('active'); // Menambahkan class 'active' ke link yang diklik
+      });
+    });
+  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
