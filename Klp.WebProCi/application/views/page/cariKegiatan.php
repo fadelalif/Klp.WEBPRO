@@ -42,8 +42,8 @@
             </span>
           </div>
           <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="padding:5px 15px 0px 0px;">
-            <button id="btnFilter" class="btn btn-small" data-toggle="portfilter" data-target="filter">Filter</button>
-            <button id="btnFilter" class="btn btn-small" data-toggle="portfilter" data-target="urutkan">Urutkan</button>
+            <button id="btnFilter" class="btn btn-small" data-toggle="portfilter" data-target="filter"><i class="fas fa-filter" style="padding-right: 10px;"></i>Filter</button>
+            <button id="btnFilter" class="btn btn-small" data-toggle="portfilter" data-target="urutkan"><i class="fa-solid fa-list" style="padding-right: 10px;"></i>Urutkan</button>
           </div>
         </div>
         <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 0px 10px 10px 10px;">

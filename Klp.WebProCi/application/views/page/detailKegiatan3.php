@@ -18,48 +18,88 @@
   <div>
     <?php include 'application/views/navLogin.php'; ?>
   </div>
-  <section id="cardKegiatan" style="position: relative;padding-top: 75px;">
+  <section id="detailKegiatan" style="position: relative;padding-top: 75px;">
     <div class="container-fluid">
       <div class="row" style="padding:20px 122px;">
         <div class="col-md-12">
           <h1 style="padding-left:10px;">Olah Sampah</h1>
           <img id="img1" src="<?= base_url() ?>assets/img/cardKeg3.jpg" alt=""
-            style="width: 100%; height: auto; max-width: 100%; flex-shrink: 0;" />
+            style="width: 100%; height: auto; flex-shrink: 0;" />
         </div>
       </div>
       <div class="row" style="padding:20px 122px; ">
-        <div class="col-md-12" style="background-color:#00897B;">
-          <h2 style="padding-top:19px; color:#fff ">Oleh <span style=";">SampahKita</h2>
-          <h4 style="padding-top:37px; color:#fff">Deskripsi</h4>
-          <p style="width: 100%;">Komunitas SampahKita membuka pendaftaran bagi para relawan yang ingin mengikuti workshop pengolahan sampah. Pada workshop kali ini 
-            kami juga akan membagikan tips dan cara mengolah sampah yang bermanfaat bagi lingkungan dan rumah tangga anda. </p>
-          <h4 style="padding-top:37px;color:#fff">Aktivitas</h4>
-          <p style="width: 100%;">Relawan yang ingin mengikuti workshop ini diharapkan mulai mengolah sampah rumah tangga sendiri 
-           dan dapat bermanfaat bagi diri sendiri dan lingkungan sekitar.</p>
-          <h3 style="padding-top:37px; color:#fff">Ketentuan</h3>
-          <p style="width: 100%;">
+        <div class="col-md-12" style="background-color:#DADADA;">
+          <h2 style="padding-top:19px">Oleh <span style="color: #00897B; font-weight: 700;">SampahKita</h2>
+          <h3 style="padding-top:37px;">Deskripsi</h3>
+          <h4 style="width: 100%;">Komunitas SampahKita membuka pendaftaran bagi para relawan yang ingin mengikuti workshop pengolahan sampah. Pada workshop kali ini 
+            kami juga akan membagikan tips dan cara mengolah sampah yang bermanfaat bagi lingkungan dan rumah tangga anda.</h4>
+          <h3 style="padding-top:37px;">Aktivitas</h3>
+          <h4 style="width: 100%;">Relawan yang ingin mengikuti workshop ini diharapkan mulai mengolah sampah rumah tangga sendiri 
+           dan dapat bermanfaat bagi diri sendiri dan lingkungan sekitar.</h4>
+          <h3 style="padding-top:37px;">Ketentuan</h3>
+          <h4 style="width: 100%;">
             <ul>
-              <li>Berkewarganegaraan Indonesia</li>
+            <li>Berkewarganegaraan Indonesia</li>
               <li>Sehat Jasmani dan rohani</li>
               <li>Berdomisili di Lampung lebih diutamakan</li>
               <li>Memiliki minat dan kepedulian terhadap isu lingkungan di Indonesia dan skala global</li>
               <li>Memiliki social media dan aktif menggunakan social media untuk gerakan perubahan yang positif</li>
             </ul>
-          </p>
+          </h4>
         </div>
       </div>
-      <div class="row" style="padding:20px 122px; padding-right:122px;">
-        <div class="col-md-6" id="masaRegis">
-          <h4 style="padding-top:15px;color:#00897B;">15 Maret - 30 Maret 2022</h4>
-          <h4 style="color:#00897B;">Lampung</h4>
-          <h4 style="color:#00897B;">Batas registrasi 30 Maret 2022</h4>
+      <div class="row" style="padding:20px 122px 37px 122px;">
+        <div class="col-md-6" style="background-color:#DADADA; padding: 16px;">
+          <h4><i class="fa-solid fa-calendar-days"
+              style="min-height: 41.667px; color: #00897b; margin-right:10px;"></i>15 Maret - 30 Maret 2022</h4>
+          <h4><i class="fa-solid fa-location-dot"
+              style="min-height: 41.667px; color: #00897b; margin-right:10px;"></i>Lampung</h4>
+          <h4 style="color: #F50320;"><i class="fa-solid fa-triangle-exclamation"
+              style="min-height: 41.667px; color: #F50320; margin-right:10px;"></i>Batas registrasi 30 Maret 2022
+          </h4>
         </div>
         <div class="col-md-2"></div>
         <div class="col-md-2" style="">
-          <div class=" justify-content-md-end">
-            <button id="btnregis"class="btn" style="width: 250px; height: 75px;">Bergabung</button>
-            <button id="btnregis" class="btn" style="width: 250px; height: 75px;">Hubungi Organisasi</button>
+          <div class="justify-content-md-end">
+            <button class="btn bergabung" style="margin-bottom:19px; width: 420px; height: 82px;">Bergabung</button>
+            <button class="btn hubOrg" style="width: 420px; height: 82px;">Hubungi Organisasi</button>
           </div>
+        </div>
+      </div>
+      <div class="row" style="padding:20px 122px 37px 122px;">
+        <div class="col-md-12">
+          <h3>Galeri</h3>
+          <div class="galeri">
+            <div id="galeriContainer" style="display: flex; justify-content: space-between;">
+              <img src="<?= base_url() ?>assets/img/galeri1.jpg" alt="" />
+              <img src="<?= base_url() ?>assets/img/galeri2.jpg" alt="" />
+            </div>
+            <nav class="galeriSlide" aria-label="Page navigation">
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item" data-img="<?= base_url() ?>assets/img/galeri1.jpg"><a class="page-link">1</a></li>
+                <li class="page-item" data-img="<?= base_url() ?>assets/img/galeri2.jpg"><a class="page-link">2</a></li>
+                <a class="page-link" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="padding:20px 122px 37px 122px;">
+        <h3>Ulasan</h3>
+        <div class="col-md-1" style="padding: 16px;">
+          <img src="<?= base_url() ?>assets/img/iconProf.png" alt="" />
+        </div>
+        <div class="col-md-7" style="margin: 0px 0px 0px 23px;">
+          <h5>Marsya(18 tahun)</h5>
+          <h6>Kegiatan yang sangat bermanfaat dan bagus untuk diikuti!</h6>
         </div>
       </div>
     </div>
