@@ -2,7 +2,7 @@ body{
     background-color: rgba(245, 245, 245, 1);
 }
 .header-background {
-    background-image: url('Header.jpg'); 
+    background-image: url('assets/img/Header.jpg'); 
     background-size: cover; 
     background-position: center top;     
     position: relative;
