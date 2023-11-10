@@ -13,6 +13,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/styleDashboard.css">
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/styleCardKegiatan.css">
+
 </head>
 
 <body>

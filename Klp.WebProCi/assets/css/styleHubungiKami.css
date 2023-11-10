@@ -25,14 +25,28 @@
 	line-height: 173.523%; /* 41.645px */
 }
 
-.Kirim{
-    width: 100px;
+.Kirim {
+	width: 100px;
 	color: #00897b;
-
 }
 
-#Kirim:hover{
+#Kirim:hover {
 	color: #fff;
 	background-color: #00897b;
+}
 
+#hubungi .email {
+	padding: 15px;
+	width: 300px;
+	height: 300px;
+	background-color: rgba(245, 245, 245, 1);
+	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#hubungi .whatsapp {
+	padding: 15px;
+	width: 300px;
+	height: 300px;
+	background-color: rgba(245, 245, 245, 1);
+	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
 }

@@ -18,11 +18,11 @@
     <div>
         <?php include 'application/views/navLogin.php'; ?>
     </div>
-    <section id="headDash" style="position: relative;">
+    <section id="hubungi" style="position: relative;">
         <div class="container-fluid">
-            <div class="row align-items-center" style="margin: 0; padding:120px;">
+            <div class="row align-items-center" style="margin: 0; padding:120px; ">
                 <h1 class="headerDash">Hubungi Kami</h1>
-                <div class="col-md-6 headDash-tagline" style="background-color:#DADADA;">
+                <div class="col-md-6 headDash-tagline" style="background-color:#DADADA; border-radius:10px;">
                     <div class="input-group mb-4" style="max-width: 568px; padding-top: 10px;">
                         <input type="text" class="form-control" placeholder="Nama" aria-label="Nama"
                             aria-describedby="basic-addon1" />
@@ -40,9 +40,24 @@
                             aria-describedby="basic-addon1"></textarea>
                     </div>
                     <div class="mt-4" style="text-align: left; padding:10px;">
-                            <a href="#" class="btn Kirim">Kirim</a>
-                        </div>
+                        <a href="#" class="btn Kirim">Kirim</a>
+                    </div>
                 </div>
+                <div class="col-md-6 headDash-tagline justify-content-center align-items-center">
+                    <h1 style="position: relative; padding:15px; font-size: 48px; text-align:center;">Kontak Kami Juga<span style="color: #00897b;">
+                            Melalui</span></h1>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div class="email text-center" >
+                            <i class="far fa-envelope fa-5x" style="color: #00897b; padding-top: 50px;"></i>
+                            <p style="padding-top: 15px;">relawanin@gmail.com</p>
+                            <p style="font-weight: bolder; color: #00897b;">email</p>
+                        </div>
+                        <div class="whatsapp text-center">
+                            <i class="fab fa-whatsapp fa-5x" style="color: #00897b; padding-top: 50px;"></i>
+                            <p style="padding-top: 15px;">081234567891</p>
+                            <p style="font-weight: bolder; color: #00897b;">Chat via whatsapp</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
