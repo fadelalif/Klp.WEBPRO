@@ -31,15 +31,18 @@
         <div class="col-md-12" style="background-color:#DADADA;">
           <h2 style="padding-top:19px">Oleh <span style="color: #00897B; font-weight: 700;">SampahKita</h2>
           <h3 style="padding-top:37px;">Deskripsi</h3>
-          <h4 style="width: 100%;">Komunitas SampahKita membuka pendaftaran bagi para relawan yang ingin mengikuti workshop pengolahan sampah. Pada workshop kali ini 
-            kami juga akan membagikan tips dan cara mengolah sampah yang bermanfaat bagi lingkungan dan rumah tangga anda.</h4>
+          <h4 style="width: 100%;">Komunitas SampahKita membuka pendaftaran bagi para relawan yang ingin mengikuti
+            workshop pengolahan sampah. Pada workshop kali ini
+            kami juga akan membagikan tips dan cara mengolah sampah yang bermanfaat bagi lingkungan dan rumah tangga
+            anda.</h4>
           <h3 style="padding-top:37px;">Aktivitas</h3>
-          <h4 style="width: 100%;">Relawan yang ingin mengikuti workshop ini diharapkan mulai mengolah sampah rumah tangga sendiri 
-           dan dapat bermanfaat bagi diri sendiri dan lingkungan sekitar.</h4>
+          <h4 style="width: 100%;">Relawan yang ingin mengikuti workshop ini diharapkan mulai mengolah sampah rumah
+            tangga sendiri
+            dan dapat bermanfaat bagi diri sendiri dan lingkungan sekitar.</h4>
           <h3 style="padding-top:37px;">Ketentuan</h3>
           <h4 style="width: 100%;">
             <ul>
-            <li>Berkewarganegaraan Indonesia</li>
+              <li>Berkewarganegaraan Indonesia</li>
               <li>Sehat Jasmani dan rohani</li>
               <li>Berdomisili di Lampung lebih diutamakan</li>
               <li>Memiliki minat dan kepedulian terhadap isu lingkungan di Indonesia dan skala global</li>
@@ -61,7 +64,10 @@
         <div class="col-md-2"></div>
         <div class="col-md-2" style="">
           <div class="justify-content-md-end">
-            <button class="btn bergabung" style="margin-bottom:19px; width: 420px; height: 82px;">Bergabung</button>
+            <div>
+              <a href="<?= base_url() ?>index.php/FormGabungKegiatan">
+                <button class="btn bergabung" style="margin-bottom:19px; width: 420px; height: 82px;">Bergabung</button>
+            </div>
             <button class="btn hubOrg" style="width: 420px; height: 82px;">Hubungi Organisasi</button>
           </div>
         </div>

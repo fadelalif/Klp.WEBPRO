@@ -66,7 +66,10 @@
         <div class="col-md-2"></div>
         <div class="col-md-2" style="">
           <div class="justify-content-md-end">
-            <button class="btn bergabung" style="margin-bottom:19px; width: 420px; height: 82px;">Bergabung</button>
+            <div>
+              <a href="<?= base_url() ?>index.php/FormGabungKegiatan">
+                <button class="btn bergabung" style="margin-bottom:19px; width: 420px; height: 82px;">Bergabung</button>
+            </div>
             <button class="btn hubOrg" style="width: 420px; height: 82px;">Hubungi Organisasi</button>
           </div>
         </div>
