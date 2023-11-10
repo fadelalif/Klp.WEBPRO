@@ -19,10 +19,18 @@
     </div>
 
     <!-- Header gambar -->
-    <div class=" header-background container-fluid text-center overlay" data-aos="fade-up">
-        <h1 class="mb-5 fw-lighter text-center" style="color: white; font-size: 100px;"> Relawanin Blog</h1>
-        <p style="color: white; font-size: 25px;">Cerita dan Artikel</p>
-    </div>
+    <section id="headDash" style="position: relative;">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-12 headDash-tagline text-center" style="margin: 0; padding: 0;">
+                    <img src="<?= base_url() ?>assets/img/BeritaHead.jpg" alt=""
+                        style="width: 100%; height: auto; max-width: 100%; flex-shrink: 0;" />
+                    <h1 class="headerDash">Relawanin Blog</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- konten -->
     <div class="header2 container-md" style="padding-top: 150px;">
@@ -30,77 +38,68 @@
         <h5 class="text-center p-3 fw-lighter" data-aos="fade-up">Relawanin juga membagikan cerita dan artikel yang
             dapat kamu baca</h5>
 
-        <!-- dropdown -->
-        <div class="dropdown" style="text-align: right; padding-right: 10px; padding-top: 50px;" data-aos="fade-in">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false" style="background-color: #00897B;">
-                <i class="fas fa-filter" style="padding-right: 10px;"></i>
-                Urutkan
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-        </div>
-        <div class="dropdown" style="text-align:right; position: relative; top: -38px; right: 150px;"
-            data-aos="fade-in">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false" style="background-color: #00897B;">
-                <i class="fas fa-filter" style="padding-right: 25px;"></i>
-                Filter
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-        </div>
 
-        <div class="container text-center" data-aos="zoom-in">
-            <div class="row g-2">
-                <div class="col-6">
-                    <div class="card mb-3 btn">
-                        <img src="<?= base_url() ?>assets/img/berita2.jpg" class="card-img-top" width="200px">
-                        <div class="card-body">
-                            <h5 class="card-title">Peduli Karawang</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
+
+        <section id="headDash" style="position: relative;">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="padding:5px 15px 0px 0px;">
+                        <button id="btnFilter" class="btn btn-small" data-toggle="portfilter" data-target="filter"><i
+                                class="fas fa-filter" style="padding-right: 10px;"></i>Filter</button>
+                        <button id="btnFilter" class="btn btn-small" data-toggle="portfilter" data-target="urutkan"><i
+                                class="fa-solid fa-list" style="padding-right: 10px;"></i>Urutkan</button>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="card mb-3 btn">
-                        <img src="<?= base_url() ?>assets/img/berita2.jpg" class="card-img-top" width="200px">
-                        <div class="card-body">
-                            <h5 class="card-title">Peduli Karawang</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
+            </div>
+    </div>
+    </section>
+    <!-- dropdown -->
+
+
+    <div class="container text-center" data-aos="zoom-in">
+        <div class="row g-2">
+            <div class="col-6">
+                <div class="card mb-3 btn">
+                    <img src="<?= base_url() ?>assets/img/berita2.jpg" class="card-img-top" width="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Peduli Karawang</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="card mb-3 btn">
-                        <img src="<?= base_url() ?>assets/img/berita2.jpg" class="card-img-top" width="200px">
-                        <div class="card-body">
-                            <h5 class="card-title">Peduli Karawang</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
+            </div>
+            <div class="col-6">
+                <div class="card mb-3 btn">
+                    <img src="<?= base_url() ?>assets/img/berita2.jpg" class="card-img-top" width="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Peduli Karawang</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="card mb-3 btn">
-                        <img src="<?= base_url() ?>assets/img/berita2.jpg" class="card-img-top" width="200px">
-                        <div class="card-body">
-                            <h5 class="card-title">Peduli Karawang</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
+            </div>
+            <div class="col-6">
+                <div class="card mb-3 btn">
+                    <img src="<?= base_url() ?>assets/img/berita2.jpg" class="card-img-top" width="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Peduli Karawang</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card mb-3 btn">
+                    <img src="<?= base_url() ?>assets/img/berita2.jpg" class="card-img-top" width="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Peduli Karawang</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- footer -->
