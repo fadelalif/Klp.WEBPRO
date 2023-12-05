@@ -19,27 +19,20 @@
     <div class="body bg-body-secondary">
         <nav class="navbar navbar-expand-lg bg-body shadow">
             <div class="container-fluid bg-white m-2">
-                <img src="img/relawain logo 1 (1).png" alt="logo">
+                <img src="assets/img/relawain logo 1 (1).png" alt="logo">
                 <div class="collapse navbar-collapse text-center justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <div class="row row-cols-3 row-cols-lg-4 g-1 g-lg-1 gap-3">
+                <ul class="navbar-nav">
+                        <div class="row row-cols-2 row-cols-lg-3 g-1 g-lg-1 gap-2">
                             <div class="col-4">
                                 <div class="mx-5 w-100">
-                                    <img src="img/1.png" class="m-1" alt="No">
+                                    <img src="assets/img/1.png" class="m-1" alt="No">
                                     Isi Data Diri
-                                    <img src="img/Expand_right.png" alt="next">
+                                    <img src="/assets/img/Expand_right.png" alt="next">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="mx-5 w-100">
                                     <img src="img/2.png" class="m-1" alt="No">
-                                    Isi Data Pendukung
-                                    <img src="img/Expand_right.png" alt="next">
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="mx-5 w-100">
-                                    <img src="img/3.png" class="m-1" alt="No">
                                     Konfirmasi
                                     <img src="img/Expand_right.png" alt="next">
                                 </div>
