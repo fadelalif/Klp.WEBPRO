@@ -1,5 +1,4 @@
-
-#btn .btnBergabung {
+#btn .btn btn-psuccess {
 	border-radius: 10px;
 	border: 2px solid #00897b;
 	background: #00897b;
@@ -24,7 +23,7 @@
 	line-height: normal;
 }
 
-#btn .btnBergabung:hover {
+#btn .btn btn-success:hover {
 	background-color: white;
 	color: #00897b;
 	border: 2px solid #00897b;
