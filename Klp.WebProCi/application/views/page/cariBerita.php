@@ -24,7 +24,7 @@
             <div class="row align-items-center">
                 <div class="col-md-12 headDash-tagline text-center" style="margin: 0; padding: 0;">
                     <img src="<?= base_url() ?>assets/img/BeritaHead.jpg" alt=""
-                        style="width: 100%; height: auto; max-width: 100%; flex-shrink: 0;" />
+                        style="width: 100%; height: auto; max-width: 100%; flex-shrink: 0;"  data-aos="zoom-in"/>
                     <h1 class="headerDash">Relawanin Blog</h1>
                 </div>
             </div>
@@ -33,14 +33,14 @@
 
 
     <!-- konten -->
-    <div class="header2 container-md" style="padding-top: 150px;">
+    <div class="header2 container-md" style="padding-top: 80px;">
         <h1 class="text-center fw-semibold" data-aos="fade-up">Semua Cerita dan Artikel</h1>
         <h5 class="text-center p-3 fw-lighter" data-aos="fade-up">Relawanin juga membagikan cerita dan artikel yang
             dapat kamu baca</h5>
 
 
 
-        <section id="headDash" style="position: relative;">
+        <section id="headDash" style="position: relative;" data-aos="zoom-in">
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="padding:5px 15px 0px 0px;">

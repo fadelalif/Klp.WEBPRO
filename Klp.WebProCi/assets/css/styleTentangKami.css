@@ -103,31 +103,5 @@ body {
 	top: 600px;
 	justify-content: space-around;
 }
-.donasi {
-	width: 400px;
-	height: 300px;
-	background-color: rgba(245, 245, 245, 1);
-	position: relative;
-	left: 170px;
-	top: 10px;
-	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
-}
-.email {
-	width: 400px;
-	height: 300px;
-	background-color: rgba(245, 245, 245, 1);
-	position: relative;
-	left: 450px;
-	top: 200px;
-	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
-}
 
-.whatsapp {
-	width: 400px;
-	height: 300px;
-	background-color: rgba(245, 245, 245, 1);
-	position: relative;
-	left: 1050px;
-	bottom: 100px;
-	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
-}
+

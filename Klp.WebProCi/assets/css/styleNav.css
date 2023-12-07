@@ -90,3 +90,7 @@ nav img {
 	background-color: #00897b;
 	color: #fff !important;
 }
+
+.nav-link.active {
+	color: #A3A3A3 !important;
+}
