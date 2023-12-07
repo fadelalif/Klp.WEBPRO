@@ -1,0 +1,37 @@
+
+#btn .btnBergabung {
+	border-radius: 10px;
+	border: 2px solid #00897b;
+	background: #00897b;
+	color: #fff;
+	text-align: center;
+	font-family: Arial;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+#btn .btnHubOrg {
+	border-radius: 10px;
+	border: 2px solid #00897b;
+	background: #fff;
+	color: #00897b;
+	text-align: center;
+	font-family: Arial;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+#btn .btnBergabung:hover {
+	background-color: white;
+	color: #00897b;
+	border: 2px solid #00897b;
+}
+
+#btn .btnHubOrg:hover {
+	background-color: #00897b;
+	color: white;
+	border: 2px solid #00897b;
+}
