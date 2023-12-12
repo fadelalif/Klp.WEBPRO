@@ -1,0 +1,82 @@
+body{
+    background-color: rgba(245, 245, 245, 1);
+}
+.header-background {
+    background-image: url('assets/img/Header.jpg'); 
+    background-size: cover; 
+    background-position: center top;     
+    position: relative;
+    top: 60px;
+    background-attachment: fixed; 
+    color: rgb(0, 0, 0); 
+    
+    padding: 200px; 
+    
+}
+
+img{
+    border-radius: 5%;
+}
+
+  
+.kotak {
+    width: 1500px; 
+    height: 600px; 
+    background-color: white; 
+     
+    position: relative;
+    top: 600px;
+}
+
+.Tulisan{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.table {
+    background-color: transparent; /* Set the table background to transparent */
+}
+.table td {
+    background-color: transparent; /* Set the cell background to transparent */
+}
+
+#contact-us{
+    background-color: #00897B;
+}
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+#headDash {
+	position: relative;
+}
+
+.headerDash {
+	color: #fff;
+	font-family: Arial;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 173.523%; /* 83.291px */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.headerDescDash {
+	color: #fff;
+	text-align: center;
+	font-family: Arial;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 173.523%; /* 41.645px */
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

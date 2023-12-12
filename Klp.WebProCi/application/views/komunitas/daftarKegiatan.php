@@ -25,38 +25,38 @@
                     <h1 class="DaftarHead fw-semibold text-center ">
                         Daftar
                     </h1>
-                    <form action="<?php echo site_url('Kegiatan/tambah'); ?>" method="post">
+                    <form action="<?php echo site_url('Kegiatan/tambah'); ?>" method="post" enctype="multipart/form-data" role="form">
                         <h2 class="AkunHead fw-semibold " style="margin-left: 465px;">
                             Detail Kegiatan
                         </h2>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
                             <input type="text" name="nama_kegiatan" id="nama_kegiatan" class="form-control" placeholder="Nama Keigatan" aria-label="Nama Keigatan"
-                                aria-describedby="basic-addon1" />
+                                aria-describedby="basic-addon1" required />
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <input type="text" name="judul_kegiatan" id="judul_kegiatan" class="form-control" placeholder="judul" aria-label="judul"
-                                aria-describedby="basic-addon1" />
+                            <input type="text" name="aktivitas_kegiatan" id="aktivitas_kegiatan" class="form-control" placeholder="aktivitas" aria-label="aktivitas"
+                                aria-describedby="basic-addon1"  required/>
                         </div>
                         <h2 class="AkunHead fw-semibold " style="margin-left: 465px;">
                             Data Keigatan
                         </h2>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <label for="tgl_kegiatan" class="input-group-text">Tanggal Kegiatan</label>
-                            <input type="date" class="form-control" id="tgl_kegiatan" name="tgl_kegiatan"
-                                aria-describedby="basic-addon1" />
+                            <label for="tanggal_kegiatan" class="input-group-text">Tanggal Kegiatan</label>
+                            <input type="date" class="form-control" id="tanggal_kegiatan" name="tanggal_kegiatan"
+                                aria-describedby="basic-addon1"  required/>
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
                             <input type="text" name="lokasi_kegiatan" id="lokasi_kegiatan" class="form-control" placeholder="Lokasi Kegiatan"
-                                aria-label="Lokasi Kegiatan" aria-describedby="basic-addon1" />
+                                aria-label="Lokasi Kegiatan" aria-describedby="basic-addon1"  required/>
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
                             <input type="text" name="penanggung_jawab" id="penanggung_jawab" class="form-control" placeholder="Penanggung Jawab" aria-label="Penanggung Jawab"
-                                aria-describedby="basic-addon1" />
+                                aria-describedby="basic-addon1"  required/>
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
                             <label class="input-group-text" for="kategori">Kategori Komunitas</label>
                             <select class="form-select" id="kategori" name="kategori"
-                                aria-describedby="basic-addon1">
+                                aria-describedby="basic-addon1"  required>
                                 <option value="">Pilih Kategori</option>
                                 <option value="Perhutana">Perhutana</option>
                                 <option value="Perairan">Perairan</option>
@@ -65,12 +65,12 @@
                             </select>
                         </div>
                         <div class="input-group mb-4 mx-auto form-floating" style="max-width: 568px">
-                        <textarea class="form-control" name="deskripsi_kegiatan"placeholder="Masukan Deskripsi Kegiatan Anda" id="desc" style="height: 100px"></textarea>
+                        <textarea class="form-control" name="deskripsi_kegiatan"placeholder="Masukan Deskripsi Kegiatan Anda" id="desc" style="height: 100px"  required></textarea>
                         <label for="desc">Deskripsi</label>
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
                             <label class="input-group-text" for="provinsi">Provinsi</label>
-                            <select class="form-select" id="provinsi" name="provinsi" aria-describedby="basic-addon1">
+                            <select class="form-select" id="provinsi" name="provinsi" aria-describedby="basic-addon1"  required>
                                 <option value="">Pilih provinsi</option>
                                 <option value="Aceh">Aceh</option>
                                 <option value="Sumatera Utara">Sumatera Utara</option>
@@ -108,11 +108,10 @@
                                 <option value="Papua Barat">Papua Barat</option>
                             </select>
                         </div>
-                        <div class="mx-auto form-check" style=" width: 568px; font-size: 16px">
-                        <input type="checkbox" class="form-check-input" id="aggrement" name="aggrement" value="agree">
-                        <label class="form-check-label" for="aggrement"> Dengan ini komunitas kami dengan sungguh-sungguh membuat kegiatan sesuai dengan syarat dan kesepakatan yang berlaku</label><br>
+                        <div class="input-group mb-4 mx-auto" style="max-width: 568px">Upload Foto</div>
+                        <div class="input-group mb-4 mx-auto" style="max-width: 568px">
+                            <input type="file" name="fileUpload" size="20"  required/>
                         </div>
-
 
                         <div class="mt-4" style="text-align: center; padding-bottom:15px;">
                         <button type="submit" class="btn MasukBut">Submit</button>

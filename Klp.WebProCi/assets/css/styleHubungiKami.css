@@ -1,0 +1,52 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+#headDash {
+	position: relative;
+}
+
+.headerDash {
+	color: #222;
+	font-family: Arial;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 173.523%; /* 83.291px */
+}
+
+.headerDescDash {
+	color: #111;
+	font-family: Arial;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 173.523%; /* 41.645px */
+}
+
+.Kirim {
+	width: 100px;
+	color: #00897b;
+}
+
+#Kirim:hover {
+	color: #fff;
+	background-color: #00897b;
+}
+
+#hubungi .email {
+	padding: 15px;
+	width: 300px;
+	height: 300px;
+	background-color: rgba(245, 245, 245, 1);
+	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#hubungi .whatsapp {
+	padding: 15px;
+	width: 300px;
+	height: 300px;
+	background-color: rgba(245, 245, 245, 1);
+	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+}

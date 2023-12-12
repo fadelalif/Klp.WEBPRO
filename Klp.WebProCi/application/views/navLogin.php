@@ -25,22 +25,22 @@
           <li class=" nav-item dropdown mx-4">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"aria-expanded="false">Tentang</a>
               <ul class="dropdown-menu navDropdownMenuLink">
-                <li><a id="navDropdownMenuLink" class="dropdown-item  " href="#">Tentang Relawanin</a></li>
-                <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/">Visi dan Misi</a></li>
-                <li><a id="navDropdownMenuLink" class=" dropdown-item" href="<?= base_url() ?>index.php/">Hubungi Kami</a></li>
-                <li><a id="navDropdownMenuLink" class=" dropdown-item" href="<?= base_url() ?>index.php/">Donasi</a></li>
+                <li><a id="navDropdownMenuLink" class="dropdown-item  " href="<?= base_url() ?>index.php/TentangKami">Tentang Relawanin</a></li>
+                <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/VisiMisi">Visi dan Misi</a></li>
+                <li><a id="navDropdownMenuLink" class=" dropdown-item" href="<?= base_url() ?>index.php/HubungiKami">Hubungi Kami</a></li>
+                <li><a id="navDropdownMenuLink" class=" dropdown-item" href="<?= base_url() ?>index.php/Donasi">Donasi</a></li>
               </ul>
           </li>
           <li class=" nav-item dropdown mx-4">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fitur</a>
             <ul class="dropdown-menu navDropdownMenuLink">
               <li><a id="navDropdownMenuLink" class="dropdown-item  " href="<?= base_url() ?>index.php/CariKegiatan">Cari Kegiatan</a></li>
-              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/">Mengadakan Kegiatan</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/RegisterKomunitas">Daftar Komunitas</a></li>
               <li><a id="navDropdownMenuLink" class=" dropdown-item" href="<?= base_url() ?>index.php/">Panduan</a></li>
             </ul>
           </li>
           <li class=" nav-item mx-4">
-            <a class="nav-link" href="#">Berita</a>
+            <a class="nav-link" href="<?= base_url() ?>index.php/CariBerita">Berita</a>
           </li>
         </ul>
       </div>
@@ -53,12 +53,14 @@
           </button>
         </a>
         <ul class="dropdown-menu">
-          <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/">Profile</a></li>
+          <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/Profile">Profile</a></li>
           <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/Utama">Log Out</a></li>
         </ul>
       </li>
       </a>
     </div>
   </nav>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/styleNav.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/styleprefkegiatan.css">
+
 
 </head>
 <body>
@@ -19,12 +21,18 @@
     <section id="tableKegiatan" style="position:relative;">
     <div class="container" style="padding-top:100px;">
         <div class="row">
-        <h1>Daftar Kegiatan</h1>
+        <div class="col-md-9">
+            <h1>Daftar Kegiatan</h1>
+        </div>
+        <div class="col-md-3">
+            <button class="btn" style="font-size:24px;" onclick="location.href='<?= base_url() ?>index.php/DaftarKegiatan'">Tambah <i class="fa fa-plus"></i></button>
+        </div>
+        
         <table class="table">
             <thead>
                 <tr>
                     <th class="sorting sorting_asc" aria-label="Name: activate to sort column descending">Nama Kegiatan</th>
-                    <th class="sorting sorting_asc" aria-label="Name: activate to sort column descending">Judul Kegiatan</th>
+                    <th class="sorting sorting_asc" aria-label="Name: activate to sort column descending">Aktivitas Kegiatan</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
@@ -33,10 +41,11 @@
                     <?php foreach ($kegiatan as $k): ?>
                     <tr>
                         <td><?php echo $k->nama_kegiatan; ?></td>
-                        <td><?php echo $k->judul_kegiatan; ?></td>
+                        <td><?php echo $k->aktivitas_kegiatan; ?></td>
                         <td>
-                        <button class="btn btn-primary"onclick="location.href='<?php echo site_url('Kegiatan/edit/' . $k->nama_kegiatan); ?>'">Edit</button>
-                        <button class="btn btn-danger" onclick="if (confirm('Apakah Anda yakin ingin menghapus kegiatan ini?')) { location.href='<?php echo site_url('Kegiatan/hapus/' . $k->nama_kegiatan); ?>'; }">Hapus</button>
+                        <button class="btn-primary" onclick="location.href='<?php echo site_url('Kegiatan/edit/' . $k->id); ?>'">Edit</button>
+                        <button class="btn-success" onclick="location.href='<?php echo site_url('Kegiatan/detailkeg/' . $k->id); ?>'">Detail</button>
+                        <button class="btn-danger" onclick="if (confirm('Apakah Anda yakin ingin menghapus kegiatan ini?')) { location.href='<?php echo site_url('Kegiatan/hapus/' . $k->id); ?>'; }">Hapus</button>
                         </td>
                     </tr>
                     <?php endforeach; ?>
@@ -46,8 +55,8 @@
         </div>
     </div>
     </section>
-    <?php include 'application/views/footer.php'; ?>
 
+    <?php include 'application/views/footer.php'; ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>

@@ -23,8 +23,8 @@
     <div class="container-fluid">
       <div class="row" style="padding:20px 122px;">
         <div class="col-md-12">
-          <h1 style="padding-left:10px;">Karawang Peduli</h1>
-          <img id="img1" src="<?= base_url() ?>assets/img/cardKeg 1.png" alt=""
+          <h1 style="padding-left:10px;"><?= $kegiatan->nama_kegiatan ?></h1>
+          <img id="img1" src="<?= base_url() ?>uploads/<?= isset($kegiatan->uploadFile) ? $kegiatan->uploadFile : '' ?>"alt=""
             style="width: 100%; height: auto; max-width: 100%; flex-shrink: 0;" />
         </div>
       </div>
@@ -32,13 +32,13 @@
         <div class="col-md-12" style="background-color:#00897B;">
           <h2 style="padding-top:19px; color:#fff ">Oleh <span style=";">Karawang Peduli</h2>
           <h4 style="padding-top:37px; color:#fff">Deskripsi</h4>
-          <p style="width: 100%;">Teens Go Green Indonesia membuka pendaftaran Volunteers bagi kamu yang ingin terlibat
-            menjadi bagian dari Teens Go Green Indonesia. Volunteers yang terdaftar nantinya akan dilibatkan dalam program Teens Go Green
-            Indonesia diantaranya #DigitalCampaigner dan Kelas Belajar Lingkungan atau menjadi bagian dari Volunteers
-            Teens Go Green Indonesia untuk terlibat di banyak project lingkungan setelah pandemi berakhir.</p>
+          <p style="width: 100%;"><?= $kegiatan->deskripsi_kegiatan?></p>
           <h4 style="padding-top:37px;color:#fff">Aktivitas</h4>
-          <p style="width: 100%;">Volunteers diharapkan menjadi Green Leaders atau pembawa virus cinta lingkungan untuk
-            menyebarkan semangat positif menjaga lingkungan ke sekitarnya.</p>
+          <p style="width: 100%;"><?= $kegiatan->aktivitas_kegiatan ?></p>
+          <h4 style="padding-top:37px;color:#fff">Lokasi</h4>
+          <p style="width: 100%;"><?= $kegiatan->lokasi_kegiatan ?></p>
+          <h4 style="padding-top:37px;color:#fff">Tanggal Kegiatan</h4>
+          <p style="width: 100%;"><?= $kegiatan->tanggal_kegiatan ?></p>
           <h3 style="padding-top:37px; color:#fff">Ketentuan</h3>
           <p style="width: 100%;">
             <ul>

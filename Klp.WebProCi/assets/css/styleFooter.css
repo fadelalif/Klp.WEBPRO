@@ -2,8 +2,11 @@ footer {
 	background-color: #00897b;
 }
 
-a:hover.footer-link {
+.a-footer:hover {
+	color: #00897b;
+	background-color: #fff;
 	text-decoration: underline;
+	border-radius: 5px;
 }
 
 .a-footer {
