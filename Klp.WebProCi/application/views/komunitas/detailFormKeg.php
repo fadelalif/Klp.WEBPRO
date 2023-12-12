@@ -117,7 +117,7 @@
 
 
                         <div class="mt-4" style="text-align: center; padding-bottom:15px;">
-                        <button type="submit" class="btn MasukBut">Submit</button>
+                        <button type="button" onclick="location.href='<?= base_url() ?>index.php/Kegiatan'" class="btn">Back</button>
                         </div>
 
 

@@ -55,7 +55,7 @@
                             <select class="form-select" id="kategori" name="kategori"
                                 aria-describedby="basic-addon1" required>
                                 <option value="" <?php echo ($kegiatan->kategori === 'Pilih Kategori') ? 'selected' : ''; ?>>Pilih Kategori</option>
-                                <option value="Perhutanan" <?php echo ($kegiatan->kategori === 'Perhutanan') ? 'selected' : ''; ?>>Perhutanan</option>
+                                <option value="Perhutanan" <?php echo ($kegiatan->kategori === 'Perhutana') ? 'selected' : ''; ?>>Perhutanan</option>
                                 <option value="Perairan" <?php echo ($kegiatan->kategori === 'Perairan') ? 'selected' : ''; ?>>Perairan</option>
                                 <option value="Bersih-Bersih" <?php echo ($kegiatan->kategori === 'Bersih-Bersih') ? 'selected' : ''; ?>>Bersih-Bersih</option>
                                 <option value="Daur Ulang" <?php echo ($kegiatan->kategori === 'Daur Ulang') ? 'selected' : ''; ?>>Daur Ulang</option>
@@ -67,7 +67,7 @@
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
                             <label class="input-group-text" for="provinsi">Provinsi</label>
-                            <select class="form-select" id="provinsi" name="provinsi" aria-describedby="basic-addon1" required>
+                            <select class="form-select" id="provinsi" name="provinsi" aria-describedby="basic-addon1">
                                 <option value="" <?php echo ($kegiatan->provinsi === 'Pilih provinsi') ? 'selected' : ''; ?>>Pilih provinsi</option>
                                 <option value="Aceh" <?php echo ($kegiatan->provinsi === 'Aceh') ? 'selected' : ''; ?>>Aceh</option>
                                 <option value="Sumatera Utara" <?php echo ($kegiatan->provinsi === 'Sumatera Utara') ? 'selected' : ''; ?>>Sumatera Utara</option>
@@ -112,7 +112,7 @@
                             <?php endif; ?>
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <input type="file" name="fileUpload" size="20" required/>
+                            <input type="file" name="fileUpload" size="20"/>
                         </div>
 
 

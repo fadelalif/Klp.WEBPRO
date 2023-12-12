@@ -41,7 +41,7 @@
                     <?php foreach ($kegiatan as $k): ?>
                     <tr>
                         <td><?php echo $k->nama_kegiatan; ?></td>
-                        <td><?php echo $k->aktivitas_kegiatan; ?></td>
+                        <td><?php echo wordwrap($k->aktivitas_kegiatan,30,"<br>\n",TRUE);?>
                         <td>
                         <button class="btn-primary" onclick="location.href='<?php echo site_url('Kegiatan/edit/' . $k->id); ?>'">Edit</button>
                         <button class="btn-success" onclick="location.href='<?php echo site_url('Kegiatan/detailkeg/' . $k->id); ?>'">Detail</button>
