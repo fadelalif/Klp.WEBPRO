@@ -3,6 +3,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Dashboard extends CI_Controller {
 
+	function __construct(){
+        parent::__construct();
+        $this->load->model('m_daftarkegiatan');
+        $this->load->library('form_validation');
+
+    }
+
 	/**
 	 * Index Page for this controller.
 	 *
@@ -20,8 +27,8 @@ class Dashboard extends CI_Controller {
 	 */
 	public function index()
 	{
-
-		$this->load->view('page/relawan');
+		$data['kegiatan'] = $this->m_daftarkegiatan->tampilData();
+		$this->load->view('page/relawan', $data);
 
 	}
 }

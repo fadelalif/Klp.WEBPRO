@@ -54,6 +54,8 @@
           <?php include 'application/views/cardKegiatan.php'; ?>
           <?php include 'application/views/cardKegiatan.php'; ?>
         </div>
+      <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 10px;">
+        <?php include 'application/views/cardKegiatan.php'; ?>
       </div>
   </section>
   <!--Footer -->
