@@ -59,60 +59,59 @@
           <p>
           <div id="btn" class="justify-content-sm-center">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="margin-bottom:19px; width: 250px; height: 60px;">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="margin-bottom:19px; width: 250px; height: 60px;">
             Bergabung
             </button>
-
+            <button class="btnHubOrg" style="width: 250px; height: 60px;">Hubungi Organisasi</button>
+          </div>
             <!-- Modal -->
-            <div class="modal fade modal-lg" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal fade  modal-lg" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h1 class="modal-title fs-5" id="staticBackdropLabel">Daftar Aktivitas</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <form method="POST" action= "echo site_url (index.php/views/komunitas/komunitasCRUD.php)"
-                    <div class="modal-body">
-                      <div class="col-md-6">
-                        <label for="inputNamaKegiatan" class="form-label">Nama Kegiatan</label>
-                        <input type="Name"class="form-control"id="inputNama"placeholder="Teens Go Green Volunteers"/>
-                      </div>
-                      <div class="col-md-6">
-                        <label for="inputEmail" class="form-label">Email</label>
-                        <input type="email"class="form-control"id="inputEmail4" placeholder="alifsss@gmail.com"/>
-                      </div>
-                      <div class="col-md-6">
-                        <label for="inputNomor" class="form-label">Nomor Telepon</label>
-                        <input type="text"class="form-control"id="inputNoTelp"placeholder="08125343586"/>
+                  <div class="modal-body">
+                      <div class="form group">
+                        <label>Nama Kegiatan</label>
+                        <input type="Name" name="name" class="form-control"placeholder="Teens Go Green Volunteers"/>
                       </div>
                       <div class="form-group">
-                        <label for="comment">Mengapa anda tertarik untuk aktivitas ini?</label>
-                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                        <label>Email</label>
+                        <input type="email"name="email"class="form-control" placeholder="alifsss@gmail.com"/>
                       </div>
                       <div class="form-group">
-                        <label for="Pengalaman">Apa Pengalamanmu?</label>
-                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                        <label class="form-label">Nomor Telepon</label>
+                        <input type="text"name="noTlp"class="form-control"placeholder="08125343586"/>
                       </div>
+                      <div class="form-group">
+                        <label>Mengapa anda tertarik untuk aktivitas ini?</label>
+                        <textarea name="alasan"class="form-control" rows="5"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>Apa Pengalamanmu?</label>
+                        <textarea name="pengalaman"class="form-control" rows="5"></textarea>
+                      </div>
+
                       <form method="post" enctype="multipart/form-data">
                         <div class="mb-3">
                           <label for="file">Upload CV anda Disini!</label>
                           <br />
-                          <input type="file" id="file" name="file" multiple />
+                          <input type="file" name="file" multiple />
                         </div>
                       </form>
-                    </div>
-                    <div class="modal-footer">
+                      <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
                       <button type="submit" class="btn btn-primary">Kirim Form Pendaftaran</button>
-                    </div>
-                  </form>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
-            <button class="btnHubOrg" style="width: 250px; height: 60px;">Hubungi Organisasi</button>
-          </div>
+
         </div>
-        
       </div>
     </div>
   </div>

@@ -1,4 +1,4 @@
-#btn .btn btn-psuccess {
+#btn.btn {
 	border-radius: 10px;
 	border: 2px solid #00897b;
 	background: #00897b;
@@ -23,10 +23,10 @@
 	line-height: normal;
 }
 
-#btn .btn btn-success:hover {
-	background-color: white;
-	color: #00897b;
-	border: 2px solid #00897b;
+#btn.btn:hover {
+	background-color: #00897b !important;
+	color: white !important;
+	border: 2px solid #000000 !important;
 }
 
 #btn .btnHubOrg:hover {
