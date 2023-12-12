@@ -82,14 +82,14 @@ class Kegiatan extends CI_Controller {
             $this->load->library('upload', $config);
             $this->upload->initialize($config);
 
-            // if (!$this->upload->do_upload('fileUpload')) {
-            //     // Jika upload file gagal, tampilkan pesan error
-            //     $error = array('error' => $this->upload->display_errors());
-            //     print_r($error); // Display the error messages for debugging
-            //     $this->load->view('komunitas/editdaftarKegiatan.php', $error);
-            // } else {
+            if (!$this->upload->do_upload('fileUpload')) {
+                // Jika upload file gagal, tampilkan pesan error
+                $error = array('error' => $this->upload->display_errors());
+                print_r($error); // Display the error messages for debugging
+                $this->load->view('komunitas/editdaftarKegiatan.php', $error);
+            } else {
                 // Jika upload file berhasil, dapatkan data file
-                $upload_data = $this->upload->data();
+                    $upload_data = $this->upload->data();
                     $nama_kegiatan = $this->input->post('nama_kegiatan');
                     $aktivitas_kegiatan = $this->input->post('aktivitas_kegiatan');
                     $tanggal_kegiatan = $this->input->post('tanggal_kegiatan');
@@ -99,7 +99,7 @@ class Kegiatan extends CI_Controller {
                     $provinsi = $this->input->post('provinsi');
                     $deskripsi_kegiatan = $this->input->post('deskripsi_kegiatan');
                     $uploadFile = $upload_data['file_name'] ;
-            // }
+            }
         
             // Simpan perubahan ke database
             $this->m_daftarkegiatan->updateKegiatan($id, $nama_kegiatan, $aktivitas_kegiatan,$tanggal_kegiatan, $lokasi_kegiatan, $penanggung_jawab,$kategori_kegiatan, $provinsi ,$deskripsi_kegiatan, $uploadFile);

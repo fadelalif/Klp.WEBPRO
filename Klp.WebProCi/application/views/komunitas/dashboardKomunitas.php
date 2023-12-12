@@ -5,35 +5,14 @@
   <title>Relawanin</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/styleDashboard.css">
   <link rel="stylesheet" href="<?= base_url() ?>assets/css/styleCardKegiatan.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script>
-      $(document).ready(function(){
-        $(".headDash-tagline").fadeIn(1000); 
-        });
-
-
-        $(window).scroll(function() {
-        var scrollPos = $(this).scrollTop();
-        var windowHeight = $(this).height();
-
-        $(".card-body").each(function(i) {
-            var elemPos = $(this).offset().top;
-
-            // akan muncul effect ketika sudah pada section yang dituju
-            if (scrollPos + windowHeight > elemPos && !$(this).is(':visible')) {
-                $(this).delay(500 * i).fadeIn(1000);
-            }
-        });
-
-        
-      });
-  </script>
 </head>
 
 <body>
@@ -78,7 +57,7 @@
       <div class="row row-cols-1 row-cols-md-3 g-4 " style="padding: 25px;">
         <div class="col text-center" style="padding: 10px;">
           <div class="card h-100" style="width: 305px; height: 422px; border-radius: 20px; background: #00897B;">
-            <div class="card-body"style="display:none;">
+            <div class="card-body">
               <p class="card-text pfitur1">Kami menghubungkan anda dengan relawan, kegiatan anda telah ditunggu para relawan untuk diikuti</p>
             </div>
             <div class="btn-link" style="margin:22px; margin: bottom 44px; width: 260px; height: 50px; ">
@@ -91,7 +70,7 @@
         <div class="col text-center" style="padding: 10px;">
           <div class="card h-100"
             style="width: 305px; height: 422px; border-radius: 20px; border: 2px solid #00897B; background: #ffff;">
-            <div class="card-body" style="display:none;">
+            <div class="card-body" >
               <img src="<?= base_url() ?>assets/img/fitur 3.png" alt="" />
               <h5 class="card-title hfitur3"> Riwayat Kegiatan</h5>
               <p class="card-text pfitur3">Anda dapat memeriksa riwayat kegiatan yang telah dibuat</p>
@@ -106,7 +85,7 @@
         <div class="col text-center" style="padding: 10px;">
           <div class="card h-100"
             style="width: 305px; height: 422px; border-radius: 20px; border: 2px solid #00897B; background: #ffff;">
-            <div class="card-body" style="display:none;">
+            <div class="card-body" >
               <img src="<?= base_url() ?>assets/img/fitur 4.png" alt="" />
               <h5 class="card-title hfitur4">Panduan</h5>
               <p class="card-text pfitur4">Masih bingung dengan layanan yang tersedia? kami menyediakan panduan untuk
@@ -183,9 +162,7 @@
   <!--Footer -->
   <?php include 'application/views/footer.php'; ?>
   <!--Footer -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
