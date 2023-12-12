@@ -59,8 +59,8 @@ class Kegiatan extends CI_Controller {
     
     public function index() {
 
-        // $data['kegiatan'] = $this->m_daftarkegiatan->tampilData();
-		$this->load->view('komunitas/previewkegiatan');
+        $data['kegiatan'] = $this->m_daftarkegiatan->tampilData();
+		$this->load->view('komunitas/previewkegiatan',$data);
     }
 
     public function edit($id) {
