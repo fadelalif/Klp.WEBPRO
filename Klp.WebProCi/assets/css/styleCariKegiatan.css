@@ -1,3 +1,8 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 #btnFilter {
 	border-color: #fff;
 	border-radius: 10px;
@@ -9,8 +14,29 @@
 	font-style: normal;
 	font-weight: 300;
 	line-height: normal;
-    width: 102px;
+	width: 140px;
 }
 .btn-link {
 	margin-right: 81px;
+}
+
+.searchBox{
+	width: 300px;
+}
+.head {
+	color: #222;
+	font-family: Arial;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 173.523%; /* 83.291px */
+}
+
+.subHead {
+	color: #222;
+	font-family: Arial;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 173.523%; /* 41.645px */
 }

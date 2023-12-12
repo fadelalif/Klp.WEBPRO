@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container-fluid img {
+	max-width: 200px;
+	height: auto;
+}
+
+.collapse img {
+	max-width: 20px;
+}
+
+.navbar-nav .w-100 {
+	color: #a3a3a3;
+}
+
+.navbar-nav .w-100:hover {
+	color: black;
+}
+
+.img-fluid img {
+	max-width: 80%;
+}
+
+.Kirim {
+	width: 100px;
+	color: #00897b;
+}
+
+#Kirim:hover {
+	color: #fff;
+	background-color: #00897b;
+}

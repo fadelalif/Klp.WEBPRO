@@ -1,0 +1,107 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+#headDash {
+	position: relative;
+}
+
+.headerDash {
+	color: #fff;
+	font-family: Arial;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 173.523%; /* 83.291px */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.headerDescDash {
+	color: #fff;
+	text-align: center;
+	font-family: Arial;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 173.523%; /* 41.645px */
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.msgTentang {
+	color: #222;
+	text-align: center;
+	font-family: Arial;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.msgDescTentang {
+	color: #222;
+	font-family: Arial;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+}
+
+body {
+	background-color: rgba(245, 245, 245, 1);
+}
+.header-background {
+	background-image: url("assets/img/Header.png");
+	background-size: cover;
+	background-position: center top;
+	position: relative;
+	top: 100px;
+	background-attachment: fixed;
+	color: rgb(0, 0, 0.5);
+	padding: 300px;
+}
+
+.kotak {
+	width: 1500px;
+	height: 600px;
+	background-color: #00897b;
+	margin: 10px;
+	position: relative;
+	top: 600px;
+	border-radius: 20px;
+}
+.kotak-visidalam {
+	width: 1500px;
+	height: 1100px;
+	background-color: white;
+	margin: 10px;
+	position: relative;
+	top: 600px;
+}
+.Tulisan {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.kotak-visimisi {
+	width: 1920px;
+	height: 1200px;
+	background-color: #00897b;
+	position: relative;
+	top: 600px;
+}
+
+.kotak-kontak {
+	width: 1920px;
+	height: 800px;
+	background-color: white;
+	position: relative;
+	top: 600px;
+	justify-content: space-around;
+}
+
+

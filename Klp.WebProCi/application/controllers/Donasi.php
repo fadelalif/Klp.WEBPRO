@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class detailKegiatan extends CI_Controller {
+class Donasi extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -21,7 +21,7 @@ class detailKegiatan extends CI_Controller {
 	public function index()
 	{
 
-		$this->load->view('page/detailKegiatan');
+		$this->load->view('page/donasi');
 
 	}
 }
