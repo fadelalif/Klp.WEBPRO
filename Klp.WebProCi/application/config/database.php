@@ -101,7 +101,11 @@ $db['default'] = array(
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '',
+<<<<<<< HEAD
 	'database' => 'dbrelawan',
+=======
+	'database' => 'db_relawanin',
+>>>>>>> origin/main
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
