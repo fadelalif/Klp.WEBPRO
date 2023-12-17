@@ -66,7 +66,7 @@ class Kegiatan extends CI_Controller {
     public function edit($id) {
         $data['kegiatan'] = $this->m_daftarkegiatan->getKegiatanById($id);
         if ($data['kegiatan']) {
-            $this->load->view('komunitas/editdaftarKegiatan', $data);
+            $this->load->view('komunitas/editKegiatan', $data);
         } else {
             // Kegiatan tidak ditemukan, arahkan kembali atau tampilkan pesan kesalahan
             redirect('Kegiatan');
