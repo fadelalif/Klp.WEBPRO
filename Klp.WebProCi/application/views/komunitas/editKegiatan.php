@@ -55,7 +55,7 @@
                             <select class="form-select" id="kategori" name="kategori"
                                 aria-describedby="basic-addon1" required>
                                 <option value="" <?php echo ($kegiatan->kategori === 'Pilih Kategori') ? 'selected' : ''; ?>>Pilih Kategori</option>
-                                <option value="Perhutanan" <?php echo ($kegiatan->kategori === 'Perhutana') ? 'selected' : ''; ?>>Perhutanan</option>
+                                <option value="Perhutanan" <?php echo ($kegiatan->kategori === 'Perhutanan') ? 'selected' : ''; ?>>Perhutanan</option>
                                 <option value="Perairan" <?php echo ($kegiatan->kategori === 'Perairan') ? 'selected' : ''; ?>>Perairan</option>
                                 <option value="Bersih-Bersih" <?php echo ($kegiatan->kategori === 'Bersih-Bersih') ? 'selected' : ''; ?>>Bersih-Bersih</option>
                                 <option value="Daur Ulang" <?php echo ($kegiatan->kategori === 'Daur Ulang') ? 'selected' : ''; ?>>Daur Ulang</option>
