@@ -74,40 +74,50 @@ class Kegiatan extends CI_Controller {
     }
     
     public function update($id) {
-            // Ambil data dari form
-            $config['upload_path'] = 'uploads/';  // Sesuaikan dengan folder tempat menyimpan file
-            $config['allowed_types'] = 'gif|jpg|jpeg|png|pdf'; // Sesuaikan dengan tipe file yang diizinkan
-            $config['max_size'] = 10000;  // Sesuaikan dengan ukuran maksimal file
-
-            $this->load->library('upload', $config);
-            $this->upload->initialize($config);
-
-            if (!$this->upload->do_upload('fileUpload')) {
-                // Jika upload file gagal, tampilkan pesan error
-                $error = array('error' => $this->upload->display_errors());
-                print_r($error); // Display the error messages for debugging
-                $this->load->view('komunitas/editdaftarKegiatan.php', $error);
-            } else {
+        // Ambil data dari form
+        $config['upload_path'] = 'uploads/';  // Sesuaikan dengan folder tempat menyimpan file
+        $config['allowed_types'] = 'gif|jpg|jpeg|png|pdf'; // Sesuaikan dengan tipe file yang diizinkan
+        $config['max_size'] = 10000;  // Sesuaikan dengan ukuran maksimal file
+    
+        $this->load->library('upload', $config);
+        $this->upload->initialize($config);
+    
+        $fileUploaded = $this->upload->do_upload('fileUpload');
+        $error = array('error' => $this->upload->display_errors());
+    
+        if (!$fileUploaded && !empty($_FILES['fileUpload']['name'])) {
+            // Jika upload file gagal, tampilkan pesan error
+            print_r($error); // Display the error messages for debugging
+            $this->load->view('komunitas/editdaftarKegiatan.php', $error);
+        } else {
+            // Jika upload file berhasil atau tidak ada file yang diunggah baru
+            if ($fileUploaded) {
                 // Jika upload file berhasil, dapatkan data file
-                    $upload_data = $this->upload->data();
-                    $nama_kegiatan = $this->input->post('nama_kegiatan');
-                    $aktivitas_kegiatan = $this->input->post('aktivitas_kegiatan');
-                    $tanggal_kegiatan = $this->input->post('tanggal_kegiatan');
-                    $lokasi_kegiatan = $this->input->post('lokasi_kegiatan');
-                    $penanggung_jawab = $this->input->post('penanggung_jawab');
-                    $kategori_kegiatan = $this->input->post('kategori');
-                    $provinsi = $this->input->post('provinsi');
-                    $deskripsi_kegiatan = $this->input->post('deskripsi_kegiatan');
-                    $uploadFile = $upload_data['file_name'] ;
+                $upload_data = $this->upload->data();
+                $uploadFile = $upload_data['file_name'];
+            } else {
+                // Jika tidak ada file yang diunggah baru, gunakan file sebelumnya
+                $uploadFile = $this->input->post('file_lama');
             }
-        
+    
+            // Dapatkan data dari form
+            $nama_kegiatan = $this->input->post('nama_kegiatan');
+            $aktivitas_kegiatan = $this->input->post('aktivitas_kegiatan');
+            $tanggal_kegiatan = $this->input->post('tanggal_kegiatan');
+            $lokasi_kegiatan = $this->input->post('lokasi_kegiatan');
+            $penanggung_jawab = $this->input->post('penanggung_jawab');
+            $kategori_kegiatan = $this->input->post('kategori');
+            $provinsi = $this->input->post('provinsi');
+            $deskripsi_kegiatan = $this->input->post('deskripsi_kegiatan');
+    
             // Simpan perubahan ke database
-            $this->m_daftarkegiatan->updateKegiatan($id, $nama_kegiatan, $aktivitas_kegiatan,$tanggal_kegiatan, $lokasi_kegiatan, $penanggung_jawab,$kategori_kegiatan, $provinsi ,$deskripsi_kegiatan, $uploadFile);
-        
+            $this->m_daftarkegiatan->updateKegiatan($id, $nama_kegiatan, $aktivitas_kegiatan, $tanggal_kegiatan, $lokasi_kegiatan, $penanggung_jawab, $kategori_kegiatan, $provinsi, $deskripsi_kegiatan, $uploadFile);
+    
             // Arahkan kembali ke halaman daftar kegiatan
             redirect('Kegiatan');
+        }
     }
-
+    
     public function detailkeg($id) {
        
         $data['kegiatan'] = $this->m_daftarkegiatan->getKegiatanById($id);

@@ -58,7 +58,7 @@
                             <select class="form-select" id="kategori" name="kategori"
                                 aria-describedby="basic-addon1"  required>
                                 <option value="">Pilih Kategori</option>
-                                <option value="Perhutana">Perhutana</option>
+                                <option value="Perhutanan">Perhutanan</option>
                                 <option value="Perairan">Perairan</option>
                                 <option value="Bersih-Bersih">Bersih-Bersih</option>
                                 <option value="Daur Ulang">Daur Ulang</option>
