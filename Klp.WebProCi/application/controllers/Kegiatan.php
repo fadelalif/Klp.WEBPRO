@@ -107,7 +107,7 @@ class Kegiatan extends CI_Controller {
                     $deskripsi_kegiatan = $this->input->post('deskripsi_kegiatan');
                     $ketentuan = $this->input->post('ketentuan');
                     $uploadFile = $upload_data['file_name'] ;
-            // }
+            }
         
             // Simpan perubahan ke database
             $this->m_daftarkegiatan->updateKegiatan($id, $nama_kegiatan, $aktivitas_kegiatan,$tanggal_kegiatan, $batas_daftar, $lokasi_kegiatan, $penanggung_jawab,$kategori_kegiatan, $provinsi ,$deskripsi_kegiatan,$ketentuan, $uploadFile);
