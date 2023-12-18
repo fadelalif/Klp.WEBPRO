@@ -40,11 +40,13 @@ class Kegiatan extends CI_Controller {
                 'nama_kegiatan' => $this->input->post('nama_kegiatan'),
                 'aktivitas_kegiatan' => $this->input->post('aktivitas_kegiatan'),
                 'tanggal_kegiatan' => $this->input->post('tanggal_kegiatan'),
+                'batas_daftar' => $this->input->post('batas_daftar'),
                 'lokasi_kegiatan' => $this->input->post('lokasi_kegiatan'),
                 'penanggung_jawab' => $this->input->post('penanggung_jawab'),
                 'kategori' => $this->input->post('kategori'),
                 'provinsi' => $this->input->post('provinsi'),
                 'deskripsi_kegiatan'=> $this->input->post('deskripsi_kegiatan'),
+                'ketentuan'=> $this->input->post('ketentuan'),
                 'uploadFile' => $upload_data['file_name']  // Nama file yang diunggah
                 );
 
@@ -93,16 +95,18 @@ class Kegiatan extends CI_Controller {
                     $nama_kegiatan = $this->input->post('nama_kegiatan');
                     $aktivitas_kegiatan = $this->input->post('aktivitas_kegiatan');
                     $tanggal_kegiatan = $this->input->post('tanggal_kegiatan');
+                    $batas_daftar = $this->input->post('batas_daftar');
                     $lokasi_kegiatan = $this->input->post('lokasi_kegiatan');
                     $penanggung_jawab = $this->input->post('penanggung_jawab');
                     $kategori_kegiatan = $this->input->post('kategori');
                     $provinsi = $this->input->post('provinsi');
                     $deskripsi_kegiatan = $this->input->post('deskripsi_kegiatan');
+                    $ketentuan = $this->input->post('ketentuan');
                     $uploadFile = $upload_data['file_name'] ;
             // }
         
             // Simpan perubahan ke database
-            $this->m_daftarkegiatan->updateKegiatan($id, $nama_kegiatan, $aktivitas_kegiatan,$tanggal_kegiatan, $lokasi_kegiatan, $penanggung_jawab,$kategori_kegiatan, $provinsi ,$deskripsi_kegiatan, $uploadFile);
+            $this->m_daftarkegiatan->updateKegiatan($id, $nama_kegiatan, $aktivitas_kegiatan,$tanggal_kegiatan, $batas_daftar, $lokasi_kegiatan, $penanggung_jawab,$kategori_kegiatan, $provinsi ,$deskripsi_kegiatan,$ketentuan, $uploadFile);
         
             // Arahkan kembali ke halaman daftar kegiatan
             redirect('Kegiatan');

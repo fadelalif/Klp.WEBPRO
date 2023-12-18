@@ -19,7 +19,7 @@
   <div>
     <?php include 'application/views/navLogin.php'; ?>
   </div>
-  <section id="cardKegiatan" style="position: relative;padding-top: 75px;">
+  <section id="detailKegiatan" style="position: relative;padding-top: 75px;">
     <div class="container-fluid">
       <div class="row" style="padding:20px 122px;">
         <div class="col-md-12">
@@ -30,43 +30,55 @@
             alt="" style="width: 100%; height: auto; max-width: 100%; flex-shrink: 0;" />
         </div>
       </div>
+      <div class="row" style="padding:0px 122px;">
+        <div class="col-md-12">
+          <h2 style="font-size: 20px; ">Kategori: <span style="color:#00897b;">
+              <?= $kegiatan->kategori ?>
+          </h2>
+        </div>
+      </div>
       <div class="row" style="padding:20px 122px; ">
-        <div class="col-md-12" style="background-color:#00897B;">
-          <h2 style="padding-top:19px; color:#fff ">Oleh <span style=";">Karawang Peduli</h2>
-          <h4 style="padding-top:37px; color:#fff">Deskripsi</h4>
-          <p style="width: 100%;">
-            <?= $kegiatan->deskripsi_kegiatan ?>
-          </p>
-          <h4 style="padding-top:37px;color:#fff">Aktivitas</h4>
+        <div class="col-md-12" style="background-color:#DADADA;">
+          <h2 style="font-size:25px;">Oleh <span style="color:#00897b;">Karawang Peduli</h2>
+          <h3 style="padding-top:15px;">Aktivitas</h3>
           <p style="width: 100%;">
             <?= $kegiatan->aktivitas_kegiatan ?>
           </p>
-          <h4 style="padding-top:37px;color:#fff">Lokasi</h4>
+          <h3 style="padding-top:10px;">Deskripsi</h3>
           <p style="width: 100%;">
-            <?= $kegiatan->lokasi_kegiatan ?>
+            <?= $kegiatan->deskripsi_kegiatan ?>
           </p>
-          <h4 style="padding-top:37px;color:#fff">Tanggal Kegiatan</h4>
+          <h3 style="padding-top:10px;">Ketentuan</h3>
           <p style="width: 100%;">
-            <?= $kegiatan->tanggal_kegiatan ?>
-          </p>
-          <h3 style="padding-top:37px; color:#fff">Ketentuan</h3>
-          <p style="width: 100%;">
-          <ul>
-            <li>Pemuda dan pemudi aktif usia 17-24 tahun</li>
-            <li>Berkewarganegaraan Indonesia</li>
-            <li>Sehat Jasmani dan rohani</li>
-            <li>Berdomisili di Bandung lebih diutamakan</li>
-            <li>Memiliki minat dan kepedulian terhadap isu lingkungan di Indonesia dan skala global</li>
-            <li>Memiliki social media dan aktif menggunakan social media untuk gerakan perubahan yang positif</li>
-          </ul>
+            <?= $kegiatan->ketentuan ?>
           </p>
         </div>
       </div>
       <div class="row" style="padding:20px 122px; padding-right:122px;">
-        <div class="col-md-6" id="masaRegis">
-          <h4 style="padding-top:15px;color:#00897B;">14 September - 30 September 2020</h4>
-          <h4 style="color:#00897B;">Karawang</h4>
-          <h4 style="color:#00897B;">Batas registrasi 30 September 2020</h4>
+        <div class="col-md-6" id="masaRegis" style="background-color:#DADADA">
+          <h4 style="padding-top:15px;"><i class="fa-solid fa-calendar-days"
+              style="min-height: 41.667px; color: #00897b; margin-right:10px;"></i>Tanggal Kegiatan: <span
+              style="font-weight: 600;">
+              <?php
+              // Mengonversi tanggal 
+              $formattedDate = date('d F Y', strtotime($kegiatan->tanggal_kegiatan));
+              echo $formattedDate;
+              ?>
+          </h4>
+          <h4><i class="fa-solid fa-location-dot"
+              style="min-height: 41.667px; color: #00897b; margin-right:10px;"></i>Lokasi Kegiatan: <span
+              style="font-weight: 600;">
+              <?= $kegiatan->lokasi_kegiatan ?>
+          </h4>
+          <h4 style="color: red;"><i class="fa-solid fa-triangle-exclamation"
+              style="min-height: 41.667px; color: #F50320; margin-right:10px;"></i>Batas Registrasi: <span
+              style="font-weight: 600;">
+              <?php
+              // Mengonversi tanggal 
+              $formattedDate = date('d F Y', strtotime($kegiatan->batas_daftar));
+              echo $formattedDate;
+              ?>
+          </h4>
         </div>
         <div class="col-md-2"></div>
         <div class="col-md-2" style="">

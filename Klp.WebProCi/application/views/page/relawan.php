@@ -190,7 +190,7 @@
   <!-- news -->
   <section>
     <div class="container-fluid">
-      <h1 style="color:#00897b;">Berita</h1>
+      <h1 style="padding-left:10px;">Berita</h1>
       <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
         <?php include 'application/views/cardBerita.php'; ?>
       </div>

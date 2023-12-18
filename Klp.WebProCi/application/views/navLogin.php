@@ -20,7 +20,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item mx-4">
-            <a class="nav-link active" aria-current="page" href="<?= base_url() ?>index.php/Dashboard">Utama</a>
+            <a class="nav-link" aria-current="page" href="<?= base_url() ?>index.php/Dashboard">Utama</a>
           </li>
           <li class="nav-item dropdown mx-4">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

@@ -5,6 +5,7 @@
 	font-style: normal;
 	font-weight: 700;
 	line-height: 173.523%; /* 69.409px */
+	padding: 0px 0px 20px 0px;
 }
 
 #detailKegiatan h2 {
@@ -19,20 +20,20 @@
 #detailKegiatan h3 {
 	color: #222;
 	font-family: Arial;
-	font-size: 40px;
+	font-size: 35px;
 	font-style: normal;
-	font-weight: 700;
 	line-height: 173.523%; /* 69.409px */
+	font-weight: 700;
 }
 
 #detailKegiatan h4 {
 	color: var(--Text-primer-color, #222);
 	text-align: justify;
 	font-family: Arial;
-	font-size: 32px;
+	font-size: 24px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: normal;
+
 }
 
 #detailKegiatan .bergabung {
