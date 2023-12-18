@@ -10,7 +10,9 @@ class m_logIn extends CI_Model {
     public function check_credentials($username, $password)
     {
     // Fetch user from m_registerRelawan table based on username
-    $user = $this->db->get_where('register_relawan', array('username' => $username))->row();
+    $this->db->where('username', $username);
+    $this->db->or_where('email', $username);
+    $user = $this->db->get('register_relawan')->row();
     
     if ($user && password_verify($password, $user->password)) {
         // Password is correct for a user
