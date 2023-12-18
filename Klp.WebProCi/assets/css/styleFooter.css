@@ -1,0 +1,23 @@
+footer {
+	background-color: #00897b;
+}
+
+.a-footer:hover {
+	color: #00897b;
+	background-color: #fff;
+	text-decoration: underline;
+	border-radius: 5px;
+}
+
+.a-footer {
+	color: #fff;
+}
+
+.footer-links {
+	color: #fff;
+	font-family: Arial;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 173.523%; /* 34.705px */
+}

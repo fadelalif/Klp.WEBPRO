@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+  }
+  
+  body{
+    background-color: #ffff;
+  }
+  
+  nav{
+    display: flex;
+    flex-shrink: 0;
+    background-color: #00897B;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+  
+  .nav-link {
+    color: #fff;
+    font-family: Arial;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .navbar-nav a {
+    color: white !important;
+  }
+
+  nav img{
+    width: 220px;
+    flex-shrink: 0;
+  }
+  
+  .login {
+    width: 133px;
+    height: 52px;
+    color: white;
+    border-radius: 16px;
+    background: #00897b;
+    border: 3px solid #fff;
+    margin-right: 10px;
+  }
+
+  .daftar{
+    width: 133px;
+    height: 52px;
+    color: white;
+    border-radius: 16px;
+    background: #00897b;
+    border: 3px solid #fff;
+  }
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background-color: #00897b;
+  }
+  .hero-tagline h1 {
+    width: 539px;
+    color: aliceblue;
+    color: #fff;
+    font-family: Arial;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 173.523%;
+  }
+  .hero-tagline p {
+    width: 515px;
+    color: #fff;
+    font-family: Arial;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 173.523%; /* 26.028px */
+  }
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.download-button1,
+.download-button2 {
+  display: inline-block;
+  margin-right: 10px;
+  border: none; 
+  background: none; 
+  padding: 0;
+}
+  
+  #layanan {
+    padding: 100px 0 100px 0;
+    background-color: #fff;
+  }
+  
+  .Daftar {
+    width: 342.967px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #00897b;
+    border: 3px solid #00897b;
+    color: #fff;
+    text-align: center;
+    font-family: Arial;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .layanan-tagline h1 {
+    width: 532.169px;
+    color: #000;
+    font-family: Arial;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 173.523%; /* 78.085px */
+  }
+  .layanan-tagline p {
+    width: 525.169px;
+    color: #000;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 173.523%; /* 34.705px */
+  }
+
+  footer{
+    background-color: #00897B;
+  }
+      
+  a:hover.footer-link{
+    text-decoration: underline;
+  }
+
+  img{
+    width: 50%;
+  }
+
+  .a-footer{
+    color: #fff;
+  }

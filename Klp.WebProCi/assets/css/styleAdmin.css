@@ -1,0 +1,42 @@
+.table-container {
+    border: 2px solid #ddd; /* Set your desired border style and color */
+    border-radius: 10px;
+    padding: 20px; /* Set your desired padding */
+    margin-top: 20px; /* Set your desired margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tombol_edit,
+.tombol_hapus {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 3px solid #fff;
+    font-family: Arial;
+    font-size: 15px;
+    font-style: normal;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.tombol_edit {
+    color: #fff;
+    background-color: blue;
+}
+
+.tombol_edit:hover {
+    border: 3px solid blue;
+    color: blue;
+    background-color: #fff;
+}
+
+.tombol_hapus {
+    color: #fff;
+    background-color: red;
+}
+
+.tombol_hapus:hover {
+    border: 3px solid red;
+    color: red;
+    background-color: #fff;
+}

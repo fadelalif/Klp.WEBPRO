@@ -1,0 +1,186 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+#btnDash{
+	border: 3px solid #fff;
+	color: #fff;
+	background-color: #00897b;
+
+}
+
+#btnDash:hover{
+	color: #00897b;
+	border-color: #00897b;
+	background-color: #fff;
+
+}
+
+#btnKegiatan{
+	border: 3px solid #00897b;
+	color: #00897b;
+	background-color: #fff;
+
+}
+
+#btnKegiatan:hover{
+	color: #fff;
+	border-color: #fff;
+	background-color: #00897b;
+
+}
+
+.pfitur1 {
+	color: #fff;
+	text-align: center;
+	font-family: Arial;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 173.523%; /* 41.645px */
+	margin-bottom: 144px;
+	margin-left: 11px;
+	margin-right: 11px;
+	margin-top: 68px;
+}
+
+.hfitur2,
+.hfitur3,
+.hfitur4 {
+	color: #222;
+	text-align: center;
+	font-family: Arial;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 173.523%; /* 41.645px */
+	margin-bottom: 207px;
+	margin-top: 20px;
+}
+.pfitur2,
+.pfitur3,
+.pfitur4 {
+	color: #222;
+	text-align: center;
+	font-family: Arial;
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 173.523%; /* 29.499px */
+	margin-bottom: 144px;
+	margin-left: 11px;
+	margin-right: 11px;
+	margin-top: 1px;
+}
+
+.msgDash h1 {
+	color: #222;
+	text-align: center;
+	font-family: Arial;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 173.523%; /* 83.291px */
+}
+
+.msgDescDash p {
+	color: #222;
+	text-align: center;
+	font-family: Arial;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 173.523%; /* 41.645px */
+}
+
+#cardKegiatan .headerCont {
+	color: #222;
+	font-family: Arial;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 173.523%; /* 69.409px */
+}
+
+#cardBerita .headerCont {
+	color: #222;
+	font-family: Arial;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 173.523%; /* 69.409px */
+}
+
+body {
+	background-color: #ffff;
+}
+
+.container {
+	margin-left: 0;
+}
+
+#headDash {
+	position: relative;
+}
+
+.headerDash {
+	color: #fff;
+	font-family: Arial;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 173.523%; /* 83.291px */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.headerDescDash {
+	color: #fff;
+	text-align: center;
+	font-family: Arial;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 173.523%; /* 41.645px */
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.login {
+	width: 133px;
+	height: 52px;
+	color: white;
+	border-radius: 16px;
+	background: #00897b;
+	border: 3px solid #fff;
+	margin-right: 10px;
+}
+
+#card {
+	padding-top: 10px;
+	background-color: #00897b;
+	color: #fff;
+	font-weight: bold;
+}
+
+#cardKat .navLink.active {
+	background-color: #a3a3a3;
+	color: #00897b;
+}
+
+.img-dpn {
+	width: 100px;
+}
+
+.carousel-item{
+	height: 40rem;
+}
+  
+
+
