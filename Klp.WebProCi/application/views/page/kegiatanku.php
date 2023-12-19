@@ -22,7 +22,7 @@
         <nav class="nav navProf nav-pills nav-fill container-expand " style="padding-top:99px;">
             <a class="nav-item nav-link navProfButt " href="<?= base_url() ?>index.php/Profile">
                 <i class="fa-regular fa-circle-user" style="color: #00897b; margin-right:5px;"></i>Profil</a>
-            <a class="nav-item nav-link navProfButt active" href="<?= base_url() ?>index.php/Kegiatanku">
+            <a class="nav-item nav-link navProfButt active" href="<?= base_url() ?>index.php/Kegiatanku" style="color: #00897b;">
                 <i class="fa-regular fa-newspaper" style="color: #00897b; margin-right:5px;"></i>Kegiatanku</a>
             <a class="nav-item nav-link navProfButt" href="<?= base_url() ?>index.php/Notifikasi">
                 <i class="fa-regular fa-bell" style="color: #00897b; margin-right:5px;"></i>Notifikasi</a>

@@ -25,5 +25,4 @@ class m_komunitas extends CI_Model {
         return $query->row();
     }
 
-    
 }

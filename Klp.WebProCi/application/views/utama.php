@@ -60,7 +60,9 @@
               menjalakan aksi cinta bumi melalui aplikasi yang
               kembangkan
             </p>
+            <a href="<?= base_url() ?>index.php/Register">
             <button class="Daftar">Daftar</button>
+            </a>
           </div>
         </div>
       </div>

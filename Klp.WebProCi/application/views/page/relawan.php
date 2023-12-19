@@ -56,9 +56,9 @@
   <!-- HEADER  -->
   <!-- FITUR  -->
   <section id="fitur">
-    <div class="container-fluid">
-      <div class="row row-cols-1 row-cols-md-4 g-4 " style="padding: 25px;">
-        <div class="col text-center" style="padding: 10px;">
+    <div class="container">
+      <div class="row" style="padding: 25px;">
+        <div class="col-md-3 text-center">
           <div class="card h-100" style="width: 305px; height: 422px; border-radius: 20px; background: #00897B;">
             <div class="card-body">
               <p class="card-text pfitur1">Kami menghubungkan anda dengan komunitas, dengan itu bentuk nyata
@@ -71,7 +71,7 @@
             </div>
           </div>
         </div>
-        <div class="col text-center" style="padding: 10px;">
+        <div class="col-md-3 text-center">
           <div class="card h-100"
             style="width: 305px; height: 422px; border-radius: 20px; border: 2px solid #00897B; background: #ffff;">
             <div class="card-body">
@@ -87,7 +87,7 @@
             </div>
           </div>
         </div>
-        <div class="col text-center" style="padding: 10px;">
+        <div class="col-md-3 text-center">
           <div class="card h-100"
             style="width: 305px; height: 422px; border-radius: 20px; border: 2px solid #00897B; background: #ffff;">
             <div class="card-body">
@@ -104,7 +104,7 @@
             </div>
           </div>
         </div>
-        <div class="col text-center" style="padding: 10px;">
+        <div class="col-md-3 text-center">
           <div class="card h-100"
             style="width: 305px; height: 422px; border-radius: 20px; border: 2px solid #00897B; background: #ffff;">
             <div class="card-body">
@@ -190,7 +190,7 @@
   <!-- news -->
   <section>
     <div class="container-fluid">
-      <h1 style="color:#00897b;">Berita</h1>
+      <h1 style="padding-left:10px;">Berita</h1>
       <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
         <?php include 'application/views/cardBerita.php'; ?>
       </div>

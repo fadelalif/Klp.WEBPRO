@@ -36,7 +36,7 @@ class RegisterKomunitas extends CI_Controller {
           $data = array(
           'nama_komunitas' => $this->input->post('nama_komunitas'),
           'email_komunitas' => $this->input->post('email_komunitas'),
-          'password' => $this->input->post('password'),
+          'password' => password_hash($this->input->post('password'), PASSWORD_BCRYPT),
           'nomorTlp_komunitas' => $this->input->post('nomorTlp_komunitas'),
           'penanggung_jawab' => $this->input->post('penanggung_jawab'),
           'kategori_komunitas' => $this->input->post('kategori_komunitas'),

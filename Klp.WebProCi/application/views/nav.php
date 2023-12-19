@@ -48,17 +48,17 @@
             <a class="nav-link" href="#">Berita</a>
           </li>
         </ul>
-      </div>
-    </div>
-    <div class="btn-link" style="margin:10px; width: 138px;">
+        <div class="btn-link" style="margin:10px; width: 138px;">
       <a href="<?= base_url() ?>index.php/Login">
         <button type="button" class="btn btn-outline-light btn-lg">Masuk</button>
       </a>
     </div>
-    <div class="btn-link">
+    <div class="btn-link" style="margin:10px; width: 138px;">
       <a href="<?= base_url() ?>index.php/Register">
         <button type="button" class="btn btn-outline-light btn-lg">Daftar</button>
       </a>
+    </div>
+      </div>
     </div>
   </nav>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
