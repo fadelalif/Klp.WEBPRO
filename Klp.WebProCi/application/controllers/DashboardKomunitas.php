@@ -17,7 +17,7 @@ class DashboardKomunitas extends CI_Controller {
     public function detail($id) {
       $data['kegiatan'] = $this->m_daftarkegiatan->getKegiatanById($id);
       if ($data['kegiatan']) {
-          $this->load->view('komunitas/detailKegiatan', $data);
+          $this->load->view('page/detailKegiatan', $data);
       } else {
           // Kegiatan tidak ditemukan, arahkan kembali atau tampilkan pesan kesalahan
           redirect('DashboardKomunitas');

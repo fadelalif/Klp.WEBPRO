@@ -23,21 +23,17 @@
     <div class="row w-auto h-auto pb-5 pt-5">
       <div class="col-md-8 pe-2 mt-5">
         <div class="img-fluid mt-5 text-center pt-5">
-          <img src="<?= base_url() ?>assets/img/Relawan.png" class="img-fluid rounded-4" style="max-width: 800px;" alt="Foto_Content" />
+          <img src="<?= base_url() ?>uploads/<?= isset($kegiatan->uploadFile) ? $kegiatan->uploadFile : '' ?>" class="img-fluid rounded-4" style="max-width: 800px;" alt="Foto_Content" />
         </div>
         <div class="w-auto h-min ms-5 ps-3 mt-5 ">
             <h5>DESKRIPSI KEGIATAN</h5>
             <div class=>
-              <p>Teens Go Green Indonesia membuka pendaftaran Volunteers bagi kamu yang ingin terlibat
-                menjadi bagian dari
-                Teens Go Green Indonesia. Volunteers yang terdaftar nantinya akan dilibatkan dalam program Teens Go Green
-                Indonesia diantaranya #DigitalCampaigner dan Kelas Belajar Lingkungan atau menjadi bagian dari Volunteers
-                Teens Go Green Indonesia untuk terlibat di banyak project lingkungan setelah pandemi berakhir.</p>
+              <p><?= $kegiatan->deskripsi_kegiatan?></p>
             </div>
             <br>  
 
             <h5>Aktivitas</h5>
-            <p>-</p>
+            <p><?= $kegiatan->aktivitas_kegiatan ?></p>
             <br>
 
             <h5>KETENTUAN</h5>
@@ -54,12 +50,12 @@
       <div class="col-6 col-md-4 h-min mt-5 pt-5 pe-5 ">
         <div class="card border-white shadow p-3 mb-5 bg-body-tertiary rounded-4 bg-white mt-4 ">
           <div class="mb-3">
-          <h3>Relawan Karawang Peduli</h3>
+          <h3><?= $kegiatan->nama_kegiatan ?><</h3>
           </div>
           <p><i class="fa-solid fa-calendar-days"
-              style="color: #00897b; margin-right:10px;"></i>14 September - 30 September 2020</p>
+              style="color: #00897b; margin-right:10px;"></i><?= $kegiatan->tanggal_kegiatan ?></p>
           <p><i class="fa-solid fa-location-dot"
-              style="color: #00897b; margin-right:10px;"></i>Karawang</9>
+              style="color: #00897b; margin-right:10px;"></i><?= $kegiatan->lokasi_kegiatan ?></p>
           <p style="color: #F50320;"><i class="fa-solid fa-triangle-exclamation"
               style="color: #F50320; margin-right:10px;"></i>Batas registrasi 30 September 2020
           <p>
@@ -79,14 +75,18 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    <form method="POST" action="<?php echo base_url('/index.php/DbRelawan/insert'); ?>"> 
+                    <form method="POST" enctype="multipart/form-data" role="form" action="<?php echo site_url('/DbRelawan/insert'); ?>"> 
                       <div class="form group">
                         <label>Nama Kegiatan</label>
                         <input type="Name" name="nama" class="form-control"placeholder="Teens Go Green Volunteers"/>
                       </div>
                       <div class="form-group">
+                        <label>Nama</label>
+                        <input type="text"name="nama"class="form-control"placeholder="Nama" aria-label="Nama" aria-describedby="basic-addon1" />
+                      </div>
+                      <div class="form-group">
                         <label>Email</label>
-                        <input type="email"name="email"class="form-control"/>
+                        <input type="text"name="email"class="form-control"placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" />
                       </div>
                       <div class="form-group">
                         <label class="form-label">Nomor Telepon</label>

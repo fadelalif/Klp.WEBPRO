@@ -1,6 +1,6 @@
 <?php
 
-<<<<<<< HEAD
+
 // class m_daftarkegiatan extends CI_Model {
 //     public function tampilData() {
 //         // Ambil data nama_kegiatan dan judul_kegiatan dari tabel kegiatan
@@ -40,7 +40,7 @@
 //         $this->db->where('nama_kegiatan', $nama_kegiatan);
 //         return $this->db->delete('table_kegiatan');
 //     }
-=======
+
 class m_daftarkegiatan extends CI_Model {
 
     public function __construct() {
@@ -87,6 +87,4 @@ class m_daftarkegiatan extends CI_Model {
         $this->db->where('id', $id);
         return $this->db->delete('kegiatan');
     }
->>>>>>> origin/main
-    
-// }
+}
