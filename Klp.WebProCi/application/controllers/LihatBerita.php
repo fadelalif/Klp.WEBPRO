@@ -35,12 +35,4 @@ class LihatBerita extends CI_Controller
 
 		$this->load->view('page/lihatBerita', $data);
 	}
-
-	public function index1()
-	{
-
-		$data['berita'] = $this->newsmodel->getNews();
-
-		$this->load->view('page/cariBerita', $data);
-	}
 }

@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg position-fixed w-100">
+    <nav class="navbar navNotLogin navbar-expand-lg position-fixed w-100">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="<?= base_url() ?>assets/img/relawain logo 1.png" alt="" />
@@ -23,16 +23,34 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav" style="margin:10px; width: 138px;">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item mx-4">
-                        <a class="nav-link active" aria-current="page" href="#">Utama</a>
+                        <a class="nav-link active" aria-current="page" href="<?= base_url() ?>index.php/Utama">Utama</a>
                     </li>
-                    <li class="nav-item mx-4">
-                        <a class="nav-link" href="#">Tentang</a>
+                    <li class="nav-item dropdown mx-4">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Tentang
+                        </a>
+                        <ul class="dropdown-menu navDropdownMenuLink">
+                            <li><a id="navDropdownMenuLink" class="dropdown-item  "
+                                    href="<?= base_url() ?>index.php/TentangRelawanin">Tentang Relawanin</a></li>
+                            <li><a id="navDropdownMenuLink" class="dropdown-item" href="#">Visi dan Misi</a></li>
+                            <li><a id="navDropdownMenuLink" class="dropdown-item" href="#">Hubungi Kami</a></li>
+                            <li><a id="navDropdownMenuLink" class="dropdown-item" href="#">Donasi</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item mx-4">
-                        <a class="nav-link" href="#">Fitur</a>
+                    <li class="nav-item dropdown mx-4">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Fitur
+                        </a>
+                        <ul class="dropdown-menu navDropdownMenuLink">
+                            <li><a id="navDropdownMenuLink" class="dropdown-item  " href="#">Cari Kegiatan</a></li>
+                            <li><a id="navDropdownMenuLink" class="dropdown-item" href="#">Mengadakan Kegiatan</a></li>
+                            <li><a id="navDropdownMenuLink" class="dropdown-item" href="#">Panduan</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item mx-4">
                         <a class="nav-link" href="#">Berita</a>
@@ -40,9 +58,18 @@
                 </ul>
             </div>
         </div>
+        <div class="btn-link" style="margin:10px; width: 138px;">
+            <a href="<?= base_url() ?>index.php/Login">
+                <button type="button" class="btn btn-outline-light btn-lg">Masuk</button>
+            </a>
+        </div>
+        <div class="btn-link active">
+            <a href="<?= base_url() ?>index.php/Register">
+                <button type="button" class="btn btn-outline-light btn-lg">Daftar</button>
+            </a>
+        </div>
     </nav>
-
-    <section id="loginPage" style="padding-top: 130px;">
+    <section id="loginPage" style="padding-top: 160px;">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
@@ -64,11 +91,11 @@
                                 aria-describedby="basic-addon1" />
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <input type="text" class="form-control" placeholder="Kata Sandi" aria-label="Kata Sandi"
+                            <input type="password" class="form-control" placeholder="Kata Sandi" aria-label="Kata Sandi"
                                 aria-describedby="basic-addon1" />
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <input type="text" class="form-control" placeholder="Konfirmasi Kata Sandi"
+                            <input type="password" class="form-control" placeholder="Konfirmasi Kata Sandi"
                                 aria-label="Konfirmasi Kata Sandi" aria-describedby="basic-addon1" />
                         </div>
                         <h2 class="AkunHead fw-semibold " style="margin-left: 465px;">
@@ -140,7 +167,8 @@
                                 <option value="Papua Barat">Papua Barat</option>
                             </select>
                         </div>
-                        <select class="form-select input-group mb-4 mx-auto " style="max-width: 568px" id="kabupaten" name="kabupaten" style="display: none;">
+                        <select class="form-select input-group mb-4 mx-auto " style="max-width: 568px" id="kabupaten"
+                            name="kabupaten" style="display: none;">
                             <option value="">Pilih kabupaten/kota</option>
                             <!-- Daftar kabupaten/kota sesuai dengan provinsi -->
                         </select>

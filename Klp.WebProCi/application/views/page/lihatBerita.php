@@ -54,19 +54,21 @@
 
     <main>
     <article>
-        <?php if (!empty($berita)) : ?>
-            <img src="<?= base_url() ?>assets/img/<?= $berita['gambar_berita'] ?>" style="max-width: 100%;" alt="<?= $berita['nama_berita'] ?>">
-            <h1><?= $berita['nama_berita'] ?></h1>
-            <p><?= $berita['isi_berita'] ?></p>
-        <?php else : ?>
-            <p>Artikel tidak ditemukan.</p>
-        <?php endif; ?>
+		<?php if (!empty($berita)) : ?>
+            <center>
+                <img style="max-width:100%;" src="<?= base_url() ?>uploads/avatarBerita/<?= $berita['gambar_berita'] ?>">
+            </center>
+            <div>
+                <h1><?= $berita['nama_berita'] ?></h1>
+                <p style=""><?= $berita['tanggal_berita'] ?></p>
+            </div>
+			<p><?= $berita['isi_berita'] ?></p>
+		<?php else : ?>
+			<p>Artikel tidak ditemukan.</p>
+		<?php endif; ?>
 
-        <div style="padding: 5px; background-color:green; padding-right: 10px; width: 190px">
-            <a href="<?= base_url() ?>index.php/cariBerita" class="back-btn">Kembali ke Daftar Artikel</a>
-        </div>
-    </article>
-
+		<a href="<?= base_url() ?>index.php/cariBerita" class="btn btn-small">Kembali ke Daftar Artikel</a>
+	</article>
 		
     </main>
 	

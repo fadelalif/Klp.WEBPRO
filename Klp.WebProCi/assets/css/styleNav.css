@@ -1,4 +1,4 @@
-nav {
+.navLogin, .navNotLogin {
 	max-width: 100%;
 	flex-shrink: 0;
 	background-color: #00897b;
@@ -55,6 +55,20 @@ nav img {
 	font-weight: 400;
 	line-height: normal;
 }
+
+.btn:hover {
+	border-radius: 16px;
+	border: 3px solid #00897b;
+	color: #00897b;
+	background-color: #fff;
+	font-family: Arial;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+
 .btn-link {
 	margin-right: 81px;
 }
@@ -65,4 +79,18 @@ nav img {
 	cursor: pointer; /* Mengubah kursor saat mengarah ke tombol */
 	padding: 0; /* Menghapus ruang bantalan di dalam tombol */
 	outline: none; /* Menghapus outline saat tombol aktif */
+}
+
+#navDropdownMenuLink{
+	background-color: #fff;
+	color: #00897b !important;
+}
+
+#navDropdownMenuLink:hover {
+	background-color: #00897b;
+	color: #fff !important;
+}
+
+.nav-link.active {
+	color: #A3A3A3 !important;
 }

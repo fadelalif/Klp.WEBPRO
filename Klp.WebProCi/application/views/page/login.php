@@ -17,33 +17,6 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg position-fixed w-100">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="<?= base_url() ?>assets/img/relawain logo 1.png" alt="" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav" style="margin:10px; width: 138px;">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item mx-4">
-                        <a class="nav-link active" aria-current="page" href="#">Utama</a>
-                    </li>
-                    <li class="nav-item mx-4">
-                        <a class="nav-link" href="#">Tentang</a>
-                    </li>
-                    <li class="nav-item mx-4">
-                        <a class="nav-link" href="#">Fitur</a>
-                    </li>
-                    <li class="nav-item mx-4">
-                        <a class="nav-link" href="#">Berita</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <section id="loginPage">
         <div class="container-fluid">
             <div class="row">
@@ -66,30 +39,35 @@
                         </a>
                     </div>
                     <p class="text-center mt-3" style="font-size: 16px">atau</p>
-                    <form>
+                    <form action="<?php echo site_url('Login/login'); ?>" method="post">
                         <div class="input-group mb-4 mx-auto" style="max-width: 400px">
                             <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope"
                                     style="color: #00897b"></i></span>
-                            <input type="text" class="form-control" placeholder="Email" aria-label="Username"
-                                aria-describedby="basic-addon1" />
+                            <input type="text" name="username"class="form-control" placeholder="Email" aria-label="Username"
+                                aria-describedby="basic-addon1" autocomplete="username" />
                         </div>
                         <div class="input-group mb-2 mx-auto" style="max-width: 400px">
                             <span class="input-group-text" id="basic-addon1"><i class="fas fa-lock"
                                     style="color: #00897b"></i></span>
-                            <input type="password" class="form-control" placeholder="Password" aria-label="Username"
-                                aria-describedby="basic-addon1" />
+                            <input type="password" name="password" class="form-control" placeholder="Password" aria-label="Username"
+                                aria-describedby="basic-addon1" autocomplete="current-password"/>
+                        </div>
+                        <div>
+                        <?php if ($this->session->flashdata('error')): ?>
+                        <p class="text-danger text-center"><?php echo $this->session->flashdata('error'); ?></p>
+                        <?php endif; ?>
                         </div>
                         <div class="text-center mt-3">
                             <a href="#" style="position: relative; right: -10%; color: #00897b">Lupa Password?</a>
                         </div>
 
                         <div class="mt-4" style="text-align: center">
-                            <a href="<?= base_url() ?>index.php/Dashboard" class="btn MasukBut">MASUK</a>
+                            <button type="submit" class="btn MasukBut">Masuk</button>
                         </div>
 
                         <p class="text-center mt-3" style="font-size: 16px">
                             Belum Punya Akun?
-                            <a href="#" style="color: #00897b; margin-left: 10px">Buat Akun</a>
+                            <a href="<?= base_url() ?>index.php/Register" style="color: #00897b; margin-left: 10px">Buat Akun</a>
                         </p>
                     </form>
                 </div>
