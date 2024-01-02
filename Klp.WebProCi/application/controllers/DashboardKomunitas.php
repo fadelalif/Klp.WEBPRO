@@ -25,5 +25,5 @@ class DashboardKomunitas extends CI_Controller {
           // Kegiatan tidak ditemukan, arahkan kembali atau tampilkan pesan kesalahan
           redirect('DashboardKomunitas');
       }
-  }
+    }
 }

@@ -142,12 +142,12 @@
     <div class="container-fluid" style="background-color: #ffff">
       <h1 style="padding-left:10px;">Rekomendasi</h1>
       <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
-        <?php include 'application/views/cardKegiatan.php'; ?>
+        <?php include 'application/views/cardKegiatanRelawan.php'; ?>
       </div>
     </div>
   </section>
 
-  <section id="cardKat">
+  <!-- <section id="cardKat">
     <div class="container-fluid ">
       <ul class="nav nav-tabs" id="myTabs">
         <li class="nav-item">
@@ -163,10 +163,10 @@
             aria-selected="false" style="color: #00897b;">Kategori 3</a>
         </li>
       </ul>
-    </div>
+    </div> -->
 
 
-    <div class="tab-content" id="myTabContent">
+    <!-- <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade show active" id="card1" role="tabpanel" aria-labelledby="card1-tab">
         <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
           <?php include 'application/views/cardKegiatan.php'; ?>
@@ -183,7 +183,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- news -->
   <section>

@@ -130,7 +130,7 @@
 
 
                     </form>
-                    <p class="text-center mt-3" style="font-size: 16px">
+                    <!-- <p class="text-center mt-3" style="font-size: 16px">
                         Daftar dengan
                     </p>
                     <div class="social_icons text-center">
@@ -144,7 +144,7 @@
                             <img src="<?= base_url() ?>assets/img/Facebook_f_logo_(2019) 1.png" width="30"
                                 height="30" />
                         </a>
-                    </div>
+                    </div> -->
                     <p class="text-center mt-3" style="font-size: 16px">
                         Sudah punya akun?
                         <a href="#" style="color: #00897b; margin-left: 10px">Masuk</a>
