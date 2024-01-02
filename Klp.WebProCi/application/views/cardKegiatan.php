@@ -1,4 +1,5 @@
 <?php foreach ($kegiatan as $keg): ?>
+    <?php if ($keg->user == $this->session->userdata('komunitas_id')): ?>
     <div class="col-md 4" style="padding: 5px 15px;">
         <a href="<?php echo site_url('Dashboardkomunitas/detail/' . $keg->id); ?>" style="text-decoration: none;">
             <div class="card cardKeg">
@@ -27,4 +28,5 @@
             </div>
         </a>
     </div>
+    <?php endif; ?>
 <?php endforeach; ?>

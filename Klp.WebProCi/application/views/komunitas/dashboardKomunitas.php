@@ -118,7 +118,13 @@
 
   <!-- CARD KEGIATAN -->
   <section id="cardKat">
-    <ul class="nav nav-tabs" id="myTabs">
+    <div class="container-fluid;">
+      <h1 style="padding-left: 25px; color:#00897b;">Aktivitas Anda</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
+        <?php include 'application/views/cardKegiatan.php'; ?>
+      </div>
+    </div>
+    <!-- <ul class="nav nav-tabs" id="myTabs">
     <li class="nav-item">
       <a class="nav-link active" id="card1-tab" data-bs-toggle="tab" href="#card1" role="tab" aria-controls="card1" aria-selected="true" style="color: #00897b;">Perhutanan</a>
     </li>
@@ -146,7 +152,7 @@
         <?php include 'application/views/cardKegiatan.php'; ?>
       </div>
     </div>
-  </div>
+  </div> -->
 
   </section>
 

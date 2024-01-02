@@ -4,12 +4,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Kegiatan extends CI_Controller {
     function __construct(){
         parent::__construct();
+        $this->load->model('m_logIn');
         $this->load->model('m_daftarkegiatan');
         $this->load->library('form_validation');
-
+        $this->load->library('session');
     }
 
     public function tambah() {
+        $user_id = $this->session->userdata('komunitas_id');
         $this->form_validation->set_rules('nama_kegiatan', 'Nama Kegiatan', 'required');
         $this->form_validation->set_rules('aktivitas_kegiatan', 'Aktivitas Kegiatan', 'required');
         $this->form_validation->set_rules('tanggal_kegiatan', 'Tanggal Kegiatan', 'required');
@@ -27,7 +29,6 @@ class Kegiatan extends CI_Controller {
 
             $this->load->library('upload', $config);
             $this->upload->initialize($config);
-
             if (!$this->upload->do_upload('fileUpload')) {
                 // Jika upload file gagal, tampilkan pesan error
                 $error = array('error' => $this->upload->display_errors());
@@ -47,7 +48,8 @@ class Kegiatan extends CI_Controller {
                 'provinsi' => $this->input->post('provinsi'),
                 'deskripsi_kegiatan'=> $this->input->post('deskripsi_kegiatan'),
                 'ketentuan'=> $this->input->post('ketentuan'),
-                'uploadFile' => $upload_data['file_name']  // Nama file yang diunggah
+                'uploadFile' => $upload_data['file_name'],  // Nama file yang diunggah
+                'user' => $user_id
                 );
 
                 // Simpan data ke database
@@ -60,9 +62,9 @@ class Kegiatan extends CI_Controller {
     }
     
     public function index() {
-
-        $data['kegiatan'] = $this->m_daftarkegiatan->tampilData();
-		$this->load->view('komunitas/previewkegiatan',$data);
+    $user_id = $this->session->userdata('user_id');
+    $data['kegiatan'] = $this->m_daftarkegiatan->tampilDataByUserId($user_id);
+    $this->load->view('komunitas/previewkegiatan', $data);
     }
 
     public function edit($id) {

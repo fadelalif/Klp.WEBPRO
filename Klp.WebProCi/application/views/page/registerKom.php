@@ -28,7 +28,7 @@
                         Daftar
                     </h1>
                     <form action="<?php echo site_url('RegisterKomunitas/tambah'); ?>" method="post" enctype="multipart/form-data" role="form">
-                        <h2 class="AkunHead fw-semibold " style="margin-left: 465px;">
+                        <h2 class="AkunHead fw-semibold " style="margin-left: 465px;margin-top: 50px;">
                             Akun
                         </h2>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">

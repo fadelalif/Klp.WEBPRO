@@ -21,9 +21,17 @@ class Login extends CI_Controller {
         $role = $this->m_logIn->check_credentials($username, $password);
 
         if ($role == "user") {
+            $user_id = $this->m_logIn->getUserId($username);
+            // Set user ID in session
+            $this->session->set_userdata('user_id', $user_id);
+            // echo $user_id;
             // Successful login for a user
             redirect('Dashboard');
         } elseif ($role == "komunitas") {
+            $komunitas_id = $this->m_logIn->getKomunitasId($username);
+            // Set komunitas ID in session
+            $this->session->set_userdata('komunitas_id', $komunitas_id);
+            // echo $komunitas_id;
             // Successful login for a komunitas
             redirect('DashboardKomunitas');
         } else {

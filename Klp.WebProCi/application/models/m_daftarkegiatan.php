@@ -48,6 +48,11 @@ class m_daftarkegiatan extends CI_Model {
         $this->db->where('id', $id);
         return $this->db->delete('kegiatan');
     }
+
+    public function tampilDataByUserId($user_id) {
+        $this->db->where('user', $user_id);
+        return $this->db->get('kegiatan')->result();
+    }
     
     
     

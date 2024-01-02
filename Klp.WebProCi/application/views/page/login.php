@@ -24,7 +24,7 @@
                     <h1 class="MasukHead fw-semibold text-center ">
                         Masuk
                     </h1>
-                    <p class="text-center" style="font-size: 16px">Masuk dengan</p>
+                    <!-- <p class="text-center" style="font-size: 16px">Masuk dengan</p>
 
                     <div class="social_icons text-center">
                         <a href="#" class="icon" style="color: #00897b">
@@ -37,10 +37,10 @@
                             <img src="<?= base_url() ?>assets/img/Facebook_f_logo_(2019) 1.png" width="30"
                                 height="30" />
                         </a>
-                    </div>
-                    <p class="text-center mt-3" style="font-size: 16px">atau</p>
+                    </div> -->
+                    <!-- <p class="text-center mt-3" style="font-size: 16px">atau</p> -->
                     <form action="<?php echo site_url('Login/login'); ?>" method="post">
-                        <div class="input-group mb-4 mx-auto" style="max-width: 400px">
+                        <div class="input-group mb-4 mx-auto" style="max-width: 400px; margin-top: 50px;">
                             <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope"
                                     style="color: #00897b"></i></span>
                             <input type="text" name="username"class="form-control" placeholder="Email" aria-label="Username"
