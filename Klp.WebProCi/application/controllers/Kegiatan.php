@@ -27,7 +27,7 @@ class Kegiatan extends CI_Controller
             echo '<script>alert("Data harus diisi");</script>';
             $this->load->view('komunitas/daftarKegiatan.php');
         } else {
-            $id_komunitas = 1;// sesuaikan dengan cara Anda mendapatkan id komunitas
+            $id_komunitas = 0;// sesuaikan dengan cara Anda mendapatkan id komunitas
             $nama_komunitas = $this->m_daftarkegiatan->getNamaKomunitasById($id_komunitas);
 
             $config['upload_path'] = 'uploads/';  // Sesuaikan dengan folder tempat menyimpan file

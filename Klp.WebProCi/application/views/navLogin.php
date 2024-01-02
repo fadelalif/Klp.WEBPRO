@@ -8,9 +8,6 @@
 </head>
 
 <body>
-  <div class="row">
-
-  </div>
   <nav class="navbar navLogin navbar-expand-lg position-fixed w-100 container-fluid">
     <div class="container">
       <a class="navbar-brand" href="#">
