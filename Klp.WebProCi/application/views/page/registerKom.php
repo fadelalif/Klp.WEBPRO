@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daftar Komunitas</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/styleRegister.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/styleNav.css">
 
 
 </head>
+
 <body>
-<div>
+    <div>
         <?php include 'application/views/navLogin.php'; ?>
     </div>
     <section id="loginPage" style="padding-top: 10px;">
@@ -27,35 +28,39 @@
                     <h1 class="DaftarHead fw-semibold text-center ">
                         Daftar
                     </h1>
-                    <form action="<?php echo site_url('RegisterKomunitas/tambah'); ?>" method="post" enctype="multipart/form-data" role="form">
+                    <form action="<?php echo site_url('RegisterKomunitas/tambah'); ?>" method="post"
+                        enctype="multipart/form-data" role="form">
                         <h2 class="AkunHead fw-semibold " style="margin-left: 465px;margin-top: 50px;">
                             Akun
                         </h2>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <input type="text" class="form-control" name="nama_komunitas"placeholder="Nama Komunitas" aria-label="Nama Komunitas"
-                                aria-describedby="basic-addon1" />
+                            <input type="text" class="form-control" name="nama_komunitas" placeholder="Nama Komunitas"
+                                aria-label="Nama Komunitas" aria-describedby="basic-addon1" />
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <input type="text" class="form-control" name="email_komunitas"placeholder="Email" aria-label="Email"
-                                aria-describedby="basic-addon1" />
+                            <input type="text" class="form-control" name="email_komunitas" placeholder="Email"
+                                aria-label="Email" aria-describedby="basic-addon1" />
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <input type="password" class="form-control" name="password" placeholder="Kata Sandi" aria-label="Kata Sandi"
-                                aria-describedby="basic-addon1" />
+                            <input type="password" class="form-control" name="password" placeholder="Kata Sandi"
+                                aria-label="Kata Sandi" aria-describedby="basic-addon1" />
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <input type="password" class="form-control" name="re-password" placeholder="Konfirmasi Kata Sandi"
-                                aria-label="Konfirmasi Kata Sandi" aria-describedby="basic-addon1" />
+                            <input type="password" class="form-control" name="re-password"
+                                placeholder="Konfirmasi Kata Sandi" aria-label="Konfirmasi Kata Sandi"
+                                aria-describedby="basic-addon1" />
                         </div>
                         <h2 class="AkunHead fw-semibold " style="margin-left: 465px;">
                             Data Komunitas
                         </h2>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <input type="text" class="form-control" name="nomorTlp_komunitas"placeholder="Nomor Telepon"
-                                aria-label="Nomor Telepon" aria-describedby="basic-addon1" />
+                            <input type="text" class="form-control" name="nomorTlp_komunitas"
+                                placeholder="Nomor Telepon" aria-label="Nomor Telepon"
+                                aria-describedby="basic-addon1" />
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
-                            <input type="text" class="form-control" name="penanggung_jawab" placeholder="Penanggung Jawab" aria-label="Penanggung Jawab"
+                            <input type="text" class="form-control" name="penanggung_jawab"
+                                placeholder="Penanggung Jawab" aria-label="Penanggung Jawab"
                                 aria-describedby="basic-addon1" />
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
@@ -70,12 +75,14 @@
                             </select>
                         </div>
                         <div class="input-group mb-4 mx-auto form-floating" style="max-width: 568px">
-                        <textarea class="form-control" name="deskripsi_komunitas"placeholder="Leave a comment here" id="desc" style="height: 100px"></textarea>
-                        <label for="desc">Deskripsi</label>
+                            <textarea class="form-control" name="deskripsi_komunitas" placeholder="Leave a comment here"
+                                id="desc" style="height: 100px"></textarea>
+                            <label for="desc">Deskripsi</label>
                         </div>
                         <div class="input-group mb-4 mx-auto" style="max-width: 568px">
                             <label class="input-group-text" for="provinsi">Provinsi</label>
-                            <select class="form-select" id="provinsi" name="provinsi_komunitas" aria-describedby="basic-addon1">
+                            <select class="form-select" id="provinsi" name="provinsi_komunitas"
+                                aria-describedby="basic-addon1">
                                 <option value="">Pilih provinsi</option>
                                 <option value="Aceh">Aceh</option>
                                 <option value="Sumatera Utara">Sumatera Utara</option>
@@ -118,14 +125,17 @@
                             <input type="file" name="uploadFoto" size="20" />
                         </div>
                         <div class="mx-auto form-check" style=" width: 568px; font-size: 16px">
-                        <input type="checkbox" class="form-check-input" id="aggrement" name="aggrement" value="agree">
-                        <label class="form-check-label" for="aggrement"> Dengan ini komunitas kami dengan sungguh-sungguh mendaftarkan diri sesuai dengan syarat dan kesepakatan yang berlaku</label><br>
+                            <input type="checkbox" class="form-check-input" id="aggrement" name="aggrement"
+                                value="agree">
+                            <label class="form-check-label" for="aggrement"> Dengan ini komunitas kami dengan
+                                sungguh-sungguh mendaftarkan diri sesuai dengan syarat dan kesepakatan yang
+                                berlaku</label><br>
 
                         </div>
 
 
                         <div class="mt-4" style="text-align: center">
-                        <button type="submit" class="btn MasukBut">Daftar</button>
+                            <button type="submit" class="btn MasukBut">Daftar</button>
                         </div>
 
 
