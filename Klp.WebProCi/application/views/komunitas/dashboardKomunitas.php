@@ -108,7 +108,7 @@
     <div class="container-fluid align-items-center">
       <div class="row">
         <div class="col-md-12 headDash-tagline text-center" style="margin-bottom: 74px; margin-top:64px; padding: 0;">
-          <h1 class="msgDash">Buat Keigatan Untuk Memperbaiki Bumi</h1>
+          <h1 class="msgDash">Buat Kegiatan Untuk Memperbaiki Bumi</h1>
           <p class="msgDescDash">Buat kegiatan yang menarik dan bermanfaat bagi bumi dan lingkungan sekitar</p>
         </div>
       </div>

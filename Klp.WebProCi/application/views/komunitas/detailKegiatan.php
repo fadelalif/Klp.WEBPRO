@@ -39,7 +39,7 @@
       </div>
       <div class="row" style="padding:20px 122px; ">
         <div class="col-md-12" style="background-color:#DADADA;">
-          <h2 style="font-size:25px;">Oleh <span style="color:#00897b;">Karawang Peduli</h2>
+          <h2 style="font-size:25px;">Oleh <span style="color:#00897b;"><?= $kegiatan->nama_komunitas ?></h2>
           <h3 style="padding-top:15px;">Aktivitas</h3>
           <p style="width: 100%;">
             <?= $kegiatan->aktivitas_kegiatan ?>

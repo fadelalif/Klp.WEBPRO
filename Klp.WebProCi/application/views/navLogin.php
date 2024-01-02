@@ -8,6 +8,9 @@
 </head>
 
 <body>
+  <div class="row">
+
+  </div>
   <nav class="navbar navLogin navbar-expand-lg position-fixed w-100 container-fluid">
     <div class="container">
       <a class="navbar-brand" href="#">
@@ -41,7 +44,7 @@
               <li><a id="navDropdownMenuLink" class="dropdown-item  "
                   href="<?= base_url() ?>index.php/CariKegiatan">Cari Kegiatan</a></li>
               <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/RegisterKomunitas">Gabung Komunitas</a></li>
-              <li><a id="navDropdownMenuLink" class="dropdown-item" href="#">Panduan</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/Panduan">Panduan</a></li>
             </ul>
           </li>
           <li class="nav-item mx-4">
