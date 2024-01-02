@@ -17,7 +17,7 @@ class Profile extends CI_Controller
 	{
 		$user_id = $this->session->userdata('user_id');
 		$data['user_profile'] = $this->m_profile->getUserProfile($user_id);
-		$this->load->view('profile', $data);
+		$this->load->view('page/profile', $data);
 	}
 
 	public function updateProfile()

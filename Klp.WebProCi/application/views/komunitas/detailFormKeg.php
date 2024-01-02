@@ -13,14 +13,20 @@
 
 </head>
 <body>
-    <section id="daftarPage" style="padding-top: 10px;">
+    <div>
+        <?php include 'application/views/navLogin.php'; ?>
+    </div>
+    <section id="daftarPage" style="padding-top: 101px;">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="DaftarHead fw-semibold text-center ">
-                        Daftar
-                    </h1>
-                    
+                    <section class="nav navProf nav-pills nav-fill container-expand  " style="padding: top 99px; " id="pilhan">
+                    <a class="nav-item nav-link navProfButt active" href="<?php echo site_url('kegiatan/detailKeg/' . $kegiatan->id); ?>">
+                        <i style="color: #00897b; margin-right:5px;"></i>Form</a>
+                    <a class="nav-item nav-link navProfButt active" href="<?= base_url() ?>index.php/DbRelawan">
+                        <i style="color: #00897b; margin-right:5px;"></i>Relawan</a>
+                    </section>  
+
                     <form action="<?php echo site_url('Kegiatan/detailkeg/' . $kegiatan->id); ?>" method="post" enctype="multipart/form-data" role="form">
                         <h2 class="AkunHead fw-semibold " style="margin-left: 465px;">
                             Detail Kegiatan
@@ -119,8 +125,6 @@
                         <div class="mt-4" style="text-align: center; padding-bottom:15px;">
                         <button type="button" onclick="location.href='<?= base_url() ?>index.php/Kegiatan'" class="btn">Back</button>
                         </div>
-
-
                     </form>
                 </div>
             </div>
