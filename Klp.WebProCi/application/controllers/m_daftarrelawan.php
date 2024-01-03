@@ -1,11 +1,6 @@
 <?php
 
 class m_daftarrelawan extends CI_Model {
-    public function __construct() {
-        parent::__construct();
-        $this->load->database();
-    }
-
     public function tampilData() {
         $this->db->select('id, firstname, lastname, email, username, password, nmrTelphone, tgl_lahir, jenis_kelamin, pekerjaan, institusi, provinsi, uploadFoto');
         $this->db->from('register_relawan');

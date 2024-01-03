@@ -15,6 +15,13 @@ class Dashboard extends CI_Controller
 
 	}
 
+	function __construct(){
+        parent::__construct();
+        $this->load->model('m_daftarkegiatan');
+        $this->load->library('form_validation');
+
+    }
+
 	/**
 	 * Index Page for this controller.
 	 *

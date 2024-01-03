@@ -1,12 +1,6 @@
 <?php
 
 class m_daftarberita extends CI_Model {
-
-    public function __construct() {
-        parent::__construct();
-        $this->load->database();
-    }
-
     public function tampilBerita() {
         $this->db->select('id, nama_berita, isi_berita, gambar_berita, tanggal_berita');
         $this->db->from('berita_konten');

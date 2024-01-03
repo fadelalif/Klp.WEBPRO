@@ -1,0 +1,99 @@
+#detailKegiatan h1 {
+	color: #222;
+	font-family: Arial;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 173.523%; /* 69.409px */
+	padding: 0px 0px 20px 0px;
+}
+
+#detailKegiatan h2 {
+	color: #222;
+	font-family: Arial;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 173.523%; /* 55.527px */
+}
+
+#detailKegiatan h3 {
+	color: #222;
+	font-family: Arial;
+	font-size: 35px;
+	font-style: normal;
+	line-height: 173.523%; /* 69.409px */
+	font-weight: 700;
+}
+
+#detailKegiatan h4 {
+	color: var(--Text-primer-color, #222);
+	text-align: justify;
+	font-family: Arial;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+
+}
+
+#detailKegiatan .bergabung {
+	border-radius: 10px;
+	background: #00897b;
+	color: #fff;
+	text-align: center;
+	font-family: Arial;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+#detailKegiatan .hubOrg {
+	border-radius: 10px;
+	border: 2px solid #00897b;
+	background: #fff;
+	color: #00897b;
+	text-align: center;
+	font-family: Arial;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+#detailKegiatan .bergabung:hover {
+	background-color: white;
+	color: #00897b;
+	border: 2px solid #00897b;
+}
+
+#detailKegiatan .hubOrg:hover {
+	background-color: #00897b;
+	color: white;
+	border: 2px solid #00897b;
+}
+
+#detailKegiatan .galeriSlide {
+	background-color: white;
+}
+
+#detailKegiatan .galeriSlide .page-link {
+	color: #00897b;
+}
+
+#detailKegiatan h5 {
+	color: var(--Text-primer-color, #222);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+#detailKegiatan h6 {
+	color: var(--Text-primer-color, #222);
+	font-family: Arial;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}

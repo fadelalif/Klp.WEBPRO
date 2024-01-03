@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class CariBerita extends CI_Controller
+class LihatBerita extends CI_Controller
 {
 
 	/**
@@ -20,18 +20,19 @@ class CariBerita extends CI_Controller
 	 * @see https://codeigniter.com/userguide3/general/urls.html
 	 */
 
+
 	function __construct()
 	{
 		parent::__construct();
 		$this->load->model('newsmodel');
 	}
-
-	public function index($sort = 'default')
+	public function index()
 	{
-		// Add logic to determine the sorting order based on the $sort parameter
 
-		$data['berita'] = $this->newsmodel->getNews($sort);
-		$this->load->view('page/cariBerita', $data);
+		$id_berita = $this->input->get('id');
+
+		$data['berita'] = $this->newsmodel->getNewsById($id_berita);
+
+		$this->load->view('page/lihatBerita', $data);
 	}
-
 }
