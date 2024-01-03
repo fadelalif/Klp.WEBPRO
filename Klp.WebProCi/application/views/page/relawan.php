@@ -17,6 +17,7 @@
 </head>
 
 <body>
+  
   <div>
     <?php include 'application/views/navLogin.php'; ?>
   </div>
@@ -166,7 +167,7 @@
     </div> -->
 
 
-    <!-- <div class="tab-content" id="myTabContent">
+  <!-- <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade show active" id="card1" role="tabpanel" aria-labelledby="card1-tab">
         <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 25px;">
           <?php include 'application/views/cardKegiatan.php'; ?>

@@ -1,18 +1,21 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class DashboardKomunitas extends CI_Controller {
+class DashboardKomunitas extends CI_Controller
+{
 
-  function __construct(){
+  function __construct()
+  {
     parent::__construct();
     $this->load->model('m_daftarkegiatan');
     $this->load->model('m_komunitas');
     $this->load->model('m_logIn');
     $this->load->library('session');
 
-  }  
+  }
 
-    public function index() {
+  public function index()
+  {
     $user_id = $this->session->userdata('user_id');
     $data['kegiatan'] = $this->m_daftarkegiatan->tampilDataByUserId($user_id);
     $data['user'] = $this->m_komunitas->getUserById($user_id);

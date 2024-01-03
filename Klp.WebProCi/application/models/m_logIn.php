@@ -1,8 +1,10 @@
 <?php
 
-class m_logIn extends CI_Model {
+class m_logIn extends CI_Model
+{
 
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct();
         $this->load->database(); // Memuat library database
         $this->load->library('session');
@@ -10,32 +12,32 @@ class m_logIn extends CI_Model {
 
     public function check_credentials($username, $password)
     {
-    // Fetch user from m_registerRelawan table based on username
-    $this->db->where('username', $username);
-    $this->db->or_where('email', $username);
-    $user = $this->db->get('register_relawan')->row();
-    
-    if ($user && password_verify($password, $user->password)) {
-        $this->create_session($user->id,$user->username, 'user');
-        // Password is correct for a user
-        return "user";
-    }
+        // Fetch user from m_registerRelawan table based on username
+        $this->db->where('username', $username);
+        $this->db->or_where('email', $username);
+        $user = $this->db->get('register_relawan')->row();
 
-    // Fetch data from the 'komunitas' table based on username
-    $komunitas = $this->db->get_where('komunitas', array('email_komunitas' => $username))->row();
+        if ($user && password_verify($password, $user->password)) {
+            $this->create_session($user->id);
+            // Password is correct for a user
+            return "user";
+        }
 
-    if ($komunitas && password_verify($password, $komunitas->password)) {
-        $this->create_session($komunitas->id, $komunitas->email_komunitas,'komunitas');
-        // Password is correct for a komunitas
-        return "komunitas";
-    }
-    if (($username == "SuperAdmin") && ($password == "Admin")) {
+        // Fetch data from the 'komunitas' table based on username
+        $komunitas = $this->db->get_where('komunitas', array('email_komunitas' => $username))->row();
 
-        $this->create_session(0, $user->username, 'admin'); 
-        // Password is correct for a komunitas
-        return "admin";
-    }
-    return false;
+        if ($komunitas && password_verify($password, $komunitas->password)) {
+            $this->create_session($komunitas->id, $komunitas->email_komunitas, 'komunitas');
+            // Password is correct for a komunitas
+            return "komunitas";
+        }
+        if (($username == "SuperAdmin") && ($password == "Admin")) {
+
+            $this->create_session(0, $user->username, 'admin');
+            // Password is correct for a komunitas
+            return "admin";
+        }
+        return false;
 
 
     }
@@ -76,5 +78,5 @@ class m_logIn extends CI_Model {
         $this->session->set_userdata('user_id', $user_id);
     }
 
-    
+
 }

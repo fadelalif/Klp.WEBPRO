@@ -137,3 +137,5 @@ $autoload['model'] = array();
 $autoload['libraries'] = array('form_validation');
 
 $autoload['libraries'] = array('upload');
+
+$autoload['libraries'] = array('database', 'session');
