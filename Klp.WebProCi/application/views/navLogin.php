@@ -1,6 +1,6 @@
 <head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -22,22 +22,20 @@
         <ul class="navbar-nav mx-auto">
           <li class="nav-item mx-4">
             <a class="nav-link" aria-current="page" href="<?= base_url() ?>index.php/Dashboard">Utama</a>
-            <a class="nav-link" aria-current="page" href="<?= base_url() ?>index.php/Dashboard">Utama</a>
           </li>
           <li class="nav-item dropdown mx-4">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Tentang
             </a>
-            <ul class="dropdown-menu navDropdownMenuLink" >
-              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/TentangKami">Tentang Relawanin</a></li>
-              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/VisiMisi">Visi dan Misi</a></li>
-              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/HubungiKami">Hubungi Kami</a></li>
-              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/Donasi">Donasi</a></li>
-            <ul class="dropdown-menu navDropdownMenuLink" >
-              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/TentangKami">Tentang Relawanin</a></li>
-              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/VisiMisi">Visi dan Misi</a></li>
-              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/HubungiKami">Hubungi Kami</a></li>
-              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/Donasi">Donasi</a></li>
+            <ul class="dropdown-menu navDropdownMenuLink">
+              <li><a id="navDropdownMenuLink" class="dropdown-item"
+                  href="<?= base_url() ?>index.php/TentangKami">Tentang Relawanin</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/VisiMisi">Visi dan
+                  Misi</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item"
+                  href="<?= base_url() ?>index.php/HubungiKami">Hubungi Kami</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/Donasi">Donasi</a>
+              </li>
             </ul>
           </li>
           <li class="nav-item dropdown mx-4">
@@ -47,12 +45,13 @@
             <ul class="dropdown-menu navDropdownMenuLink">
               <li><a id="navDropdownMenuLink" class="dropdown-item  "
                   href="<?= base_url() ?>index.php/CariKegiatan">Cari Kegiatan</a></li>
-              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/RegisterKomunitas">Gabung Komunitas</a></li>
-              <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/Panduan">Panduan</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item"
+                  href="<?= base_url() ?>index.php/RegisterKomunitas">Gabung Komunitas</a></li>
+              <li><a id="navDropdownMenuLink" class="dropdown-item"
+                  href="<?= base_url() ?>index.php/Panduan">Panduan</a></li>
             </ul>
           </li>
           <li class="nav-item mx-4">
-            <a class="nav-link" href="<?= base_url() ?>index.php/CariBerita">Berita</a>
             <a class="nav-link" href="<?= base_url() ?>index.php/CariBerita">Berita</a>
           </li>
         </ul>
@@ -66,22 +65,11 @@
           </button>
         </a>
         <ul class="dropdown-menu">
-          <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/Profile">Profile</a></li>
+          <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/Profile">Profile</a>
+          </li>
           <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/Utama">Log Out</a></li>
         </ul>
       </li>
-      <li class="nav-item dropdown" style="list-style-type: none;">
-        <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <button type="button" style="background:none; border:none">
-            <img src="<?= base_url() ?>assets/img/icon profile.png" alt="" style="width: 67px;" />
-          </button>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/Profile">Profile</a></li>
-          <li><a id="navDropdownMenuLink" class="dropdown-item" href="<?= base_url() ?>index.php/Utama">Log Out</a></li>
-        </ul>
-      </li>
-      </a>
     </div>
   </nav>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
