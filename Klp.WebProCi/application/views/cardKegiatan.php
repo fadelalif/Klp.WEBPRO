@@ -11,7 +11,7 @@
                         style="color: #000;font-family: Arial;font-size: 20px;font-style: normal;font-weight: 700;line-height: normal;">
                         <?= isset($keg->nama_kegiatan) ? $keg->nama_kegiatan : '' ?>
                     </h5>
-                    <p class=" card-text cT1">Oleh <span><?= isset($keg->nama_komunitas) ? $keg->nama_komunitas : 'Nama Komunitas' ?></span></p>
+                    <p class=" card-text cT1">Oleh <span><?= isset($users->nama_komunitas) ? $users->nama_komunitas : 'Nama Komunitas' ?></span></p>
                     <p class="card-text cT2"><img src="<?= base_url() ?>assets/img/calendar.png" alt=""
                             style="margin-right:8px;" />
                         <?php

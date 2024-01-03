@@ -116,4 +116,22 @@ class m_daftarkegiatan extends CI_Model
         $this->db->where('user', $user_id);
         return $this->db->get('kegiatan')->result();
     }
+
+    public function getDataWithKomunitasName()
+{
+    // Assuming you have a relationship between m_daftarkegiatan.user and m_komunitas.id
+    $this->db->select('kegiatan.*, komunitas.nama_komunitas');
+    $this->db->from('kegiatan');
+    $this->db->join('komunitas', 'kegiatan.user = komunitas.id');
+    
+    // Add any other conditions or order by if needed
+    // $this->db->where('m_daftarkegiatan.some_column', $some_value);
+    
+    $query = $this->db->get();
+    
+    return $query->result();
+}
+    
+    
+    
 }

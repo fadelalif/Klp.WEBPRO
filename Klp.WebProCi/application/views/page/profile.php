@@ -35,6 +35,7 @@
         <div class="container-fluid ">
             <div class="row ">
                 <div class="col-md-12 ">
+                    
                     <form method="post" action="<?= base_url('Profile/updateProfile') ?>">
                         <div class="photoProf text-center">
                             <img src="<?= base_url() ?>assets/img/profile picture.png" alt="" style="width: 238px;" />
@@ -131,7 +132,7 @@
                             <a class="ubahPassLink" href="#">Ubah Kata Sandi</a>
                         </div>
                         <div class="mt-4" style="text-align: center">
-                            <a href="#" class="btn DaftarBut">Simpan</a>
+                            <button type="submit" class="DaftarBut">Simpan</button>
                         </div>
                     </form>
                 </div>

@@ -1,21 +1,25 @@
 <?php
 
-class M_daftarkomunitas extends CI_Model {
+class M_daftarkomunitas extends CI_Model
+{
 
-    public function tampilDataFix() {
+    public function tampilDataFix()
+    {
         $this->db->select('id, nama_komunitas, email_komunitas, password, nomorTlp_komunitas,penanggung_jawab, kategori_komunitas, deskripsi_komunitas, provinsi_komunitas, uploadFoto');
         $this->db->from('komunitas');
         $query = $this->db->get();
         return $query->result();
     }
 
-    public function getUserById($id) {
+    public function getUserById($id)
+    {
         $this->db->where('id', $id);
         $query = $this->db->get('komunitas');
         return $query->row();
     }
 
-    public function delete_data($id) {
+    public function delete_data($id)
+    {
         $this->db->where('id', $id);
         return $this->db->delete('komunitas');
     }
@@ -35,37 +39,64 @@ class M_daftarkomunitas extends CI_Model {
     //     $this->db->insert('komunitas', $data);
     // }
 
-    public function get_user_details($id) {
+    public function get_user_details($id)
+    {
         $query = $this->db->get_where('komunitas', array('id' => $id));
         return $query->row();
     }
 
-    public function updatekomunitas($id, $data) {
+    public function updatekomunitas($id, $data)
+    {
         $this->db->where('id', $id);
         $this->db->update('komunitas', $data); // Sesuaikan dengan nama tabel yang sesuai
     }
 
     // Buat daftar Komunitas ACC
 
-    public function tampilDataBlmFix() {
+    public function tampilDataBlmFix()
+    {
         $this->db->select('id, nama_komunitas, email_komunitas, password, nomorTlp_komunitas,penanggung_jawab, kategori_komunitas, deskripsi_komunitas, provinsi_komunitas, uploadFoto');
         $this->db->from('komunitas_status');
         $query = $this->db->get();
         return $query->result();
     }
 
-    public function getUserByIdAcc($id) {
+    public function getUserByIdAcc($id)
+    {
         $this->db->where('id', $id);
         $query = $this->db->get('komunitas_status');
         return $query->row();
     }
 
-    public function delete_dataAcc($id) {
+    public function delete_dataAcc($id)
+    {
         $this->db->where('id', $id);
         return $this->db->delete('komunitas_status');
     }
 
-    public function approveAccount($id) {
+    public function insertData($data)
+    {
+        $this->db->insert('komunitas_status', $data);
+    }
+
+    public function tampilData()
+    {
+        // Ambil data nama_kegiatan dan aktivitas_kegiatan dari tabel kegiatan
+        $this->db->select('id, nama_komunitas, email_komunitas, password, nomorTlp_komunitas,penanggung_jawab, kategori_komunitas, deskripsi_komunitas, provinsi_komunitas, uploadFoto');
+        $this->db->from('komunitas'); // Ganti nama_tabel_kegiatan dengan nama tabel kegiatan Anda
+        $query = $this->db->get();
+        return $query->result(); // Mengembalikan hasil query sebagai array of objects
+    }
+
+    public function getKegiatanById($id)
+    {
+        $this->db->where('id', $id);
+        $query = $this->db->get('komunitas_status');
+        return $query->row();
+    }
+
+    public function approveAccount($id)
+    {
         // Ambil data user yang akan disetujui
         $data = $this->getUserByIdAcc($id);
 

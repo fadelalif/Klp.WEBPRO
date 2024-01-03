@@ -41,3 +41,29 @@ class Profile extends CI_Controller
 		redirect('Profile');
 	}
 }
+		$user_id = $this->session->userdata('user_id');
+		$data['user_profile'] = $this->m_profile->getUserProfile($user_id);
+		$this->load->view('profile', $data);
+	}
+
+	public function updateProfile()
+	{
+		// Handle logika update profil di sini
+		// Ambil data dari form
+		$data = array(
+			'firstname' => $this->input->post('firstname'),
+			'tgl_lahir' => $this->input->post('tgl_lahir'),
+			'jenis_kelamin' => $this->input->post('jenis_kelamin'),
+			'pekerjaan' => $this->input->post('pekerjaan'),
+			'institusi' => $this->input->post('institusi'),
+			'provinsi' => $this->input->post('provinsi'),
+			// ... tambahkan field lain sesuai kebutuhan
+		);
+
+		// Panggil model untuk update data
+		$this->m_profile->updateProfile($user_id, $data);
+
+		// Redirect ke halaman profil atau tampilkan pesan sukses
+		redirect('Profile');
+	}
+}

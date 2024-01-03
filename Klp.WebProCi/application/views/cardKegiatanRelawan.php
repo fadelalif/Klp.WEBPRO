@@ -1,6 +1,6 @@
 <?php foreach ($kegiatan as $keg): ?>
     <div class="col-md 4" style="padding: 5px 15px;">
-        <a href="<?php echo site_url('Dashboardkomunitas/detail/' . $keg->id); ?>" style="text-decoration: none;">
+        <a href="<?php echo site_url('Dashboard/detail/' . $keg->id); ?>" style="text-decoration: none;">
             <div class="card cardKeg">
                 <img class="card-img-top" style="height: 250px;"
                     src="<?= base_url() ?>uploads/<?= isset($keg->uploadFile) ? $keg->uploadFile : '' ?>"
@@ -10,7 +10,7 @@
                         style="color: #000;font-family: Arial;font-size: 20px;font-style: normal;font-weight: 700;line-height: normal;">
                         <?= isset($keg->nama_kegiatan) ? $keg->nama_kegiatan : '' ?>
                     </h5>
-                    <p class=" card-text cT1">Oleh <span><?= isset($keg->nama_komunitas) ? $keg->nama_komunitas : 'Nama Komunitas' ?></span></p>
+                    <p class=" card-text cT1">Oleh <span><?= isset($user->nama_komunitas) ? $user->nama_komunitas : 'Nama Komunitas' ?></span></p>
                     <p class="card-text cT2"><img src="<?= base_url() ?>assets/img/calendar.png" alt=""
                             style="margin-right:8px;" />
                         <?php
