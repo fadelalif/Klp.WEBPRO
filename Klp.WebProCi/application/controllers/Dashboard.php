@@ -7,6 +7,9 @@ class Dashboard extends CI_Controller {
         parent::__construct();
         $this->load->model('m_daftarkegiatan');
         $this->load->library('form_validation');
+		$this->load->model('m_komunitas');
+		$this->load->model('m_logIn');
+		$this->load->library('session');
 
     }
 
@@ -27,7 +30,9 @@ class Dashboard extends CI_Controller {
 	 */
 	public function index()
 	{
+		$user_id = $this->session->userdata('user_id');
 		$data['kegiatan'] = $this->m_daftarkegiatan->tampilData();
+		$data['users'] = $this->m_daftarkegiatan->getDataWithKomunitasName();
 		$this->load->view('page/relawan', $data);
 
 	}
